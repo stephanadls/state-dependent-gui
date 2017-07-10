@@ -1,0 +1,3 @@
+name: generic-gui-src
+depend: standard-library
+include: . ../examples
