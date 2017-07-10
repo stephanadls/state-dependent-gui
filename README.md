@@ -5,13 +5,13 @@ State-Dependent GUIs based on Dependent Types
 ### Code Listings from Paper
 2. Section – Background
   * [IOInterface](https://stephanadls.github.io/state-dependent-gui/html/SizedIO.Base.html#333)
-3.1. Section – Introductory Example
+3.1 Section – Introductory Example
   * oneBtnGUI
   * twoBtnGUI 
   * propOneBtn 
   * obj1Btn 
   * obj2Btn 
-3.2. Section – Basic GUI Commands
+3.2 Section – Basic GUI Commands
   * GuiLev1Command 
   * GuiLev1Response 
   * GuiLev1Interface
@@ -19,9 +19,9 @@ State-Dependent GUIs based on Dependent Types
   * GuiLev2Command
   * GuiLev2Interface 
   * GuiLev3Command 
-3.3. Section – State-dependent Objects
+3.3 Section – State-dependent Objects
   * Interface
-3.4. Section – Implementation of Generic GUIs
+3.4 Section – Implementation of Generic GUIs
   * HandlerObject 
   * handlerInterface
   * returnType
