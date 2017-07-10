@@ -1,0 +1,3100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >GUIgeneric.GUIFeaturesPart3</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="GUIgeneric.GUIFeaturesPart3.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart3</a
+      ><a name="35"
+      > </a
+      ><a name="36" class="Keyword"
+      >where</a
+      ><a name="41"
+      >
+
+</a
+      ><a name="43" class="Keyword"
+      >open</a
+      ><a name="47"
+      > </a
+      ><a name="48" class="Keyword"
+      >import</a
+      ><a name="54"
+      > </a
+      ><a name="55" href="GUIgeneric.Prelude.html#1" class="Module"
+      >GUIgeneric.Prelude</a
+      ><a name="73"
+      > </a
+      ><a name="74" class="Keyword"
+      >renaming</a
+      ><a name="82"
+      > </a
+      ><a name="83" class="Symbol"
+      >(</a
+      ><a name="84" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton</a
+      ><a name="93"
+      > </a
+      ><a name="94" class="Symbol"
+      >to</a
+      ><a name="96"
+      > </a
+      ><a name="97" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton'</a
+      ><a name="107" class="Symbol"
+      >)</a
+      ><a name="108"
+      >
+
+</a
+      ><a name="110" class="Keyword"
+      >open</a
+      ><a name="114"
+      > </a
+      ><a name="115" class="Keyword"
+      >import</a
+      ><a name="121"
+      > </a
+      ><a name="122" href="GUIgeneric.GUIDefinitions.html#1" class="Module"
+      >GUIgeneric.GUIDefinitions</a
+      ><a name="147"
+      > </a
+      ><a name="148" class="Keyword"
+      >renaming</a
+      ><a name="156"
+      > </a
+      ><a name="157" class="Symbol"
+      >(</a
+      ><a name="158" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add</a
+      ><a name="161"
+      > </a
+      ><a name="162" class="Symbol"
+      >to</a
+      ><a name="164"
+      > </a
+      ><a name="165" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add'</a
+      ><a name="169" class="Symbol"
+      >;</a
+      ><a name="170"
+      > </a
+      ><a name="171" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add'</a
+      ><a name="175"
+      > </a
+      ><a name="176" class="Symbol"
+      >to</a
+      ><a name="178"
+      > </a
+      ><a name="179" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add</a
+      ><a name="182" class="Symbol"
+      >)</a
+      ><a name="183"
+      >
+</a
+      ><a name="184" class="Keyword"
+      >open</a
+      ><a name="188"
+      > </a
+      ><a name="189" class="Keyword"
+      >import</a
+      ><a name="195"
+      > </a
+      ><a name="196" href="GUIgeneric.GUI.html#1" class="Module"
+      >GUIgeneric.GUI</a
+      ><a name="210"
+      >
+</a
+      ><a name="211" class="Keyword"
+      >open</a
+      ><a name="215"
+      > </a
+      ><a name="216" class="Keyword"
+      >import</a
+      ><a name="222"
+      > </a
+      ><a name="223" href="GUIgeneric.GUIExampleLib.html#1" class="Module"
+      >GUIgeneric.GUIExampleLib</a
+      ><a name="247"
+      >
+</a
+      ><a name="248" class="Keyword"
+      >open</a
+      ><a name="252"
+      > </a
+      ><a name="253" class="Keyword"
+      >import</a
+      ><a name="259"
+      > </a
+      ><a name="260" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1" class="Module"
+      >StateSizedIO.GUI.WxGraphicsLibLevel3</a
+      ><a name="296"
+      > </a
+      ><a name="297" class="Keyword"
+      >renaming</a
+      ><a name="305"
+      > </a
+      ><a name="306" class="Symbol"
+      >(</a
+      ><a name="307" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton</a
+      ><a name="316"
+      > </a
+      ><a name="317" class="Symbol"
+      >to</a
+      ><a name="319"
+      > </a
+      ><a name="320" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton'</a
+      ><a name="330" class="Symbol"
+      >)</a
+      ><a name="331"
+      >
+</a
+      ><a name="332" class="Keyword"
+      >open</a
+      ><a name="336"
+      > </a
+      ><a name="337" class="Keyword"
+      >import</a
+      ><a name="343"
+      > </a
+      ><a name="344" href="GUIgeneric.GUIFeatures.html#1" class="Module"
+      >GUIgeneric.GUIFeatures</a
+      ><a name="366"
+      >
+</a
+      ><a name="367" class="Keyword"
+      >open</a
+      ><a name="371"
+      > </a
+      ><a name="372" class="Keyword"
+      >import</a
+      ><a name="378"
+      > </a
+      ><a name="379" href="GUIgeneric.GUIFeaturesPart2.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart2</a
+      ><a name="406"
+      > </a
+      ><a name="407" class="Keyword"
+      >hiding</a
+      ><a name="413"
+      > </a
+      ><a name="414" class="Symbol"
+      >(</a
+      ><a name="415"
+      > </a
+      ><a name="416" href="GUIgeneric.GUIFeaturesPart2.html#10110" class="Function"
+      >main</a
+      ><a name="420"
+      > </a
+      ><a name="421" class="Symbol"
+      >)</a
+      ><a name="422"
+      >
+</a
+      ><a name="423" class="Keyword"
+      >open</a
+      ><a name="427"
+      > </a
+      ><a name="428" class="Keyword"
+      >import</a
+      ><a name="434"
+      > </a
+      ><a name="435" href="GUIgeneric.GUIExample.html#1" class="Module"
+      >GUIgeneric.GUIExample</a
+      ><a name="456"
+      > </a
+      ><a name="457" class="Keyword"
+      >hiding</a
+      ><a name="463"
+      > </a
+      ><a name="464" class="Symbol"
+      >(</a
+      ><a name="465" href="GUIgeneric.GUIExample.html#2656" class="Function"
+      >main</a
+      ><a name="469"
+      > </a
+      ><a name="470" class="Symbol"
+      >)</a
+      ><a name="471"
+      >
+
+
+</a
+      ><a name="474" class="Keyword"
+      >open</a
+      ><a name="478"
+      > </a
+      ><a name="479" class="Keyword"
+      >import</a
+      ><a name="485"
+      > </a
+      ><a name="486" href="Data.Product.html#1" class="Module"
+      >Data.Product</a
+      ><a name="498"
+      >
+</a
+      ><a name="499" class="Keyword"
+      >open</a
+      ><a name="503"
+      > </a
+      ><a name="504" class="Keyword"
+      >import</a
+      ><a name="510"
+      > </a
+      ><a name="511" href="Data.Fin.html#1" class="Module"
+      >Data.Fin</a
+      ><a name="519"
+      >
+
+
+</a
+      ><a name="522" href="GUIgeneric.GUIFeaturesPart3.html#522" class="Function"
+      >liftResult&#738;</a
+      ><a name="533"
+      > </a
+      ><a name="534" class="Symbol"
+      >:</a
+      ><a name="535"
+      > </a
+      ><a name="536" class="Symbol"
+      >(</a
+      ><a name="537" href="GUIgeneric.GUIFeaturesPart3.html#537" class="Bound"
+      >S</a
+      ><a name="538"
+      > </a
+      ><a name="539" href="GUIgeneric.GUIFeaturesPart3.html#539" class="Bound"
+      >S'</a
+      ><a name="541"
+      > </a
+      ><a name="542" class="Symbol"
+      >:</a
+      ><a name="543"
+      > </a
+      ><a name="544" class="PrimitiveType"
+      >Set</a
+      ><a name="547" class="Symbol"
+      >)</a
+      ><a name="548"
+      > </a
+      ><a name="549" class="Symbol"
+      >(</a
+      ><a name="550" href="GUIgeneric.GUIFeaturesPart3.html#550" class="Bound"
+      >s2GUI</a
+      ><a name="555"
+      > </a
+      ><a name="556" class="Symbol"
+      >:</a
+      ><a name="557"
+      > </a
+      ><a name="558" class="Symbol"
+      >(</a
+      ><a name="559" href="GUIgeneric.GUIFeaturesPart3.html#559" class="Bound"
+      >s</a
+      ><a name="560"
+      > </a
+      ><a name="561" class="Symbol"
+      >:</a
+      ><a name="562"
+      > </a
+      ><a name="563" href="GUIgeneric.GUIFeaturesPart3.html#539" class="Bound"
+      >S'</a
+      ><a name="565" class="Symbol"
+      >)</a
+      ><a name="566"
+      > </a
+      ><a name="567" class="Symbol"
+      >&#8594;</a
+      ><a name="568"
+      > </a
+      ><a name="569" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="574" class="Symbol"
+      >)</a
+      ><a name="575"
+      >
+             </a
+      ><a name="589" class="Symbol"
+      >(</a
+      ><a name="590" href="GUIgeneric.GUIFeaturesPart3.html#590" class="Bound"
+      >ss'</a
+      ><a name="593"
+      > </a
+      ><a name="594" class="Symbol"
+      >:</a
+      ><a name="595"
+      > </a
+      ><a name="596" href="GUIgeneric.GUIFeaturesPart3.html#537" class="Bound"
+      >S</a
+      ><a name="597"
+      > </a
+      ><a name="598" class="Symbol"
+      >&#8594;</a
+      ><a name="599"
+      > </a
+      ><a name="600" href="GUIgeneric.GUIFeaturesPart3.html#539" class="Bound"
+      >S'</a
+      ><a name="602" class="Symbol"
+      >)</a
+      ><a name="603"
+      >
+             </a
+      ><a name="617" class="Symbol"
+      >(</a
+      ><a name="618" href="GUIgeneric.GUIFeaturesPart3.html#618" class="Bound"
+      >s</a
+      ><a name="619"
+      > </a
+      ><a name="620" class="Symbol"
+      >:</a
+      ><a name="621"
+      > </a
+      ><a name="622" href="GUIgeneric.GUIFeaturesPart3.html#537" class="Bound"
+      >S</a
+      ><a name="623" class="Symbol"
+      >)</a
+      ><a name="624"
+      >
+             </a
+      ><a name="638" class="Symbol"
+      >(</a
+      ><a name="639" href="GUIgeneric.GUIFeaturesPart3.html#639" class="Bound"
+      >m</a
+      ><a name="640"
+      > </a
+      ><a name="641" class="Symbol"
+      >:</a
+      ><a name="642"
+      > </a
+      ><a name="643" href="GUIgeneric.GUI.html#6315" class="Function"
+      >methodsG</a
+      ><a name="651"
+      > </a
+      ><a name="652" class="Symbol"
+      >(</a
+      ><a name="653" href="GUIgeneric.GUIFeaturesPart3.html#550" class="Bound"
+      >s2GUI</a
+      ><a name="658"
+      > </a
+      ><a name="659" class="Symbol"
+      >(</a
+      ><a name="660" href="GUIgeneric.GUIFeaturesPart3.html#590" class="Bound"
+      >ss'</a
+      ><a name="663"
+      > </a
+      ><a name="664" href="GUIgeneric.GUIFeaturesPart3.html#618" class="Bound"
+      >s</a
+      ><a name="665" class="Symbol"
+      >)))</a
+      ><a name="668"
+      >
+             </a
+      ><a name="682" class="Symbol"
+      >(</a
+      ><a name="683" href="GUIgeneric.GUIFeaturesPart3.html#683" class="Bound"
+      >r</a
+      ><a name="684"
+      > </a
+      ><a name="685" class="Symbol"
+      >:</a
+      ><a name="686"
+      > </a
+      ><a name="687" href="StateSizedIO.Base.html#470" class="Field"
+      >Result&#738;</a
+      ><a name="694"
+      > </a
+      ><a name="695" class="Symbol"
+      >(</a
+      ><a name="696" href="GUIgeneric.GUIFeaturesPart2.html#946" class="Function"
+      >handlerGUIInterf&#8347;</a
+      ><a name="713"
+      > </a
+      ><a name="714" href="GUIgeneric.GUIFeaturesPart3.html#537" class="Bound"
+      >S</a
+      ><a name="715"
+      > </a
+      ><a name="716" class="Symbol"
+      >(</a
+      ><a name="717" href="GUIgeneric.GUIFeaturesPart3.html#550" class="Bound"
+      >s2GUI</a
+      ><a name="722"
+      > </a
+      ><a name="723" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="724"
+      > </a
+      ><a name="725" href="GUIgeneric.GUIFeaturesPart3.html#590" class="Bound"
+      >ss'</a
+      ><a name="728" class="Symbol"
+      >))</a
+      ><a name="730"
+      > </a
+      ><a name="731" href="GUIgeneric.GUIFeaturesPart3.html#618" class="Bound"
+      >s</a
+      ><a name="732"
+      > </a
+      ><a name="733" href="GUIgeneric.GUIFeaturesPart3.html#639" class="Bound"
+      >m</a
+      ><a name="734" class="Symbol"
+      >)</a
+      ><a name="735"
+      >
+            </a
+      ><a name="748" class="Symbol"
+      >&#8594;</a
+      ><a name="749"
+      > </a
+      ><a name="750" href="StateSizedIO.Base.html#470" class="Field"
+      >Result&#738;</a
+      ><a name="757"
+      > </a
+      ><a name="758" class="Symbol"
+      >(</a
+      ><a name="759" href="GUIgeneric.GUIFeaturesPart2.html#946" class="Function"
+      >handlerGUIInterf&#8347;</a
+      ><a name="776"
+      > </a
+      ><a name="777" href="GUIgeneric.GUIFeaturesPart3.html#539" class="Bound"
+      >S'</a
+      ><a name="779"
+      > </a
+      ><a name="780" href="GUIgeneric.GUIFeaturesPart3.html#550" class="Bound"
+      >s2GUI</a
+      ><a name="785" class="Symbol"
+      >)</a
+      ><a name="786"
+      > </a
+      ><a name="787" class="Symbol"
+      >(</a
+      ><a name="788" href="GUIgeneric.GUIFeaturesPart3.html#590" class="Bound"
+      >ss'</a
+      ><a name="791"
+      > </a
+      ><a name="792" href="GUIgeneric.GUIFeaturesPart3.html#618" class="Bound"
+      >s</a
+      ><a name="793" class="Symbol"
+      >)</a
+      ><a name="794"
+      > </a
+      ><a name="795" href="GUIgeneric.GUIFeaturesPart3.html#639" class="Bound"
+      >m</a
+      ><a name="796"
+      >
+</a
+      ><a name="797" href="GUIgeneric.GUIFeaturesPart3.html#522" class="Function"
+      >liftResult&#738;</a
+      ><a name="808"
+      > </a
+      ><a name="809" href="GUIgeneric.GUIFeaturesPart3.html#809" class="Bound"
+      >S</a
+      ><a name="810"
+      > </a
+      ><a name="811" href="GUIgeneric.GUIFeaturesPart3.html#811" class="Bound"
+      >S'</a
+      ><a name="813"
+      > </a
+      ><a name="814" href="GUIgeneric.GUIFeaturesPart3.html#814" class="Bound"
+      >s2GUI</a
+      ><a name="819"
+      > </a
+      ><a name="820" href="GUIgeneric.GUIFeaturesPart3.html#820" class="Bound"
+      >ss'</a
+      ><a name="823"
+      > </a
+      ><a name="824" href="GUIgeneric.GUIFeaturesPart3.html#824" class="Bound"
+      >s</a
+      ><a name="825"
+      > </a
+      ><a name="826" href="GUIgeneric.GUIFeaturesPart3.html#826" class="Bound"
+      >m</a
+      ><a name="827"
+      > </a
+      ><a name="828" href="GUIgeneric.GUIFeaturesPart2.html#550" class="InductiveConstructor"
+      >noChange</a
+      ><a name="836"
+      > </a
+      ><a name="837" class="Symbol"
+      >=</a
+      ><a name="838"
+      > </a
+      ><a name="839" href="GUIgeneric.GUIFeaturesPart2.html#550" class="InductiveConstructor"
+      >noChange</a
+      ><a name="847"
+      >
+</a
+      ><a name="848" href="GUIgeneric.GUIFeaturesPart3.html#522" class="Function"
+      >liftResult&#738;</a
+      ><a name="859"
+      > </a
+      ><a name="860" href="GUIgeneric.GUIFeaturesPart3.html#860" class="Bound"
+      >S</a
+      ><a name="861"
+      > </a
+      ><a name="862" href="GUIgeneric.GUIFeaturesPart3.html#862" class="Bound"
+      >S'</a
+      ><a name="864"
+      > </a
+      ><a name="865" href="GUIgeneric.GUIFeaturesPart3.html#865" class="Bound"
+      >s2GUI</a
+      ><a name="870"
+      > </a
+      ><a name="871" href="GUIgeneric.GUIFeaturesPart3.html#871" class="Bound"
+      >ss'</a
+      ><a name="874"
+      > </a
+      ><a name="875" href="GUIgeneric.GUIFeaturesPart3.html#875" class="Bound"
+      >s</a
+      ><a name="876"
+      > </a
+      ><a name="877" href="GUIgeneric.GUIFeaturesPart3.html#877" class="Bound"
+      >m</a
+      ><a name="878"
+      > </a
+      ><a name="879" class="Symbol"
+      >(</a
+      ><a name="880" href="GUIgeneric.GUIFeaturesPart2.html#584" class="InductiveConstructor"
+      >changedState</a
+      ><a name="892"
+      > </a
+      ><a name="893" href="GUIgeneric.GUIFeaturesPart3.html#893" class="Bound"
+      >snew</a
+      ><a name="897" class="Symbol"
+      >)</a
+      ><a name="898"
+      > </a
+      ><a name="899" class="Symbol"
+      >=</a
+      ><a name="900"
+      > </a
+      ><a name="901" href="GUIgeneric.GUIFeaturesPart2.html#584" class="InductiveConstructor"
+      >changedState</a
+      ><a name="913"
+      > </a
+      ><a name="914" class="Symbol"
+      >(</a
+      ><a name="915" href="GUIgeneric.GUIFeaturesPart3.html#871" class="Bound"
+      >ss'</a
+      ><a name="918"
+      > </a
+      ><a name="919" href="GUIgeneric.GUIFeaturesPart3.html#893" class="Bound"
+      >snew</a
+      ><a name="923" class="Symbol"
+      >)</a
+      ><a name="924"
+      >
+
+
+</a
+      ><a name="927" href="GUIgeneric.GUIFeaturesPart3.html#927" class="Function"
+      >extendHandlerGuiInterf&#8347;</a
+      ><a name="950"
+      > </a
+      ><a name="951" class="Symbol"
+      >:</a
+      ><a name="952"
+      >  </a
+      ><a name="954" class="Symbol"
+      >(</a
+      ><a name="955" href="GUIgeneric.GUIFeaturesPart3.html#955" class="Bound"
+      >i</a
+      ><a name="956"
+      > </a
+      ><a name="957" class="Symbol"
+      >:</a
+      ><a name="958"
+      > </a
+      ><a name="959" href="Agda.Builtin.Size.html#114" class="Postulate"
+      >Size</a
+      ><a name="963" class="Symbol"
+      >)</a
+      ><a name="964"
+      >
+                           </a
+      ><a name="992" class="Symbol"
+      >(</a
+      ><a name="993" href="GUIgeneric.GUIFeaturesPart3.html#993" class="Bound"
+      >S</a
+      ><a name="994"
+      > </a
+      ><a name="995" href="GUIgeneric.GUIFeaturesPart3.html#995" class="Bound"
+      >S'</a
+      ><a name="997"
+      > </a
+      ><a name="998" class="Symbol"
+      >:</a
+      ><a name="999"
+      > </a
+      ><a name="1000" class="PrimitiveType"
+      >Set</a
+      ><a name="1003" class="Symbol"
+      >)</a
+      ><a name="1004"
+      > </a
+      ><a name="1005" class="Symbol"
+      >(</a
+      ><a name="1006" href="GUIgeneric.GUIFeaturesPart3.html#1006" class="Bound"
+      >s2GUI</a
+      ><a name="1011"
+      > </a
+      ><a name="1012" class="Symbol"
+      >:</a
+      ><a name="1013"
+      > </a
+      ><a name="1014" class="Symbol"
+      >(</a
+      ><a name="1015" href="GUIgeneric.GUIFeaturesPart3.html#1015" class="Bound"
+      >s</a
+      ><a name="1016"
+      > </a
+      ><a name="1017" class="Symbol"
+      >:</a
+      ><a name="1018"
+      > </a
+      ><a name="1019" href="GUIgeneric.GUIFeaturesPart3.html#995" class="Bound"
+      >S'</a
+      ><a name="1021" class="Symbol"
+      >)</a
+      ><a name="1022"
+      > </a
+      ><a name="1023" class="Symbol"
+      >&#8594;</a
+      ><a name="1024"
+      > </a
+      ><a name="1025" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="1030" class="Symbol"
+      >)</a
+      ><a name="1031"
+      >
+                           </a
+      ><a name="1059" class="Symbol"
+      >(</a
+      ><a name="1060" href="GUIgeneric.GUIFeaturesPart3.html#1060" class="Bound"
+      >ss'</a
+      ><a name="1063"
+      > </a
+      ><a name="1064" class="Symbol"
+      >:</a
+      ><a name="1065"
+      > </a
+      ><a name="1066" href="GUIgeneric.GUIFeaturesPart3.html#993" class="Bound"
+      >S</a
+      ><a name="1067"
+      > </a
+      ><a name="1068" class="Symbol"
+      >&#8594;</a
+      ><a name="1069"
+      > </a
+      ><a name="1070" href="GUIgeneric.GUIFeaturesPart3.html#995" class="Bound"
+      >S'</a
+      ><a name="1072" class="Symbol"
+      >)</a
+      ><a name="1073"
+      >
+                           </a
+      ><a name="1101" class="Symbol"
+      >(</a
+      ><a name="1102" href="GUIgeneric.GUIFeaturesPart3.html#1102" class="Bound"
+      >s</a
+      ><a name="1103"
+      > </a
+      ><a name="1104" class="Symbol"
+      >:</a
+      ><a name="1105"
+      > </a
+      ><a name="1106" href="GUIgeneric.GUIFeaturesPart3.html#993" class="Bound"
+      >S</a
+      ><a name="1107" class="Symbol"
+      >)</a
+      ><a name="1108"
+      >
+                           </a
+      ><a name="1136" class="Symbol"
+      >(</a
+      ><a name="1137" href="GUIgeneric.GUIFeaturesPart3.html#1137" class="Bound"
+      >obj</a
+      ><a name="1140"
+      > </a
+      ><a name="1141" class="Symbol"
+      >:</a
+      ><a name="1142"
+      > </a
+      ><a name="1143" href="GUIgeneric.GUIFeaturesPart2.html#1375" class="Function"
+      >handlerGUIObject&#8347;</a
+      ><a name="1160"
+      > </a
+      ><a name="1161" href="GUIgeneric.GUIFeaturesPart3.html#955" class="Bound"
+      >i</a
+      ><a name="1162"
+      > </a
+      ><a name="1163" href="GUIgeneric.GUIFeaturesPart3.html#993" class="Bound"
+      >S</a
+      ><a name="1164"
+      > </a
+      ><a name="1165" class="Symbol"
+      >(</a
+      ><a name="1166" href="GUIgeneric.GUIFeaturesPart3.html#1006" class="Bound"
+      >s2GUI</a
+      ><a name="1171"
+      > </a
+      ><a name="1172" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="1173"
+      > </a
+      ><a name="1174" href="GUIgeneric.GUIFeaturesPart3.html#1060" class="Bound"
+      >ss'</a
+      ><a name="1177" class="Symbol"
+      >)</a
+      ><a name="1178"
+      > </a
+      ><a name="1179" href="GUIgeneric.GUIFeaturesPart3.html#1102" class="Bound"
+      >s</a
+      ><a name="1180" class="Symbol"
+      >)</a
+      ><a name="1181"
+      >
+                           </a
+      ><a name="1209" class="Symbol"
+      >&#8594;</a
+      ><a name="1210"
+      > </a
+      ><a name="1211" href="GUIgeneric.GUIFeaturesPart2.html#1375" class="Function"
+      >handlerGUIObject&#8347;</a
+      ><a name="1228"
+      > </a
+      ><a name="1229" href="GUIgeneric.GUIFeaturesPart3.html#955" class="Bound"
+      >i</a
+      ><a name="1230"
+      > </a
+      ><a name="1231" href="GUIgeneric.GUIFeaturesPart3.html#995" class="Bound"
+      >S'</a
+      ><a name="1233"
+      > </a
+      ><a name="1234" href="GUIgeneric.GUIFeaturesPart3.html#1006" class="Bound"
+      >s2GUI</a
+      ><a name="1239"
+      > </a
+      ><a name="1240" class="Symbol"
+      >(</a
+      ><a name="1241" href="GUIgeneric.GUIFeaturesPart3.html#1060" class="Bound"
+      >ss'</a
+      ><a name="1244"
+      > </a
+      ><a name="1245" href="GUIgeneric.GUIFeaturesPart3.html#1102" class="Bound"
+      >s</a
+      ><a name="1246" class="Symbol"
+      >)</a
+      ><a name="1247"
+      >
+</a
+      ><a name="1248" href="StateSizedIO.Base.html#1818" class="Field"
+      >method</a
+      ><a name="1254"
+      > </a
+      ><a name="1255" class="Symbol"
+      >(</a
+      ><a name="1256" href="GUIgeneric.GUIFeaturesPart3.html#927" class="Function"
+      >extendHandlerGuiInterf&#8347;</a
+      ><a name="1279"
+      > </a
+      ><a name="1280" href="GUIgeneric.GUIFeaturesPart3.html#1280" class="Bound"
+      >i</a
+      ><a name="1281"
+      > </a
+      ><a name="1282" href="GUIgeneric.GUIFeaturesPart3.html#1282" class="Bound"
+      >S</a
+      ><a name="1283"
+      > </a
+      ><a name="1284" href="GUIgeneric.GUIFeaturesPart3.html#1284" class="Bound"
+      >S'</a
+      ><a name="1286"
+      > </a
+      ><a name="1287" href="GUIgeneric.GUIFeaturesPart3.html#1287" class="Bound"
+      >s2GUI</a
+      ><a name="1292"
+      > </a
+      ><a name="1293" href="GUIgeneric.GUIFeaturesPart3.html#1293" class="Bound"
+      >ss'</a
+      ><a name="1296"
+      > </a
+      ><a name="1297" href="GUIgeneric.GUIFeaturesPart3.html#1297" class="Bound"
+      >s</a
+      ><a name="1298"
+      > </a
+      ><a name="1299" href="GUIgeneric.GUIFeaturesPart3.html#1299" class="Bound"
+      >obj</a
+      ><a name="1302" class="Symbol"
+      >)</a
+      ><a name="1303"
+      > </a
+      ><a name="1304" href="GUIgeneric.GUIFeaturesPart3.html#1304" class="Bound"
+      >m</a
+      ><a name="1305"
+      > </a
+      ><a name="1306" class="Symbol"
+      >=</a
+      ><a name="1307"
+      >
+                    </a
+      ><a name="1328" href="GUIgeneric.GUIFeaturesPart3.html#1426" class="Function"
+      >x</a
+      ><a name="1329"
+      > </a
+      ><a name="1330" href="SizedIO.Base.html#1716" class="Function Operator"
+      >&gt;&gt;=</a
+      ><a name="1333"
+      > </a
+      ><a name="1334" class="Symbol"
+      >(&#955;</a
+      ><a name="1336"
+      > </a
+      ><a name="1337" href="GUIgeneric.GUIFeaturesPart3.html#1337" class="Bound"
+      >r</a
+      ><a name="1338"
+      > </a
+      ><a name="1339" class="Symbol"
+      >&#8594;</a
+      ><a name="1340"
+      > </a
+      ><a name="1341" href="SizedIO.Base.html#1290" class="Function"
+      >return</a
+      ><a name="1347"
+      > </a
+      ><a name="1348" class="Symbol"
+      >(</a
+      ><a name="1349" href="GUIgeneric.GUIFeaturesPart3.html#522" class="Function"
+      >liftResult&#738;</a
+      ><a name="1360"
+      > </a
+      ><a name="1361" href="GUIgeneric.GUIFeaturesPart3.html#1282" class="Bound"
+      >S</a
+      ><a name="1362"
+      > </a
+      ><a name="1363" href="GUIgeneric.GUIFeaturesPart3.html#1284" class="Bound"
+      >S'</a
+      ><a name="1365"
+      > </a
+      ><a name="1366" href="GUIgeneric.GUIFeaturesPart3.html#1287" class="Bound"
+      >s2GUI</a
+      ><a name="1371"
+      > </a
+      ><a name="1372" href="GUIgeneric.GUIFeaturesPart3.html#1293" class="Bound"
+      >ss'</a
+      ><a name="1375"
+      > </a
+      ><a name="1376" href="GUIgeneric.GUIFeaturesPart3.html#1297" class="Bound"
+      >s</a
+      ><a name="1377"
+      > </a
+      ><a name="1378" href="GUIgeneric.GUIFeaturesPart3.html#1304" class="Bound"
+      >m</a
+      ><a name="1379"
+      > </a
+      ><a name="1380" href="GUIgeneric.GUIFeaturesPart3.html#1337" class="Bound"
+      >r</a
+      ><a name="1381" class="Symbol"
+      >))</a
+      ><a name="1383"
+      >
+              </a
+      ><a name="1398" class="Keyword"
+      >where</a
+      ><a name="1403"
+      >
+                      </a
+      ><a name="1426" href="GUIgeneric.GUIFeaturesPart3.html#1426" class="Function"
+      >x</a
+      ><a name="1427"
+      > </a
+      ><a name="1428" class="Symbol"
+      >:</a
+      ><a name="1429"
+      > </a
+      ><a name="1430" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1432"
+      > </a
+      ><a name="1433" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1449"
+      > </a
+      ><a name="1450" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1451"
+      >  </a
+      ><a name="1453" class="Symbol"
+      >(</a
+      ><a name="1454" href="StateSizedIO.Base.html#470" class="Field"
+      >Result&#738;</a
+      ><a name="1461"
+      > </a
+      ><a name="1462" class="Symbol"
+      >(</a
+      ><a name="1463" href="GUIgeneric.GUIFeaturesPart2.html#946" class="Function"
+      >handlerGUIInterf&#8347;</a
+      ><a name="1480"
+      > </a
+      ><a name="1481" href="GUIgeneric.GUIFeaturesPart3.html#1282" class="Bound"
+      >S</a
+      ><a name="1482"
+      > </a
+      ><a name="1483" class="Symbol"
+      >(</a
+      ><a name="1484" href="GUIgeneric.GUIFeaturesPart3.html#1287" class="Bound"
+      >s2GUI</a
+      ><a name="1489"
+      > </a
+      ><a name="1490" href="Function.html#713" class="Function Operator"
+      >&#8728;</a
+      ><a name="1491"
+      > </a
+      ><a name="1492" href="GUIgeneric.GUIFeaturesPart3.html#1293" class="Bound"
+      >ss'</a
+      ><a name="1495" class="Symbol"
+      >))</a
+      ><a name="1497"
+      > </a
+      ><a name="1498" href="GUIgeneric.GUIFeaturesPart3.html#1297" class="Bound"
+      >s</a
+      ><a name="1499"
+      > </a
+      ><a name="1500" href="GUIgeneric.GUIFeaturesPart3.html#1304" class="Bound"
+      >m</a
+      ><a name="1501" class="Symbol"
+      >)</a
+      ><a name="1502"
+      >
+                      </a
+      ><a name="1525" href="GUIgeneric.GUIFeaturesPart3.html#1426" class="Function"
+      >x</a
+      ><a name="1526"
+      > </a
+      ><a name="1527" class="Symbol"
+      >=</a
+      ><a name="1528"
+      > </a
+      ><a name="1529" href="StateSizedIO.Base.html#1818" class="Field"
+      >method</a
+      ><a name="1535"
+      > </a
+      ><a name="1536" href="GUIgeneric.GUIFeaturesPart3.html#1299" class="Bound"
+      >obj</a
+      ><a name="1539"
+      > </a
+      ><a name="1540" href="GUIgeneric.GUIFeaturesPart3.html#1304" class="Bound"
+      >m</a
+      ><a name="1541"
+      >
+
+</a
+      ><a name="1543" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="1549"
+      >  </a
+      ><a name="1551" class="Symbol"
+      >:</a
+      ><a name="1552"
+      > </a
+      ><a name="1553" class="Symbol"
+      >{</a
+      ><a name="1554" href="GUIgeneric.GUIFeaturesPart3.html#1554" class="Bound"
+      >A</a
+      ><a name="1555"
+      > </a
+      ><a name="1556" href="GUIgeneric.GUIFeaturesPart3.html#1556" class="Bound"
+      >B</a
+      ><a name="1557"
+      > </a
+      ><a name="1558" href="GUIgeneric.GUIFeaturesPart3.html#1558" class="Bound"
+      >C</a
+      ><a name="1559"
+      > </a
+      ><a name="1560" class="Symbol"
+      >:</a
+      ><a name="1561"
+      > </a
+      ><a name="1562" class="PrimitiveType"
+      >Set</a
+      ><a name="1565" class="Symbol"
+      >}</a
+      ><a name="1566"
+      > </a
+      ><a name="1567" class="Symbol"
+      >&#8594;</a
+      ><a name="1568"
+      > </a
+      ><a name="1569" href="GUIgeneric.GUIFeaturesPart3.html#1554" class="Bound"
+      >A</a
+      ><a name="1570"
+      > </a
+      ><a name="1571" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1572"
+      > </a
+      ><a name="1573" href="GUIgeneric.GUIFeaturesPart3.html#1556" class="Bound"
+      >B</a
+      ><a name="1574"
+      > </a
+      ><a name="1575" class="Symbol"
+      >&#8594;</a
+      ><a name="1576"
+      > </a
+      ><a name="1577" href="GUIgeneric.GUIFeaturesPart3.html#1554" class="Bound"
+      >A</a
+      ><a name="1578"
+      > </a
+      ><a name="1579" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1580"
+      > </a
+      ><a name="1581" href="GUIgeneric.GUIFeaturesPart3.html#1556" class="Bound"
+      >B</a
+      ><a name="1582"
+      > </a
+      ><a name="1583" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1584"
+      > </a
+      ><a name="1585" href="GUIgeneric.GUIFeaturesPart3.html#1558" class="Bound"
+      >C</a
+      ><a name="1586"
+      >
+</a
+      ><a name="1587" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="1593"
+      > </a
+      ><a name="1594" class="Symbol"
+      >(</a
+      ><a name="1595" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1599"
+      > </a
+      ><a name="1600" href="GUIgeneric.GUIFeaturesPart3.html#1600" class="Bound"
+      >x</a
+      ><a name="1601" class="Symbol"
+      >)</a
+      ><a name="1602"
+      > </a
+      ><a name="1603" class="Symbol"
+      >=</a
+      ><a name="1604"
+      > </a
+      ><a name="1605" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1609"
+      > </a
+      ><a name="1610" href="GUIgeneric.GUIFeaturesPart3.html#1600" class="Bound"
+      >x</a
+      ><a name="1611"
+      >
+</a
+      ><a name="1612" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="1618"
+      > </a
+      ><a name="1619" class="Symbol"
+      >(</a
+      ><a name="1620" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="1624"
+      > </a
+      ><a name="1625" href="GUIgeneric.GUIFeaturesPart3.html#1625" class="Bound"
+      >y</a
+      ><a name="1626" class="Symbol"
+      >)</a
+      ><a name="1627"
+      > </a
+      ><a name="1628" class="Symbol"
+      >=</a
+      ><a name="1629"
+      > </a
+      ><a name="1630" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="1634"
+      > </a
+      ><a name="1635" class="Symbol"
+      >(</a
+      ><a name="1636" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1640"
+      > </a
+      ><a name="1641" href="GUIgeneric.GUIFeaturesPart3.html#1625" class="Bound"
+      >y</a
+      ><a name="1642" class="Symbol"
+      >)</a
+      ><a name="1643"
+      >
+
+
+</a
+      ><a name="1646" href="GUIgeneric.GUIFeaturesPart3.html#1646" class="Function"
+      >mapReturnType&#8347;</a
+      ><a name="1660"
+      > </a
+      ><a name="1661" class="Symbol"
+      >:</a
+      ><a name="1662"
+      > </a
+      ><a name="1663" class="Symbol"
+      >{</a
+      ><a name="1664" href="GUIgeneric.GUIFeaturesPart3.html#1664" class="Bound"
+      >A</a
+      ><a name="1665"
+      > </a
+      ><a name="1666" href="GUIgeneric.GUIFeaturesPart3.html#1666" class="Bound"
+      >B</a
+      ><a name="1667"
+      > </a
+      ><a name="1668" class="Symbol"
+      >:</a
+      ><a name="1669"
+      > </a
+      ><a name="1670" class="PrimitiveType"
+      >Set</a
+      ><a name="1673" class="Symbol"
+      >}(</a
+      ><a name="1675" href="GUIgeneric.GUIFeaturesPart3.html#1675" class="Bound"
+      >f</a
+      ><a name="1676"
+      > </a
+      ><a name="1677" class="Symbol"
+      >:</a
+      ><a name="1678"
+      > </a
+      ><a name="1679" href="GUIgeneric.GUIFeaturesPart3.html#1664" class="Bound"
+      >A</a
+      ><a name="1680"
+      > </a
+      ><a name="1681" class="Symbol"
+      >&#8594;</a
+      ><a name="1682"
+      > </a
+      ><a name="1683" href="GUIgeneric.GUIFeaturesPart3.html#1666" class="Bound"
+      >B</a
+      ><a name="1684" class="Symbol"
+      >)</a
+      ><a name="1685"
+      > </a
+      ><a name="1686" class="Symbol"
+      >(</a
+      ><a name="1687" href="GUIgeneric.GUIFeaturesPart3.html#1687" class="Bound"
+      >a</a
+      ><a name="1688"
+      > </a
+      ><a name="1689" class="Symbol"
+      >:</a
+      ><a name="1690"
+      > </a
+      ><a name="1691" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="1702"
+      > </a
+      ><a name="1703" href="GUIgeneric.GUIFeaturesPart3.html#1664" class="Bound"
+      >A</a
+      ><a name="1704" class="Symbol"
+      >)</a
+      ><a name="1705"
+      > </a
+      ><a name="1706" class="Symbol"
+      >&#8594;</a
+      ><a name="1707"
+      > </a
+      ><a name="1708" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="1719"
+      >  </a
+      ><a name="1721" href="GUIgeneric.GUIFeaturesPart3.html#1666" class="Bound"
+      >B</a
+      ><a name="1722"
+      >
+</a
+      ><a name="1723" href="GUIgeneric.GUIFeaturesPart3.html#1646" class="Function"
+      >mapReturnType&#8347;</a
+      ><a name="1737"
+      > </a
+      ><a name="1738" href="GUIgeneric.GUIFeaturesPart3.html#1738" class="Bound"
+      >f</a
+      ><a name="1739"
+      > </a
+      ><a name="1740" href="GUIgeneric.GUIFeaturesPart2.html#550" class="InductiveConstructor"
+      >noChange</a
+      ><a name="1748"
+      > </a
+      ><a name="1749" class="Symbol"
+      >=</a
+      ><a name="1750"
+      > </a
+      ><a name="1751" href="GUIgeneric.GUIFeaturesPart2.html#550" class="InductiveConstructor"
+      >noChange</a
+      ><a name="1759"
+      >
+</a
+      ><a name="1760" href="GUIgeneric.GUIFeaturesPart3.html#1646" class="Function"
+      >mapReturnType&#8347;</a
+      ><a name="1774"
+      > </a
+      ><a name="1775" href="GUIgeneric.GUIFeaturesPart3.html#1775" class="Bound"
+      >f</a
+      ><a name="1776"
+      > </a
+      ><a name="1777" class="Symbol"
+      >(</a
+      ><a name="1778" href="GUIgeneric.GUIFeaturesPart2.html#584" class="InductiveConstructor"
+      >changedState</a
+      ><a name="1790"
+      > </a
+      ><a name="1791" href="GUIgeneric.GUIFeaturesPart3.html#1791" class="Bound"
+      >snew</a
+      ><a name="1795" class="Symbol"
+      >)</a
+      ><a name="1796"
+      > </a
+      ><a name="1797" class="Symbol"
+      >=</a
+      ><a name="1798"
+      > </a
+      ><a name="1799" href="GUIgeneric.GUIFeaturesPart2.html#584" class="InductiveConstructor"
+      >changedState</a
+      ><a name="1811"
+      > </a
+      ><a name="1812" class="Symbol"
+      >(</a
+      ><a name="1813" href="GUIgeneric.GUIFeaturesPart3.html#1775" class="Bound"
+      >f</a
+      ><a name="1814"
+      > </a
+      ><a name="1815" href="GUIgeneric.GUIFeaturesPart3.html#1791" class="Bound"
+      >snew</a
+      ><a name="1819" class="Symbol"
+      >)</a
+      ><a name="1820"
+      >
+
+</a
+      ><a name="1822" href="GUIgeneric.GUIFeaturesPart3.html#1822" class="Function"
+      >mapStateMachineHandl</a
+      ><a name="1842"
+      > </a
+      ><a name="1843" class="Symbol"
+      >:</a
+      ><a name="1844"
+      > </a
+      ><a name="1845" class="Symbol"
+      >{</a
+      ><a name="1846" href="GUIgeneric.GUIFeaturesPart3.html#1846" class="Bound"
+      >S</a
+      ><a name="1847"
+      > </a
+      ><a name="1848" href="GUIgeneric.GUIFeaturesPart3.html#1848" class="Bound"
+      >S'</a
+      ><a name="1850"
+      > </a
+      ><a name="1851" class="Symbol"
+      >:</a
+      ><a name="1852"
+      > </a
+      ><a name="1853" class="PrimitiveType"
+      >Set</a
+      ><a name="1856" class="Symbol"
+      >}(</a
+      ><a name="1858" href="GUIgeneric.GUIFeaturesPart3.html#1858" class="Bound"
+      >f</a
+      ><a name="1859"
+      > </a
+      ><a name="1860" class="Symbol"
+      >:</a
+      ><a name="1861"
+      > </a
+      ><a name="1862" href="GUIgeneric.GUIFeaturesPart3.html#1846" class="Bound"
+      >S</a
+      ><a name="1863"
+      > </a
+      ><a name="1864" class="Symbol"
+      >&#8594;</a
+      ><a name="1865"
+      > </a
+      ><a name="1866" href="GUIgeneric.GUIFeaturesPart3.html#1848" class="Bound"
+      >S'</a
+      ><a name="1868" class="Symbol"
+      >)</a
+      ><a name="1869"
+      >
+                       </a
+      ><a name="1893" class="Symbol"
+      >(</a
+      ><a name="1894" href="GUIgeneric.GUIFeaturesPart3.html#1894" class="Bound"
+      >p</a
+      ><a name="1895"
+      > </a
+      ><a name="1896" class="Symbol"
+      >:</a
+      ><a name="1897"
+      > </a
+      ><a name="1898" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1900"
+      > </a
+      ><a name="1901" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1917"
+      > </a
+      ><a name="1918" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1919"
+      > </a
+      ><a name="1920" class="Symbol"
+      >(</a
+      ><a name="1921" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="1932"
+      > </a
+      ><a name="1933" href="GUIgeneric.GUIFeaturesPart3.html#1846" class="Bound"
+      >S</a
+      ><a name="1934" class="Symbol"
+      >))</a
+      ><a name="1936"
+      >
+                       </a
+      ><a name="1960" class="Symbol"
+      >&#8594;</a
+      ><a name="1961"
+      > </a
+      ><a name="1962" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1964"
+      > </a
+      ><a name="1965" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1981"
+      > </a
+      ><a name="1982" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1983"
+      > </a
+      ><a name="1984" class="Symbol"
+      >(</a
+      ><a name="1985" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="1996"
+      > </a
+      ><a name="1997" href="GUIgeneric.GUIFeaturesPart3.html#1848" class="Bound"
+      >S'</a
+      ><a name="1999" class="Symbol"
+      >)</a
+      ><a name="2000"
+      >
+</a
+      ><a name="2001" href="GUIgeneric.GUIFeaturesPart3.html#1822" class="Function"
+      >mapStateMachineHandl</a
+      ><a name="2021"
+      > </a
+      ><a name="2022" href="GUIgeneric.GUIFeaturesPart3.html#2022" class="Bound"
+      >f</a
+      ><a name="2023"
+      > </a
+      ><a name="2024" href="GUIgeneric.GUIFeaturesPart3.html#2024" class="Bound"
+      >p</a
+      ><a name="2025"
+      > </a
+      ><a name="2026" class="Symbol"
+      >=</a
+      ><a name="2027"
+      > </a
+      ><a name="2028" href="SizedIO.Base.html#3668" class="Function"
+      >mapIO</a
+      ><a name="2033"
+      > </a
+      ><a name="2034" class="Symbol"
+      >(</a
+      ><a name="2035" href="GUIgeneric.GUIFeaturesPart3.html#1646" class="Function"
+      >mapReturnType&#8347;</a
+      ><a name="2049"
+      > </a
+      ><a name="2050" href="GUIgeneric.GUIFeaturesPart3.html#2022" class="Bound"
+      >f</a
+      ><a name="2051" class="Symbol"
+      >)</a
+      ><a name="2052"
+      > </a
+      ><a name="2053" href="GUIgeneric.GUIFeaturesPart3.html#2024" class="Bound"
+      >p</a
+      ><a name="2054"
+      >
+
+</a
+      ><a name="2056" href="GUIgeneric.GUIFeaturesPart3.html#2056" class="Function"
+      >mapSMachineState</a
+      ><a name="2072"
+      > </a
+      ><a name="2073" class="Symbol"
+      >:</a
+      ><a name="2074"
+      > </a
+      ><a name="2075" class="Symbol"
+      >{</a
+      ><a name="2076" href="GUIgeneric.GUIFeaturesPart3.html#2076" class="Bound"
+      >S</a
+      ><a name="2077"
+      > </a
+      ><a name="2078" href="GUIgeneric.GUIFeaturesPart3.html#2078" class="Bound"
+      >S'</a
+      ><a name="2080"
+      > </a
+      ><a name="2081" class="Symbol"
+      >:</a
+      ><a name="2082"
+      > </a
+      ><a name="2083" class="PrimitiveType"
+      >Set</a
+      ><a name="2086" class="Symbol"
+      >}(</a
+      ><a name="2088" href="GUIgeneric.GUIFeaturesPart3.html#2088" class="Bound"
+      >f</a
+      ><a name="2089"
+      > </a
+      ><a name="2090" class="Symbol"
+      >:</a
+      ><a name="2091"
+      > </a
+      ><a name="2092" href="GUIgeneric.GUIFeaturesPart3.html#2076" class="Bound"
+      >S</a
+      ><a name="2093"
+      > </a
+      ><a name="2094" class="Symbol"
+      >&#8594;</a
+      ><a name="2095"
+      > </a
+      ><a name="2096" href="GUIgeneric.GUIFeaturesPart3.html#2078" class="Bound"
+      >S'</a
+      ><a name="2098" class="Symbol"
+      >)(</a
+      ><a name="2100" href="GUIgeneric.GUIFeaturesPart3.html#2100" class="Bound"
+      >s</a
+      ><a name="2101"
+      > </a
+      ><a name="2102" class="Symbol"
+      >:</a
+      ><a name="2103"
+      > </a
+      ><a name="2104" href="GUIgeneric.GUIFeaturesPart3.html#2076" class="Bound"
+      >S</a
+      ><a name="2105" class="Symbol"
+      >)(</a
+      ><a name="2107" href="GUIgeneric.GUIFeaturesPart3.html#2107" class="Bound"
+      >sm</a
+      ><a name="2109"
+      > </a
+      ><a name="2110" class="Symbol"
+      >:</a
+      ><a name="2111"
+      > </a
+      ><a name="2112" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="2125"
+      > </a
+      ><a name="2126" href="GUIgeneric.GUIFeaturesPart3.html#2076" class="Bound"
+      >S</a
+      ><a name="2127"
+      > </a
+      ><a name="2128" href="GUIgeneric.GUIFeaturesPart3.html#2100" class="Bound"
+      >s</a
+      ><a name="2129" class="Symbol"
+      >)</a
+      ><a name="2130"
+      >
+                    </a
+      ><a name="2151" class="Symbol"
+      >&#8594;</a
+      ><a name="2152"
+      > </a
+      ><a name="2153" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="2166"
+      > </a
+      ><a name="2167" href="GUIgeneric.GUIFeaturesPart3.html#2078" class="Bound"
+      >S'</a
+      ><a name="2169"
+      > </a
+      ><a name="2170" class="Symbol"
+      >(</a
+      ><a name="2171" href="GUIgeneric.GUIFeaturesPart3.html#2088" class="Bound"
+      >f</a
+      ><a name="2172"
+      > </a
+      ><a name="2173" href="GUIgeneric.GUIFeaturesPart3.html#2100" class="Bound"
+      >s</a
+      ><a name="2174" class="Symbol"
+      >)</a
+      ><a name="2175"
+      >
+</a
+      ><a name="2176" href="GUIgeneric.GUIFeaturesPart3.html#2056" class="Function"
+      >mapSMachineState</a
+      ><a name="2192"
+      > </a
+      ><a name="2193" href="GUIgeneric.GUIFeaturesPart3.html#2193" class="Bound"
+      >f</a
+      ><a name="2194"
+      > </a
+      ><a name="2195" href="GUIgeneric.GUIFeaturesPart3.html#2195" class="Bound"
+      >s</a
+      ><a name="2196"
+      > </a
+      ><a name="2197" href="GUIgeneric.GUIFeaturesPart3.html#2197" class="Bound"
+      >sm</a
+      ><a name="2199"
+      > </a
+      ><a name="2200" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2201" href="GUIgeneric.GUIFeaturesPart2.html#3998" class="DottedPattern Field"
+      >fSM</a
+      ><a name="2204"
+      > </a
+      ><a name="2205" class="Symbol"
+      >=</a
+      ><a name="2206"
+      > </a
+      ><a name="2207" href="GUIgeneric.GUIFeaturesPart3.html#2197" class="Bound"
+      >sm</a
+      ><a name="2209"
+      > </a
+      ><a name="2210" class="Symbol"
+      >.</a
+      ><a name="2211" href="GUIgeneric.GUIFeaturesPart2.html#3998" class="Field"
+      >fSM</a
+      ><a name="2214"
+      >
+</a
+      ><a name="2215" href="GUIgeneric.GUIFeaturesPart3.html#2056" class="Function"
+      >mapSMachineState</a
+      ><a name="2231"
+      > </a
+      ><a name="2232" href="GUIgeneric.GUIFeaturesPart3.html#2232" class="Bound"
+      >f</a
+      ><a name="2233"
+      > </a
+      ><a name="2234" href="GUIgeneric.GUIFeaturesPart3.html#2234" class="Bound"
+      >s</a
+      ><a name="2235"
+      > </a
+      ><a name="2236" href="GUIgeneric.GUIFeaturesPart3.html#2236" class="Bound"
+      >sm</a
+      ><a name="2238"
+      > </a
+      ><a name="2239" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2240" href="GUIgeneric.GUIFeaturesPart2.html#4018" class="DottedPattern Field"
+      >propSM</a
+      ><a name="2246"
+      > </a
+      ><a name="2247" class="Symbol"
+      >=</a
+      ><a name="2248"
+      > </a
+      ><a name="2249" href="GUIgeneric.GUIFeaturesPart3.html#2236" class="Bound"
+      >sm</a
+      ><a name="2251"
+      > </a
+      ><a name="2252" class="Symbol"
+      >.</a
+      ><a name="2253" href="GUIgeneric.GUIFeaturesPart2.html#4018" class="Field"
+      >propSM</a
+      ><a name="2259"
+      >
+</a
+      ><a name="2260" href="GUIgeneric.GUIFeaturesPart3.html#2056" class="Function"
+      >mapSMachineState</a
+      ><a name="2276"
+      > </a
+      ><a name="2277" href="GUIgeneric.GUIFeaturesPart3.html#2277" class="Bound"
+      >f</a
+      ><a name="2278"
+      > </a
+      ><a name="2279" href="GUIgeneric.GUIFeaturesPart3.html#2279" class="Bound"
+      >s</a
+      ><a name="2280"
+      > </a
+      ><a name="2281" href="GUIgeneric.GUIFeaturesPart3.html#2281" class="Bound"
+      >sm</a
+      ><a name="2283"
+      > </a
+      ><a name="2284" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2285" href="GUIgeneric.GUIFeaturesPart2.html#4047" class="DottedPattern Field"
+      >handlSM</a
+      ><a name="2292"
+      > </a
+      ><a name="2293" href="GUIgeneric.GUIFeaturesPart3.html#2293" class="Bound"
+      >m</a
+      ><a name="2294"
+      > </a
+      ><a name="2295" class="Symbol"
+      >=</a
+      ><a name="2296"
+      > </a
+      ><a name="2297" href="GUIgeneric.GUIFeaturesPart3.html#1822" class="Function"
+      >mapStateMachineHandl</a
+      ><a name="2317"
+      > </a
+      ><a name="2318" href="GUIgeneric.GUIFeaturesPart3.html#2277" class="Bound"
+      >f</a
+      ><a name="2319"
+      > </a
+      ><a name="2320" class="Symbol"
+      >(</a
+      ><a name="2321" href="GUIgeneric.GUIFeaturesPart3.html#2281" class="Bound"
+      >sm</a
+      ><a name="2323"
+      > </a
+      ><a name="2324" class="Symbol"
+      >.</a
+      ><a name="2325" href="GUIgeneric.GUIFeaturesPart2.html#4047" class="Field"
+      >handlSM</a
+      ><a name="2332"
+      > </a
+      ><a name="2333" href="GUIgeneric.GUIFeaturesPart3.html#2293" class="Bound"
+      >m</a
+      ><a name="2334" class="Symbol"
+      >)</a
+      ><a name="2335"
+      >
+
+</a
+      ><a name="2337" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="2354"
+      > </a
+      ><a name="2355" class="Symbol"
+      >:</a
+      ><a name="2356"
+      > </a
+      ><a name="2357" class="Symbol"
+      >{</a
+      ><a name="2358" href="GUIgeneric.GUIFeaturesPart3.html#2358" class="Bound"
+      >A</a
+      ><a name="2359"
+      > </a
+      ><a name="2360" href="GUIgeneric.GUIFeaturesPart3.html#2360" class="Bound"
+      >B</a
+      ><a name="2361"
+      > </a
+      ><a name="2362" href="GUIgeneric.GUIFeaturesPart3.html#2362" class="Bound"
+      >C</a
+      ><a name="2363"
+      > </a
+      ><a name="2364" class="Symbol"
+      >:</a
+      ><a name="2365"
+      > </a
+      ><a name="2366" class="PrimitiveType"
+      >Set</a
+      ><a name="2369" class="Symbol"
+      >}</a
+      ><a name="2370"
+      >
+                          </a
+      ><a name="2397" class="Symbol"
+      >(</a
+      ><a name="2398" href="GUIgeneric.GUIFeaturesPart3.html#2398" class="Bound"
+      >a</a
+      ><a name="2399"
+      > </a
+      ><a name="2400" class="Symbol"
+      >:</a
+      ><a name="2401"
+      > </a
+      ><a name="2402" href="GUIgeneric.GUIFeaturesPart3.html#2358" class="Bound"
+      >A</a
+      ><a name="2403"
+      > </a
+      ><a name="2404" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2405"
+      > </a
+      ><a name="2406" href="GUIgeneric.GUIFeaturesPart3.html#2360" class="Bound"
+      >B</a
+      ><a name="2407" class="Symbol"
+      >)(</a
+      ><a name="2409" href="GUIgeneric.GUIFeaturesPart3.html#2409" class="Bound"
+      >sm</a
+      ><a name="2411"
+      > </a
+      ><a name="2412" class="Symbol"
+      >:</a
+      ><a name="2413"
+      > </a
+      ><a name="2414" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="2427"
+      > </a
+      ><a name="2428" class="Symbol"
+      >(</a
+      ><a name="2429" href="GUIgeneric.GUIFeaturesPart3.html#2358" class="Bound"
+      >A</a
+      ><a name="2430"
+      > </a
+      ><a name="2431" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2432"
+      > </a
+      ><a name="2433" href="GUIgeneric.GUIFeaturesPart3.html#2360" class="Bound"
+      >B</a
+      ><a name="2434" class="Symbol"
+      >)</a
+      ><a name="2435"
+      > </a
+      ><a name="2436" href="GUIgeneric.GUIFeaturesPart3.html#2398" class="Bound"
+      >a</a
+      ><a name="2437" class="Symbol"
+      >)</a
+      ><a name="2438"
+      >
+                          </a
+      ><a name="2465" class="Symbol"
+      >&#8594;</a
+      ><a name="2466"
+      > </a
+      ><a name="2467" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="2480"
+      > </a
+      ><a name="2481" class="Symbol"
+      >(</a
+      ><a name="2482" href="GUIgeneric.GUIFeaturesPart3.html#2358" class="Bound"
+      >A</a
+      ><a name="2483"
+      > </a
+      ><a name="2484" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2485"
+      > </a
+      ><a name="2486" href="GUIgeneric.GUIFeaturesPart3.html#2360" class="Bound"
+      >B</a
+      ><a name="2487"
+      > </a
+      ><a name="2488" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2489"
+      > </a
+      ><a name="2490" href="GUIgeneric.GUIFeaturesPart3.html#2362" class="Bound"
+      >C</a
+      ><a name="2491" class="Symbol"
+      >)</a
+      ><a name="2492"
+      > </a
+      ><a name="2493" class="Symbol"
+      >(</a
+      ><a name="2494" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="2500"
+      > </a
+      ><a name="2501" href="GUIgeneric.GUIFeaturesPart3.html#2398" class="Bound"
+      >a</a
+      ><a name="2502" class="Symbol"
+      >)</a
+      ><a name="2503"
+      >
+</a
+      ><a name="2504" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="2521"
+      > </a
+      ><a name="2522" href="GUIgeneric.GUIFeaturesPart3.html#2522" class="Bound"
+      >a</a
+      ><a name="2523"
+      > </a
+      ><a name="2524" href="GUIgeneric.GUIFeaturesPart3.html#2524" class="Bound"
+      >sm</a
+      ><a name="2526"
+      > </a
+      ><a name="2527" class="Symbol"
+      >=</a
+      ><a name="2528"
+      > </a
+      ><a name="2529" href="GUIgeneric.GUIFeaturesPart3.html#2056" class="Function"
+      >mapSMachineState</a
+      ><a name="2545"
+      > </a
+      ><a name="2546" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="2552"
+      > </a
+      ><a name="2553" href="GUIgeneric.GUIFeaturesPart3.html#2522" class="Bound"
+      >a</a
+      ><a name="2554"
+      > </a
+      ><a name="2555" href="GUIgeneric.GUIFeaturesPart3.html#2524" class="Bound"
+      >sm</a
+      ><a name="2557"
+      >
+
+</a
+      ><a name="2559" href="GUIgeneric.GUIFeaturesPart3.html#2559" class="Function"
+      >mapIOFeatureM</a
+      ><a name="2572"
+      > </a
+      ><a name="2573" class="Symbol"
+      >:</a
+      ><a name="2574"
+      > </a
+      ><a name="2575" class="Symbol"
+      >{</a
+      ><a name="2576" href="GUIgeneric.GUIFeaturesPart3.html#2576" class="Bound"
+      >A</a
+      ><a name="2577"
+      > </a
+      ><a name="2578" href="GUIgeneric.GUIFeaturesPart3.html#2578" class="Bound"
+      >B</a
+      ><a name="2579"
+      > </a
+      ><a name="2580" href="GUIgeneric.GUIFeaturesPart3.html#2580" class="Bound"
+      >C</a
+      ><a name="2581"
+      > </a
+      ><a name="2582" class="Symbol"
+      >:</a
+      ><a name="2583"
+      > </a
+      ><a name="2584" class="PrimitiveType"
+      >Set</a
+      ><a name="2587" class="Symbol"
+      >}</a
+      ><a name="2588"
+      >
+            </a
+      ><a name="2601" class="Symbol"
+      >&#8594;</a
+      ><a name="2602"
+      > </a
+      ><a name="2603" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="2605"
+      > </a
+      ><a name="2606" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="2622"
+      > </a
+      ><a name="2623" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="2624"
+      > </a
+      ><a name="2625" class="Symbol"
+      >(</a
+      ><a name="2626" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="2637"
+      > </a
+      ><a name="2638" class="Symbol"
+      >(</a
+      ><a name="2639" href="GUIgeneric.GUIFeaturesPart3.html#2576" class="Bound"
+      >A</a
+      ><a name="2640"
+      > </a
+      ><a name="2641" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2642"
+      > </a
+      ><a name="2643" href="GUIgeneric.GUIFeaturesPart3.html#2578" class="Bound"
+      >B</a
+      ><a name="2644" class="Symbol"
+      >))</a
+      ><a name="2646"
+      >
+            </a
+      ><a name="2659" class="Symbol"
+      >&#8594;</a
+      ><a name="2660"
+      > </a
+      ><a name="2661" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="2663"
+      > </a
+      ><a name="2664" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="2680"
+      > </a
+      ><a name="2681" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="2682"
+      > </a
+      ><a name="2683" class="Symbol"
+      >(</a
+      ><a name="2684" href="GUIgeneric.GUIFeaturesPart2.html#511" class="Datatype"
+      >ReturnType&#8347;</a
+      ><a name="2695"
+      > </a
+      ><a name="2696" class="Symbol"
+      >(</a
+      ><a name="2697" href="GUIgeneric.GUIFeaturesPart3.html#2576" class="Bound"
+      >A</a
+      ><a name="2698"
+      > </a
+      ><a name="2699" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2700"
+      > </a
+      ><a name="2701" href="GUIgeneric.GUIFeaturesPart3.html#2578" class="Bound"
+      >B</a
+      ><a name="2702"
+      > </a
+      ><a name="2703" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2704"
+      > </a
+      ><a name="2705" href="GUIgeneric.GUIFeaturesPart3.html#2580" class="Bound"
+      >C</a
+      ><a name="2706" class="Symbol"
+      >))</a
+      ><a name="2708"
+      >
+</a
+      ><a name="2709" href="GUIgeneric.GUIFeaturesPart3.html#2559" class="Function"
+      >mapIOFeatureM</a
+      ><a name="2722"
+      > </a
+      ><a name="2723" href="GUIgeneric.GUIFeaturesPart3.html#2723" class="Bound"
+      >p</a
+      ><a name="2724"
+      > </a
+      ><a name="2725" class="Symbol"
+      >=</a
+      ><a name="2726"
+      > </a
+      ><a name="2727" href="SizedIO.Base.html#3668" class="Function"
+      >mapIO</a
+      ><a name="2732"
+      > </a
+      ><a name="2733" class="Symbol"
+      >(</a
+      ><a name="2734" href="GUIgeneric.GUIFeaturesPart3.html#1646" class="Function"
+      >mapReturnType&#8347;</a
+      ><a name="2748"
+      > </a
+      ><a name="2749" href="GUIgeneric.GUIFeaturesPart3.html#1543" class="Function"
+      >lift&#8846;3</a
+      ><a name="2755" class="Symbol"
+      >)</a
+      ><a name="2756"
+      > </a
+      ><a name="2757" href="GUIgeneric.GUIFeaturesPart3.html#2723" class="Bound"
+      >p</a
+      ><a name="2758"
+      >
+
+
+</a
+      ><a name="2761" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="2767"
+      > </a
+      ><a name="2768" class="Symbol"
+      >:</a
+      ><a name="2769"
+      > </a
+      ><a name="2770" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2778"
+      > </a
+      ><a name="2779" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="2785"
+      > </a
+      ><a name="2786" class="Symbol"
+      >&#8594;</a
+      ><a name="2787"
+      > </a
+      ><a name="2788" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2796"
+      > </a
+      ><a name="2797" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="2803"
+      >
+</a
+      ><a name="2804" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="2810"
+      > </a
+      ><a name="2811" href="GUIgeneric.GUIFeaturesPart3.html#2811" class="Bound"
+      >vm</a
+      ><a name="2813"
+      > </a
+      ><a name="2814" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2815" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="2823"
+      > </a
+      ><a name="2824" class="Symbol"
+      >=</a
+      ><a name="2825"
+      > </a
+      ><a name="2826" href="GUIgeneric.GUIFeaturesPart3.html#2811" class="Bound"
+      >vm</a
+      ><a name="2828"
+      > </a
+      ><a name="2829" class="Symbol"
+      >.</a
+      ><a name="2830" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="Field"
+      >Features</a
+      ><a name="2838"
+      > </a
+      ><a name="2839" href="Data.Product.html#1295" class="Function Operator"
+      >&#215;</a
+      ><a name="2840"
+      > </a
+      ><a name="2841" href="GUIgeneric.GUIFeatures.html#1051" class="Datatype"
+      >FeatureCancel</a
+      ><a name="2854"
+      >
+</a
+      ><a name="2855" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="2861"
+      > </a
+      ><a name="2862" href="GUIgeneric.GUIFeaturesPart3.html#2862" class="Bound"
+      >vm</a
+      ><a name="2864"
+      > </a
+      ><a name="2865" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2866" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="2875"
+      >  </a
+      ><a name="2877" class="Symbol"
+      >=</a
+      ><a name="2878"
+      > </a
+      ><a name="2879" href="GUIgeneric.GUIFeaturesPart3.html#2862" class="Bound"
+      >vm</a
+      ><a name="2881"
+      > </a
+      ><a name="2882" class="Symbol"
+      >.</a
+      ><a name="2883" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="2892"
+      > </a
+      ><a name="2893" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2894"
+      > </a
+      ><a name="2895" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="2896"
+      >
+</a
+      ><a name="2897" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="2903"
+      > </a
+      ><a name="2904" href="GUIgeneric.GUIFeaturesPart3.html#2904" class="Bound"
+      >vm</a
+      ><a name="2906"
+      > </a
+      ><a name="2907" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2908" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="2912"
+      > </a
+      ><a name="2913" class="Symbol"
+      >(</a
+      ><a name="2914" href="GUIgeneric.GUIFeaturesPart3.html#2914" class="Bound"
+      >f</a
+      ><a name="2915"
+      > </a
+      ><a name="2916" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="2917"
+      > </a
+      ><a name="2918" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="2927" class="Symbol"
+      >)</a
+      ><a name="2928"
+      > </a
+      ><a name="2929" class="Symbol"
+      >(</a
+      ><a name="2930" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="2934"
+      > </a
+      ><a name="2935" href="GUIgeneric.GUIFeatures.html#856" class="InductiveConstructor"
+      >s1</a
+      ><a name="2937" class="Symbol"
+      >)</a
+      ><a name="2938"
+      > </a
+      ><a name="2939" class="Symbol"
+      >=</a
+      ><a name="2940"
+      >
+      </a
+      ><a name="2947" href="GUIgeneric.GUIFeaturesPart2.html#9140" class="Function"
+      >addBtn2StateMachine</a
+      ><a name="2966"
+      > </a
+      ><a name="2967" class="Symbol"
+      >(</a
+      ><a name="2968" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="2985"
+      > </a
+      ><a name="2986" class="Symbol"
+      >(</a
+      ><a name="2987" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="2991"
+      > </a
+      ><a name="2992" href="GUIgeneric.GUIFeatures.html#856" class="InductiveConstructor"
+      >s1</a
+      ><a name="2994" class="Symbol"
+      >)</a
+      ><a name="2995"
+      > </a
+      ><a name="2996" class="Symbol"
+      >(</a
+      ><a name="2997" href="GUIgeneric.GUIFeaturesPart3.html#2904" class="Bound"
+      >vm</a
+      ><a name="2999"
+      > </a
+      ><a name="3000" class="Symbol"
+      >.</a
+      ><a name="3001" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3005"
+      > </a
+      ><a name="3006" href="GUIgeneric.GUIFeaturesPart3.html#2914" class="Bound"
+      >f</a
+      ><a name="3007"
+      > </a
+      ><a name="3008" class="Symbol"
+      >(</a
+      ><a name="3009" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3013"
+      > </a
+      ><a name="3014" href="GUIgeneric.GUIFeatures.html#856" class="InductiveConstructor"
+      >s1</a
+      ><a name="3016" class="Symbol"
+      >)))</a
+      ><a name="3019"
+      >
+                          </a
+      ><a name="3046" class="String"
+      >&quot;Cancel&quot;</a
+      ><a name="3054"
+      > </a
+      ><a name="3055" class="Symbol"
+      >((</a
+      ><a name="3057" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3061"
+      > </a
+      ><a name="3062" class="Symbol"
+      >(</a
+      ><a name="3063" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3067"
+      > </a
+      ><a name="3068" class="Symbol"
+      >_)))</a
+      ><a name="3072"
+      >
+</a
+      ><a name="3073" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="CatchallClause Function"
+      >Cancel</a
+      ><a name="3079" class="CatchallClause"
+      > </a
+      ><a name="3080" href="GUIgeneric.GUIFeaturesPart3.html#3080" class="CatchallClause Bound"
+      >vm</a
+      ><a name="3082" class="CatchallClause"
+      > </a
+      ><a name="3083" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="3084" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="3088" class="CatchallClause"
+      > </a
+      ><a name="3089" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3090" href="GUIgeneric.GUIFeaturesPart3.html#3090" class="CatchallClause Bound"
+      >f</a
+      ><a name="3091" class="CatchallClause"
+      > </a
+      ><a name="3092" href="Data.Product.html#509" class="CatchallClause InductiveConstructor Operator"
+      >,</a
+      ><a name="3093" class="CatchallClause"
+      > </a
+      ><a name="3094" class="CatchallClause Symbol"
+      >_)</a
+      ><a name="3096" class="CatchallClause"
+      > </a
+      ><a name="3097" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3098" href="Data.Sum.html#489" class="CatchallClause InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3102" class="CatchallClause"
+      > </a
+      ><a name="3103" href="GUIgeneric.GUIFeaturesPart3.html#3103" class="CatchallClause Bound"
+      >s</a
+      ><a name="3104" class="CatchallClause Symbol"
+      >)</a
+      ><a name="3105"
+      > </a
+      ><a name="3106" class="Symbol"
+      >=</a
+      ><a name="3107"
+      > </a
+      ><a name="3108" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="3125"
+      > </a
+      ><a name="3126" class="Symbol"
+      >(</a
+      ><a name="3127" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3131"
+      > </a
+      ><a name="3132" href="GUIgeneric.GUIFeaturesPart3.html#3103" class="Bound"
+      >s</a
+      ><a name="3133" class="Symbol"
+      >)</a
+      ><a name="3134"
+      > </a
+      ><a name="3135" class="Symbol"
+      >(</a
+      ><a name="3136" href="GUIgeneric.GUIFeaturesPart3.html#3080" class="Bound"
+      >vm</a
+      ><a name="3138"
+      > </a
+      ><a name="3139" class="Symbol"
+      >.</a
+      ><a name="3140" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3144"
+      > </a
+      ><a name="3145" href="GUIgeneric.GUIFeaturesPart3.html#3090" class="Bound"
+      >f</a
+      ><a name="3146"
+      > </a
+      ><a name="3147" class="Symbol"
+      >(</a
+      ><a name="3148" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3152"
+      > </a
+      ><a name="3153" href="GUIgeneric.GUIFeaturesPart3.html#3103" class="Bound"
+      >s</a
+      ><a name="3154" class="Symbol"
+      >))</a
+      ><a name="3156"
+      >
+</a
+      ><a name="3157" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="CatchallClause Function"
+      >Cancel</a
+      ><a name="3163" class="CatchallClause"
+      > </a
+      ><a name="3164" href="GUIgeneric.GUIFeaturesPart3.html#3164" class="CatchallClause Bound"
+      >vm</a
+      ><a name="3166" class="CatchallClause"
+      > </a
+      ><a name="3167" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="3168" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="3172" class="CatchallClause"
+      > </a
+      ><a name="3173" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3174" href="GUIgeneric.GUIFeaturesPart3.html#3174" class="CatchallClause Bound"
+      >f</a
+      ><a name="3175" class="CatchallClause"
+      > </a
+      ><a name="3176" href="Data.Product.html#509" class="CatchallClause InductiveConstructor Operator"
+      >,</a
+      ><a name="3177" class="CatchallClause"
+      > </a
+      ><a name="3178" class="CatchallClause Symbol"
+      >_)</a
+      ><a name="3180" class="CatchallClause"
+      > </a
+      ><a name="3181" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3182" href="Data.Sum.html#514" class="CatchallClause InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3186" class="CatchallClause"
+      > </a
+      ><a name="3187" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3188" href="Data.Sum.html#489" class="CatchallClause InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3192" class="CatchallClause"
+      > </a
+      ><a name="3193" href="GUIgeneric.GUIFeaturesPart3.html#3193" class="CatchallClause Bound"
+      >x</a
+      ><a name="3194" class="CatchallClause Symbol"
+      >))</a
+      ><a name="3196"
+      > </a
+      ><a name="3197" class="Symbol"
+      >=</a
+      ><a name="3198"
+      > </a
+      ><a name="3199" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="3216"
+      > </a
+      ><a name="3217" class="Symbol"
+      >(</a
+      ><a name="3218" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3222"
+      > </a
+      ><a name="3223" href="GUIgeneric.GUIFeaturesPart3.html#3193" class="Bound"
+      >x</a
+      ><a name="3224" class="Symbol"
+      >)</a
+      ><a name="3225"
+      > </a
+      ><a name="3226" class="Symbol"
+      >(</a
+      ><a name="3227" href="GUIgeneric.GUIFeaturesPart3.html#3164" class="Bound"
+      >vm</a
+      ><a name="3229"
+      > </a
+      ><a name="3230" class="Symbol"
+      >.</a
+      ><a name="3231" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3235"
+      > </a
+      ><a name="3236" href="GUIgeneric.GUIFeaturesPart3.html#3174" class="Bound"
+      >f</a
+      ><a name="3237"
+      > </a
+      ><a name="3238" class="Symbol"
+      >(</a
+      ><a name="3239" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3243"
+      > </a
+      ><a name="3244" href="GUIgeneric.GUIFeaturesPart3.html#3193" class="Bound"
+      >x</a
+      ><a name="3245" class="Symbol"
+      >))</a
+      ><a name="3247"
+      >
+</a
+      ><a name="3248" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="CatchallClause Function"
+      >Cancel</a
+      ><a name="3254" class="CatchallClause"
+      > </a
+      ><a name="3255" href="GUIgeneric.GUIFeaturesPart3.html#3255" class="CatchallClause Bound"
+      >vm</a
+      ><a name="3257" class="CatchallClause"
+      > </a
+      ><a name="3258" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="3259" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="3263" class="CatchallClause"
+      > </a
+      ><a name="3264" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3265" href="GUIgeneric.GUIFeaturesPart3.html#3265" class="CatchallClause Bound"
+      >f</a
+      ><a name="3266" class="CatchallClause"
+      > </a
+      ><a name="3267" href="Data.Product.html#509" class="CatchallClause InductiveConstructor Operator"
+      >,</a
+      ><a name="3268" class="CatchallClause"
+      > </a
+      ><a name="3269" class="CatchallClause Symbol"
+      >_)</a
+      ><a name="3271" class="CatchallClause"
+      > </a
+      ><a name="3272" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3273" href="Data.Sum.html#514" class="CatchallClause InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3277" class="CatchallClause"
+      > </a
+      ><a name="3278" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3279" href="Data.Sum.html#514" class="CatchallClause InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3283" class="CatchallClause"
+      > </a
+      ><a name="3284" class="CatchallClause Symbol"
+      >_))</a
+      ><a name="3287"
+      > </a
+      ><a name="3288" class="Symbol"
+      >=</a
+      ><a name="3289"
+      > </a
+      ><a name="3290" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="3303"
+      > </a
+      ><a name="3304" class="String"
+      >&quot;Intermediate&quot;</a
+      ><a name="3318"
+      > </a
+      ><a name="3319" class="Symbol"
+      >(</a
+      ><a name="3320" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3324"
+      > </a
+      ><a name="3325" href="GUIgeneric.GUIFeatures.html#853" class="InductiveConstructor"
+      >s0</a
+      ><a name="3327" class="Symbol"
+      >)</a
+      ><a name="3328"
+      >
+
+</a
+      ><a name="3330" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3333"
+      > </a
+      ><a name="3334" class="Symbol"
+      >:</a
+      ><a name="3335"
+      > </a
+      ><a name="3336" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3344"
+      > </a
+      ><a name="3345" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="3351"
+      > </a
+      ><a name="3352" class="Symbol"
+      >&#8594;</a
+      ><a name="3353"
+      > </a
+      ><a name="3354" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3362"
+      > </a
+      ><a name="3363" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="3369"
+      >
+</a
+      ><a name="3370" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3373"
+      > </a
+      ><a name="3374" href="GUIgeneric.GUIFeaturesPart3.html#3374" class="Bound"
+      >vm</a
+      ><a name="3376"
+      > </a
+      ><a name="3377" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3378" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="3386"
+      > </a
+      ><a name="3387" class="Symbol"
+      >=</a
+      ><a name="3388"
+      > </a
+      ><a name="3389" href="GUIgeneric.GUIFeaturesPart3.html#3374" class="Bound"
+      >vm</a
+      ><a name="3391"
+      > </a
+      ><a name="3392" class="Symbol"
+      >.</a
+      ><a name="3393" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="Field"
+      >Features</a
+      ><a name="3401"
+      > </a
+      ><a name="3402" href="Data.Product.html#1295" class="Function Operator"
+      >&#215;</a
+      ><a name="3403"
+      > </a
+      ><a name="3404" href="GUIgeneric.GUIFeatures.html#933" class="Datatype"
+      >FeatureTea</a
+      ><a name="3414"
+      >
+</a
+      ><a name="3415" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3418"
+      > </a
+      ><a name="3419" href="GUIgeneric.GUIFeaturesPart3.html#3419" class="Bound"
+      >vm</a
+      ><a name="3421"
+      > </a
+      ><a name="3422" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3423" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="3432"
+      >  </a
+      ><a name="3434" class="Symbol"
+      >=</a
+      ><a name="3435"
+      > </a
+      ><a name="3436" href="GUIgeneric.GUIFeaturesPart3.html#3419" class="Bound"
+      >vm</a
+      ><a name="3438"
+      > </a
+      ><a name="3439" class="Symbol"
+      >.</a
+      ><a name="3440" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="3449"
+      > </a
+      ><a name="3450" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="3451"
+      > </a
+      ><a name="3452" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="3453"
+      >
+</a
+      ><a name="3454" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3457"
+      > </a
+      ><a name="3458" href="GUIgeneric.GUIFeaturesPart3.html#3458" class="Bound"
+      >vm</a
+      ><a name="3460"
+      > </a
+      ><a name="3461" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3462" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="3466"
+      > </a
+      ><a name="3467" class="Symbol"
+      >(</a
+      ><a name="3468" href="GUIgeneric.GUIFeaturesPart3.html#3468" class="Bound"
+      >f</a
+      ><a name="3469"
+      > </a
+      ><a name="3470" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="3471"
+      > </a
+      ><a name="3472" href="GUIgeneric.GUIFeaturesPart3.html#3472" class="Bound"
+      >yeTea</a
+      ><a name="3477" class="Symbol"
+      >)</a
+      ><a name="3478"
+      > </a
+      ><a name="3479" class="Symbol"
+      >(</a
+      ><a name="3480" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3484"
+      > </a
+      ><a name="3485" href="GUIgeneric.GUIFeatures.html#859" class="InductiveConstructor"
+      >s2</a
+      ><a name="3487" class="Symbol"
+      >)</a
+      ><a name="3488"
+      > </a
+      ><a name="3489" class="Symbol"
+      >=</a
+      ><a name="3490"
+      >
+      </a
+      ><a name="3497" href="GUIgeneric.GUIFeaturesPart2.html#9140" class="Function"
+      >addBtn2StateMachine</a
+      ><a name="3516"
+      > </a
+      ><a name="3517" class="Symbol"
+      >(</a
+      ><a name="3518" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="3535"
+      > </a
+      ><a name="3536" class="Symbol"
+      >(</a
+      ><a name="3537" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3541"
+      > </a
+      ><a name="3542" href="GUIgeneric.GUIFeatures.html#859" class="InductiveConstructor"
+      >s2</a
+      ><a name="3544" class="Symbol"
+      >)</a
+      ><a name="3545"
+      > </a
+      ><a name="3546" class="Symbol"
+      >(</a
+      ><a name="3547" href="GUIgeneric.GUIFeaturesPart3.html#3458" class="Bound"
+      >vm</a
+      ><a name="3549"
+      > </a
+      ><a name="3550" class="Symbol"
+      >.</a
+      ><a name="3551" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3555"
+      > </a
+      ><a name="3556" href="GUIgeneric.GUIFeaturesPart3.html#3468" class="Bound"
+      >f</a
+      ><a name="3557"
+      > </a
+      ><a name="3558" class="Symbol"
+      >(</a
+      ><a name="3559" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3563"
+      > </a
+      ><a name="3564" href="GUIgeneric.GUIFeatures.html#859" class="InductiveConstructor"
+      >s2</a
+      ><a name="3566" class="Symbol"
+      >)))</a
+      ><a name="3569"
+      >
+                          </a
+      ><a name="3596" class="String"
+      >&quot;Tea&quot;</a
+      ><a name="3601"
+      > </a
+      ><a name="3602" class="Symbol"
+      >((</a
+      ><a name="3604" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3608"
+      > </a
+      ><a name="3609" class="Symbol"
+      >(</a
+      ><a name="3610" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3614"
+      > </a
+      ><a name="3615" class="Symbol"
+      >_)))</a
+      ><a name="3619"
+      >
+</a
+      ><a name="3620" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="CatchallClause Function"
+      >Tea</a
+      ><a name="3623" class="CatchallClause"
+      > </a
+      ><a name="3624" href="GUIgeneric.GUIFeaturesPart3.html#3624" class="CatchallClause Bound"
+      >vm</a
+      ><a name="3626" class="CatchallClause"
+      > </a
+      ><a name="3627" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="3628" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="3632" class="CatchallClause"
+      > </a
+      ><a name="3633" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3634" href="GUIgeneric.GUIFeaturesPart3.html#3634" class="CatchallClause Bound"
+      >f</a
+      ><a name="3635" class="CatchallClause"
+      > </a
+      ><a name="3636" href="Data.Product.html#509" class="CatchallClause InductiveConstructor Operator"
+      >,</a
+      ><a name="3637" class="CatchallClause"
+      > </a
+      ><a name="3638" class="CatchallClause Symbol"
+      >_)</a
+      ><a name="3640" class="CatchallClause"
+      > </a
+      ><a name="3641" class="CatchallClause Symbol"
+      >(</a
+      ><a name="3642" href="Data.Sum.html#489" class="CatchallClause InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3646" class="CatchallClause"
+      > </a
+      ><a name="3647" href="GUIgeneric.GUIFeaturesPart3.html#3647" class="CatchallClause Bound"
+      >s</a
+      ><a name="3648" class="CatchallClause Symbol"
+      >)</a
+      ><a name="3649"
+      > </a
+      ><a name="3650" class="Symbol"
+      >=</a
+      ><a name="3651"
+      > </a
+      ><a name="3652" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="3669"
+      > </a
+      ><a name="3670" class="Symbol"
+      >(</a
+      ><a name="3671" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3675"
+      > </a
+      ><a name="3676" href="GUIgeneric.GUIFeaturesPart3.html#3647" class="Bound"
+      >s</a
+      ><a name="3677" class="Symbol"
+      >)</a
+      ><a name="3678"
+      > </a
+      ><a name="3679" class="Symbol"
+      >(</a
+      ><a name="3680" href="GUIgeneric.GUIFeaturesPart3.html#3624" class="Bound"
+      >vm</a
+      ><a name="3682"
+      > </a
+      ><a name="3683" class="Symbol"
+      >.</a
+      ><a name="3684" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3688"
+      > </a
+      ><a name="3689" href="GUIgeneric.GUIFeaturesPart3.html#3634" class="Bound"
+      >f</a
+      ><a name="3690"
+      > </a
+      ><a name="3691" class="Symbol"
+      >(</a
+      ><a name="3692" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3696"
+      > </a
+      ><a name="3697" href="GUIgeneric.GUIFeaturesPart3.html#3647" class="Bound"
+      >s</a
+      ><a name="3698" class="Symbol"
+      >))</a
+      ><a name="3700"
+      >
+</a
+      ><a name="3701" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3704"
+      > </a
+      ><a name="3705" href="GUIgeneric.GUIFeaturesPart3.html#3705" class="Bound"
+      >vm</a
+      ><a name="3707"
+      > </a
+      ><a name="3708" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3709" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="3713"
+      > </a
+      ><a name="3714" class="Symbol"
+      >(</a
+      ><a name="3715" href="GUIgeneric.GUIFeaturesPart3.html#3715" class="Bound"
+      >f</a
+      ><a name="3716"
+      > </a
+      ><a name="3717" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="3718"
+      > </a
+      ><a name="3719" class="Symbol"
+      >_)</a
+      ><a name="3721"
+      > </a
+      ><a name="3722" class="Symbol"
+      >(</a
+      ><a name="3723" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3727"
+      > </a
+      ><a name="3728" class="Symbol"
+      >(</a
+      ><a name="3729" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3733"
+      > </a
+      ><a name="3734" href="GUIgeneric.GUIFeaturesPart3.html#3734" class="Bound"
+      >x</a
+      ><a name="3735" class="Symbol"
+      >))</a
+      ><a name="3737"
+      > </a
+      ><a name="3738" class="Symbol"
+      >=</a
+      ><a name="3739"
+      > </a
+      ><a name="3740" href="GUIgeneric.GUIFeaturesPart3.html#2337" class="Function"
+      >mapFMachineHandle</a
+      ><a name="3757"
+      > </a
+      ><a name="3758" class="Symbol"
+      >(</a
+      ><a name="3759" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3763"
+      > </a
+      ><a name="3764" href="GUIgeneric.GUIFeaturesPart3.html#3734" class="Bound"
+      >x</a
+      ><a name="3765" class="Symbol"
+      >)</a
+      ><a name="3766"
+      > </a
+      ><a name="3767" class="Symbol"
+      >(</a
+      ><a name="3768" href="GUIgeneric.GUIFeaturesPart3.html#3705" class="Bound"
+      >vm</a
+      ><a name="3770"
+      > </a
+      ><a name="3771" class="Symbol"
+      >.</a
+      ><a name="3772" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3776"
+      > </a
+      ><a name="3777" href="GUIgeneric.GUIFeaturesPart3.html#3715" class="Bound"
+      >f</a
+      ><a name="3778"
+      > </a
+      ><a name="3779" class="Symbol"
+      >(</a
+      ><a name="3780" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3784"
+      > </a
+      ><a name="3785" href="GUIgeneric.GUIFeaturesPart3.html#3734" class="Bound"
+      >x</a
+      ><a name="3786" class="Symbol"
+      >))</a
+      ><a name="3788"
+      >
+</a
+      ><a name="3789" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3792"
+      > </a
+      ><a name="3793" href="GUIgeneric.GUIFeaturesPart3.html#3793" class="Bound"
+      >vm</a
+      ><a name="3795"
+      > </a
+      ><a name="3796" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3797" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="3801"
+      > </a
+      ><a name="3802" class="Symbol"
+      >(</a
+      ><a name="3803" href="GUIgeneric.GUIFeaturesPart3.html#3803" class="Bound"
+      >f</a
+      ><a name="3804"
+      > </a
+      ><a name="3805" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="3806"
+      > </a
+      ><a name="3807" class="Symbol"
+      >_)</a
+      ><a name="3809"
+      > </a
+      ><a name="3810" class="Symbol"
+      >(</a
+      ><a name="3811" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3815"
+      > </a
+      ><a name="3816" class="Symbol"
+      >(</a
+      ><a name="3817" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="3821"
+      > </a
+      ><a name="3822" class="Symbol"
+      >_))</a
+      ><a name="3825"
+      > </a
+      ><a name="3826" class="Symbol"
+      >=</a
+      ><a name="3827"
+      > </a
+      ><a name="3828" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="3841"
+      > </a
+      ><a name="3842" class="String"
+      >&quot;Get Your Tea&quot;</a
+      ><a name="3856"
+      > </a
+      ><a name="3857" class="Symbol"
+      >(</a
+      ><a name="3858" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3862"
+      > </a
+      ><a name="3863" href="GUIgeneric.GUIFeatures.html#853" class="InductiveConstructor"
+      >s0</a
+      ><a name="3865" class="Symbol"
+      >)</a
+      ><a name="3866"
+      >
+
+
+</a
+      ><a name="3869" href="GUIgeneric.GUIFeaturesPart3.html#3869" class="Function"
+      >cancelBase</a
+      ><a name="3879"
+      > </a
+      ><a name="3880" class="Symbol"
+      >:</a
+      ><a name="3881"
+      > </a
+      ><a name="3882" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3890"
+      > </a
+      ><a name="3891" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="3897"
+      >
+</a
+      ><a name="3898" href="GUIgeneric.GUIFeaturesPart3.html#3869" class="Function"
+      >cancelBase</a
+      ><a name="3908"
+      > </a
+      ><a name="3909" class="Symbol"
+      >=</a
+      ><a name="3910"
+      > </a
+      ><a name="3911" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="3917"
+      > </a
+      ><a name="3918" href="GUIgeneric.GUIFeaturesPart2.html#8871" class="Function"
+      >baseF</a
+      ><a name="3923"
+      >
+
+</a
+      ><a name="3925" href="GUIgeneric.GUIFeaturesPart3.html#3925" class="Function"
+      >teaCancelBase</a
+      ><a name="3938"
+      > </a
+      ><a name="3939" class="Symbol"
+      >:</a
+      ><a name="3940"
+      > </a
+      ><a name="3941" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3949"
+      > </a
+      ><a name="3950" href="GUIgeneric.GUIFeatures.html#828" class="Datatype"
+      >StateV</a
+      ><a name="3956"
+      >
+</a
+      ><a name="3957" href="GUIgeneric.GUIFeaturesPart3.html#3925" class="Function"
+      >teaCancelBase</a
+      ><a name="3970"
+      > </a
+      ><a name="3971" class="Symbol"
+      >=</a
+      ><a name="3972"
+      > </a
+      ><a name="3973" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="3976"
+      > </a
+      ><a name="3977" href="GUIgeneric.GUIFeaturesPart3.html#3869" class="Function"
+      >cancelBase</a
+      ><a name="3987"
+      >
+
+</a
+      ><a name="3989" href="GUIgeneric.GUIFeaturesPart3.html#3989" class="Function"
+      >main</a
+      ><a name="3993"
+      > </a
+      ><a name="3994" class="Symbol"
+      >:</a
+      ><a name="3995"
+      > </a
+      ><a name="3996" href="NativeIO.html#260" class="Postulate"
+      >NativeIO</a
+      ><a name="4004"
+      > </a
+      ><a name="4005" href="Unit.html#28" class="Record"
+      >Unit</a
+      ><a name="4009"
+      >
+</a
+      ><a name="4010" href="GUIgeneric.GUIFeaturesPart3.html#3989" class="Function"
+      >main</a
+      ><a name="4014"
+      > </a
+      ><a name="4015" class="Symbol"
+      >=</a
+      ><a name="4016"
+      > </a
+      ><a name="4017" href="GUIgeneric.GUIFeaturesPart2.html#6240" class="Function"
+      >compileFeatureVM</a
+      ><a name="4033"
+      > </a
+      ><a name="4034" href="GUIgeneric.GUIFeaturesPart3.html#3925" class="Function"
+      >teaCancelBase</a
+      ><a name="4047"
+      > </a
+      ><a name="4048" class="Symbol"
+      >((_</a
+      ><a name="4051"
+      > </a
+      ><a name="4052" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4053"
+      > </a
+      ><a name="4054" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="4063" class="Symbol"
+      >)</a
+      ><a name="4064"
+      > </a
+      ><a name="4065" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4066"
+      > </a
+      ><a name="4067" href="GUIgeneric.GUIFeatures.html#958" class="InductiveConstructor"
+      >yesTea</a
+      ><a name="4073" class="Symbol"
+      >)</a
+      ><a name="4074"
+      > </a
+      ><a name="4075" class="Symbol"
+      >(</a
+      ><a name="4076" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4080"
+      > </a
+      ><a name="4081" href="GUIgeneric.GUIFeatures.html#853" class="InductiveConstructor"
+      >s0</a
+      ><a name="4083" class="Symbol"
+      >)</a
+      ><a name="4084"
+      > </a
+      ><a name="4085" class="Comment"
+      >--</a
+      ><a name="4087"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

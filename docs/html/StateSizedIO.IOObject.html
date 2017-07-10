@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >StateSizedIO.IOObject</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="StateSizedIO.IOObject.html#1" class="Module"
+      >StateSizedIO.IOObject</a
+      ><a name="29"
+      > </a
+      ><a name="30" class="Keyword"
+      >where</a
+      ><a name="35"
+      >
+
+</a
+      ><a name="37" class="Keyword"
+      >open</a
+      ><a name="41"
+      > </a
+      ><a name="42" class="Keyword"
+      >import</a
+      ><a name="48"
+      > </a
+      ><a name="49" href="Data.Product.html#1" class="Module"
+      >Data.Product</a
+      ><a name="61"
+      >
+
+</a
+      ><a name="63" class="Keyword"
+      >open</a
+      ><a name="67"
+      > </a
+      ><a name="68" class="Keyword"
+      >import</a
+      ><a name="74"
+      > </a
+      ><a name="75" href="Size.html#1" class="Module"
+      >Size</a
+      ><a name="79"
+      >
+
+</a
+      ><a name="81" class="Keyword"
+      >open</a
+      ><a name="85"
+      > </a
+      ><a name="86" class="Keyword"
+      >import</a
+      ><a name="92"
+      > </a
+      ><a name="93" href="SizedIO.Base.html#1" class="Module"
+      >SizedIO.Base</a
+      ><a name="105"
+      >
+</a
+      ><a name="106" class="Keyword"
+      >open</a
+      ><a name="110"
+      > </a
+      ><a name="111" class="Keyword"
+      >import</a
+      ><a name="117"
+      > </a
+      ><a name="118" href="StateSizedIO.Object.html#1" class="Module"
+      >StateSizedIO.Object</a
+      ><a name="137"
+      >
+
+
+
+</a
+      ><a name="141" class="Comment"
+      >-- ---</a
+      ><a name="147"
+      >
+</a
+      ><a name="148" class="Comment"
+      >-- ---</a
+      ><a name="154"
+      >
+</a
+      ><a name="155" class="Comment"
+      >-- ---  FILE IS DELETED !!!</a
+      ><a name="182"
+      >
+</a
+      ><a name="183" class="Comment"
+      >-- ---</a
+      ><a name="189"
+      >
+</a
+      ><a name="190" class="Comment"
+      >-- ---</a
+      ><a name="196"
+      >
+
+
+</a
+      ><a name="199" class="Comment"
+      >-- An IO object is like a simple object,</a
+      ><a name="239"
+      >
+</a
+      ><a name="240" class="Comment"
+      >-- but the method returns IO applied to the result type of a simple object</a
+      ><a name="314"
+      >
+</a
+      ><a name="315" class="Comment"
+      >-- which means the method returns an IO program which when terminating</a
+      ><a name="385"
+      >
+</a
+      ><a name="386" class="Comment"
+      >-- returns the result of the simple object</a
+      ><a name="428"
+      >
+
+
+
+</a
+      ><a name="432" class="Comment"
+      >{- NOTE   IOObject is now replaced by IOObject&#738; as defined in
+          StateSizedIO.Base
+-}</a
+      ><a name="524"
+      >
+
+</a
+      ><a name="526" class="Comment"
+      >{-
+module _  (ioi  : IOInterface)  (let C = Command ioi)  (let R = Response ioi)
+          (oi   : Interface&#738;)    (let S = State&#738; oi)     (let M  = Method&#738; oi)
+                                (let Rt  = Result&#738; oi) (let next = next&#738; oi)
+
+  where
+
+  record IOObject (i : Size) (s : S) : Set where
+    coinductive
+    field
+      method : &#8704;{j : Size&lt; i} (m : M s) &#8594; IO ioi &#8734; (&#931;[ r &#8712; Rt s m ] IOObject j (next s m r) )
+
+open IOObject public
+-}</a
+      ><a name="966"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

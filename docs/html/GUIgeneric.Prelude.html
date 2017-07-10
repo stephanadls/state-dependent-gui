@@ -1,0 +1,921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >GUIgeneric.Prelude</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="GUIgeneric.Prelude.html#1" class="Module"
+      >GUIgeneric.Prelude</a
+      ><a name="26"
+      > </a
+      ><a name="27" class="Keyword"
+      >where</a
+      ><a name="32"
+      >
+
+</a
+      ><a name="34" class="Keyword"
+      >open</a
+      ><a name="38"
+      > </a
+      ><a name="39" class="Keyword"
+      >import</a
+      ><a name="45"
+      > </a
+      ><a name="46" href="Data.Sum.html#1" class="Module"
+      >Data.Sum</a
+      ><a name="54"
+      > </a
+      ><a name="55" class="Keyword"
+      >public</a
+      ><a name="61"
+      > </a
+      ><a name="62" class="Keyword"
+      >hiding</a
+      ><a name="68"
+      > </a
+      ><a name="69" class="Symbol"
+      >(</a
+      ><a name="70" href="Data.Sum.html#1077" class="Function"
+      >map</a
+      ><a name="73" class="Symbol"
+      >)</a
+      ><a name="74"
+      >
+</a
+      ><a name="75" class="Keyword"
+      >open</a
+      ><a name="79"
+      > </a
+      ><a name="80" class="Keyword"
+      >import</a
+      ><a name="86"
+      > </a
+      ><a name="87" href="Data.List.html#1" class="Module"
+      >Data.List</a
+      ><a name="96"
+      > </a
+      ><a name="97" class="Keyword"
+      >public</a
+      ><a name="103"
+      >
+</a
+      ><a name="104" class="Keyword"
+      >open</a
+      ><a name="108"
+      > </a
+      ><a name="109" class="Keyword"
+      >import</a
+      ><a name="115"
+      > </a
+      ><a name="116" href="Data.Bool.html#1" class="Module"
+      >Data.Bool</a
+      ><a name="125"
+      > </a
+      ><a name="126" class="Keyword"
+      >public</a
+      ><a name="132"
+      >
+</a
+      ><a name="133" class="Keyword"
+      >open</a
+      ><a name="137"
+      > </a
+      ><a name="138" class="Keyword"
+      >import</a
+      ><a name="144"
+      > </a
+      ><a name="145" href="Data.String.html#1" class="Module"
+      >Data.String</a
+      ><a name="156"
+      > </a
+      ><a name="157" class="Keyword"
+      >hiding</a
+      ><a name="163"
+      > </a
+      ><a name="164" class="Symbol"
+      >(</a
+      ><a name="165" href="Data.String.html#1996" class="Function"
+      >decSetoid</a
+      ><a name="174" class="Symbol"
+      >)</a
+      ><a name="175"
+      > </a
+      ><a name="176" class="Keyword"
+      >renaming</a
+      ><a name="184"
+      > </a
+      ><a name="185" class="Symbol"
+      >(</a
+      ><a name="186" href="Data.String.Base.html#873" class="Function Operator"
+      >_++_</a
+      ><a name="190"
+      > </a
+      ><a name="191" class="Symbol"
+      >to</a
+      ><a name="193"
+      > </a
+      ><a name="194" href="Data.String.Base.html#873" class="Function Operator"
+      >_++Str_</a
+      ><a name="201" class="Symbol"
+      >;</a
+      ><a name="202"
+      > </a
+      ><a name="203" href="Data.String.html#1640" class="Function Operator"
+      >_==_</a
+      ><a name="207"
+      > </a
+      ><a name="208" class="Symbol"
+      >to</a
+      ><a name="210"
+      > </a
+      ><a name="211" href="Data.String.html#1640" class="Function Operator"
+      >_==Str_</a
+      ><a name="218" class="Symbol"
+      >;</a
+      ><a name="219"
+      > </a
+      ><a name="220" href="Data.String.html#1196" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="223"
+      > </a
+      ><a name="224" class="Symbol"
+      >to</a
+      ><a name="226"
+      > </a
+      ><a name="227" href="Data.String.html#1196" class="Function Operator"
+      >_&#8799;Str_</a
+      ><a name="233" class="Symbol"
+      >)</a
+      ><a name="234"
+      > </a
+      ><a name="235" class="Keyword"
+      >public</a
+      ><a name="241"
+      >
+</a
+      ><a name="242" class="Keyword"
+      >open</a
+      ><a name="246"
+      > </a
+      ><a name="247" class="Keyword"
+      >import</a
+      ><a name="253"
+      > </a
+      ><a name="254" href="Data.Unit.html#1" class="Module"
+      >Data.Unit</a
+      ><a name="263"
+      > </a
+      ><a name="264" class="Keyword"
+      >hiding</a
+      ><a name="270"
+      > </a
+      ><a name="271" class="Symbol"
+      >(</a
+      ><a name="272" href="Data.Unit.html#569" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="275" class="Symbol"
+      >;</a
+      ><a name="276"
+      > </a
+      ><a name="277" href="Data.Unit.html#1517" class="Function"
+      >decSetoid</a
+      ><a name="286" class="Symbol"
+      >;</a
+      ><a name="287"
+      > </a
+      ><a name="288" href="Data.Unit.html#834" class="Function"
+      >setoid</a
+      ><a name="294" class="Symbol"
+      >)</a
+      ><a name="295"
+      > </a
+      ><a name="296" class="Keyword"
+      >public</a
+      ><a name="302"
+      >
+</a
+      ><a name="303" class="Keyword"
+      >open</a
+      ><a name="307"
+      > </a
+      ><a name="308" class="Keyword"
+      >import</a
+      ><a name="314"
+      > </a
+      ><a name="315" href="Data.Empty.html#1" class="Module"
+      >Data.Empty</a
+      ><a name="325"
+      > </a
+      ><a name="326" class="Keyword"
+      >public</a
+      ><a name="332"
+      >
+</a
+      ><a name="333" class="Keyword"
+      >open</a
+      ><a name="337"
+      > </a
+      ><a name="338" class="Keyword"
+      >import</a
+      ><a name="344"
+      > </a
+      ><a name="345" href="Data.Product.html#1" class="Module"
+      >Data.Product</a
+      ><a name="357"
+      > </a
+      ><a name="358" class="Keyword"
+      >hiding</a
+      ><a name="364"
+      > </a
+      ><a name="365" class="Symbol"
+      >(</a
+      ><a name="366" href="Data.Product.html#2094" class="Function"
+      >map</a
+      ><a name="369" class="Symbol"
+      >;</a
+      ><a name="370"
+      > </a
+      ><a name="371" href="Data.Product.html#2275" class="Function"
+      >zip</a
+      ><a name="374" class="Symbol"
+      >)</a
+      ><a name="375"
+      > </a
+      ><a name="376" class="Keyword"
+      >public</a
+      ><a name="382"
+      >
+</a
+      ><a name="383" class="Keyword"
+      >open</a
+      ><a name="387"
+      > </a
+      ><a name="388" class="Keyword"
+      >import</a
+      ><a name="394"
+      > </a
+      ><a name="395" href="Data.Sum.html#1" class="Module"
+      >Data.Sum</a
+      ><a name="403"
+      > </a
+      ><a name="404" class="Keyword"
+      >hiding</a
+      ><a name="410"
+      > </a
+      ><a name="411" class="Symbol"
+      >(</a
+      ><a name="412" href="Data.Sum.html#1077" class="Function"
+      >map</a
+      ><a name="415" class="Symbol"
+      >)</a
+      ><a name="416"
+      > </a
+      ><a name="417" class="Keyword"
+      >public</a
+      ><a name="423"
+      >
+</a
+      ><a name="424" class="Keyword"
+      >open</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Keyword"
+      >import</a
+      ><a name="435"
+      > </a
+      ><a name="436" href="Data.Nat.html#1" class="Module"
+      >Data.Nat</a
+      ><a name="444"
+      > </a
+      ><a name="445" class="Keyword"
+      >hiding</a
+      ><a name="451"
+      > </a
+      ><a name="452" class="Symbol"
+      >(</a
+      ><a name="453" href="Data.Nat.Base.html#3212" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="456" class="Symbol"
+      >;</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="Data.Nat.Base.html#802" class="Datatype Operator"
+      >_&#8804;_</a
+      ><a name="461" class="Symbol"
+      >;</a
+      ><a name="462"
+      > </a
+      ><a name="463" href="Data.Nat.Base.html#3522" class="Function Operator"
+      >_&#8804;?_</a
+      ><a name="467" class="Symbol"
+      >)</a
+      ><a name="468"
+      > </a
+      ><a name="469" class="Keyword"
+      >public</a
+      ><a name="475"
+      >
+</a
+      ><a name="476" class="Keyword"
+      >open</a
+      ><a name="480"
+      > </a
+      ><a name="481" class="Keyword"
+      >import</a
+      ><a name="487"
+      > </a
+      ><a name="488" href="Data.Maybe.Base.html#1" class="Module"
+      >Data.Maybe.Base</a
+      ><a name="503"
+      > </a
+      ><a name="504" class="Keyword"
+      >hiding</a
+      ><a name="510"
+      > </a
+      ><a name="511" class="Symbol"
+      >(</a
+      ><a name="512" href="Data.Maybe.Base.html#1810" class="Function"
+      >map</a
+      ><a name="515" class="Symbol"
+      >)</a
+      ><a name="516"
+      > </a
+      ><a name="517" class="Keyword"
+      >public</a
+      ><a name="523"
+      >
+</a
+      ><a name="524" class="Keyword"
+      >open</a
+      ><a name="528"
+      > </a
+      ><a name="529" class="Keyword"
+      >import</a
+      ><a name="535"
+      > </a
+      ><a name="536" href="Function.html#1" class="Module"
+      >Function</a
+      ><a name="544"
+      > </a
+      ><a name="545" class="Keyword"
+      >public</a
+      ><a name="551"
+      >
+</a
+      ><a name="552" class="Keyword"
+      >open</a
+      ><a name="556"
+      > </a
+      ><a name="557" class="Keyword"
+      >import</a
+      ><a name="563"
+      > </a
+      ><a name="564" href="Relation.Binary.PropositionalEquality.Core.html#1" class="Module"
+      >Relation.Binary.PropositionalEquality.Core</a
+      ><a name="606"
+      > </a
+      ><a name="607" class="Keyword"
+      >public</a
+      ><a name="613"
+      >
+</a
+      ><a name="614" class="Keyword"
+      >open</a
+      ><a name="618"
+      > </a
+      ><a name="619" class="Keyword"
+      >import</a
+      ><a name="625"
+      > </a
+      ><a name="626" href="Relation.Binary.PropositionalEquality.html#1" class="Module"
+      >Relation.Binary.PropositionalEquality</a
+      ><a name="663"
+      > </a
+      ><a name="664" class="Keyword"
+      >hiding</a
+      ><a name="670"
+      > </a
+      ><a name="671" class="Symbol"
+      >(</a
+      ><a name="672" href="Relation.Binary.PropositionalEquality.html#1526" class="Function"
+      >setoid</a
+      ><a name="678"
+      > </a
+      ><a name="679" class="Symbol"
+      >;</a
+      ><a name="680"
+      > </a
+      ><a name="681" href="Relation.Binary.PropositionalEquality.html#2064" class="Function"
+      >preorder</a
+      ><a name="689"
+      > </a
+      ><a name="690" class="Symbol"
+      >;</a
+      ><a name="691"
+      > </a
+      ><a name="692" href="Relation.Binary.PropositionalEquality.html#1665" class="Function"
+      >decSetoid</a
+      ><a name="701" class="Symbol"
+      >;</a
+      ><a name="702"
+      > </a
+      ><a name="703" href="Relation.Binary.PropositionalEquality.html#5124" class="InductiveConstructor Operator"
+      >[_]</a
+      ><a name="706" class="Symbol"
+      >)</a
+      ><a name="707"
+      > </a
+      ><a name="708" class="Keyword"
+      >public</a
+      ><a name="714"
+      >
+</a
+      ><a name="715" class="Keyword"
+      >open</a
+      ><a name="719"
+      > </a
+      ><a name="720" class="Keyword"
+      >import</a
+      ><a name="726"
+      > </a
+      ><a name="727" href="Size.html#1" class="Module"
+      >Size</a
+      ><a name="731"
+      > </a
+      ><a name="732" class="Keyword"
+      >public</a
+      ><a name="738"
+      >
+
+</a
+      ><a name="740" class="Keyword"
+      >open</a
+      ><a name="744"
+      > </a
+      ><a name="745" class="Keyword"
+      >import</a
+      ><a name="751"
+      > </a
+      ><a name="752" href="Level.html#1" class="Module"
+      >Level</a
+      ><a name="757"
+      > </a
+      ><a name="758" class="Keyword"
+      >renaming</a
+      ><a name="766"
+      > </a
+      ><a name="767" class="Symbol"
+      >(</a
+      ><a name="768" href="Agda.Primitive.html#657" class="Primitive Operator"
+      >_&#8852;_</a
+      ><a name="771"
+      > </a
+      ><a name="772" class="Symbol"
+      >to</a
+      ><a name="774"
+      > </a
+      ><a name="775" href="Agda.Primitive.html#657" class="Primitive Operator"
+      >_&#8852;Level_</a
+      ><a name="783" class="Symbol"
+      >;</a
+      ><a name="784"
+      > </a
+      ><a name="785" href="Agda.Primitive.html#627" class="Primitive"
+      >suc</a
+      ><a name="788"
+      > </a
+      ><a name="789" class="Symbol"
+      >to</a
+      ><a name="791"
+      > </a
+      ><a name="792" href="Agda.Primitive.html#627" class="Primitive"
+      >sucLevel</a
+      ><a name="800" class="Symbol"
+      >;</a
+      ><a name="801"
+      > </a
+      ><a name="802" href="Agda.Primitive.html#611" class="Primitive"
+      >zero</a
+      ><a name="806"
+      > </a
+      ><a name="807" class="Symbol"
+      >to</a
+      ><a name="809"
+      > </a
+      ><a name="810" href="Agda.Primitive.html#611" class="Primitive"
+      >zeroLevel</a
+      ><a name="819" class="Symbol"
+      >)</a
+      ><a name="820"
+      > </a
+      ><a name="821" class="Keyword"
+      >public</a
+      ><a name="827"
+      >
+
+</a
+      ><a name="829" class="Keyword"
+      >open</a
+      ><a name="833"
+      > </a
+      ><a name="834" class="Keyword"
+      >import</a
+      ><a name="840"
+      > </a
+      ><a name="841" href="Relation.Binary.Core.html#1" class="Module"
+      >Relation.Binary.Core</a
+      ><a name="861"
+      > </a
+      ><a name="862" class="Keyword"
+      >using</a
+      ><a name="867"
+      > </a
+      ><a name="868" class="Symbol"
+      >(</a
+      ><a name="869" href="Relation.Binary.Core.html#3490" class="Function"
+      >Decidable</a
+      ><a name="878" class="Symbol"
+      >)</a
+      ><a name="879"
+      > </a
+      ><a name="880" class="Keyword"
+      >public</a
+      ><a name="886"
+      >
+</a
+      ><a name="887" class="Keyword"
+      >open</a
+      ><a name="891"
+      > </a
+      ><a name="892" class="Keyword"
+      >import</a
+      ><a name="898"
+      > </a
+      ><a name="899" href="Relation.Nullary.html#1" class="Module"
+      >Relation.Nullary</a
+      ><a name="915"
+      > </a
+      ><a name="916" class="Keyword"
+      >using</a
+      ><a name="921"
+      > </a
+      ><a name="922" class="Symbol"
+      >(</a
+      ><a name="923" href="Relation.Nullary.html#484" class="Datatype"
+      >Dec</a
+      ><a name="926" class="Symbol"
+      >)</a
+      ><a name="927"
+      > </a
+      ><a name="928" class="Keyword"
+      >public</a
+      ><a name="934"
+      >
+</a
+      ><a name="935" class="Keyword"
+      >open</a
+      ><a name="939"
+      > </a
+      ><a name="940" class="Keyword"
+      >import</a
+      ><a name="946"
+      > </a
+      ><a name="947" href="Relation.Nullary.Decidable.html#1" class="Module"
+      >Relation.Nullary.Decidable</a
+      ><a name="973"
+      > </a
+      ><a name="974" class="Keyword"
+      >using</a
+      ><a name="979"
+      > </a
+      ><a name="980" class="Symbol"
+      >(</a
+      ><a name="981" href="Relation.Nullary.Decidable.html#822" class="Function Operator"
+      >&#8970;_&#8971;</a
+      ><a name="984" class="Symbol"
+      >)</a
+      ><a name="985"
+      > </a
+      ><a name="986" class="Keyword"
+      >public</a
+      ><a name="992"
+      >
+</a
+      ><a name="993" class="Comment"
+      >--</a
+      ><a name="995"
+      >
+</a
+      ><a name="996" class="Comment"
+      >-- ooAgda Imports</a
+      ><a name="1013"
+      >
+</a
+      ><a name="1014" class="Comment"
+      >--</a
+      ><a name="1016"
+      >
+
+</a
+      ><a name="1018" class="Keyword"
+      >open</a
+      ><a name="1022"
+      > </a
+      ><a name="1023" class="Keyword"
+      >import</a
+      ><a name="1029"
+      > </a
+      ><a name="1030" href="NativeIO.html#1" class="Module"
+      >NativeIO</a
+      ><a name="1038"
+      > </a
+      ><a name="1039" class="Keyword"
+      >public</a
+      ><a name="1045"
+      >
+
+
+</a
+      ><a name="1048" class="Keyword"
+      >open</a
+      ><a name="1052"
+      > </a
+      ><a name="1053" class="Keyword"
+      >import</a
+      ><a name="1059"
+      > </a
+      ><a name="1060" href="StateSizedIO.Base.html#1" class="Module"
+      >StateSizedIO.Base</a
+      ><a name="1077"
+      > </a
+      ><a name="1078" class="Keyword"
+      >hiding</a
+      ><a name="1084"
+      > </a
+      ><a name="1085" class="Symbol"
+      >(</a
+      ><a name="1086" href="StateSizedIO.Base.html#109" class="Record"
+      >IOInterface&#738;</a
+      ><a name="1098" class="Symbol"
+      >;</a
+      ><a name="1099"
+      > </a
+      ><a name="1100" href="StateSizedIO.Base.html#2091" class="Record"
+      >IO&#738;</a
+      ><a name="1103" class="Symbol"
+      >;</a
+      ><a name="1104"
+      > </a
+      ><a name="1105" href="StateSizedIO.Base.html#2252" class="Datatype"
+      >IO&#738;'</a
+      ><a name="1109" class="Symbol"
+      >;</a
+      ><a name="1110"
+      > </a
+      ><a name="1111" href="StateSizedIO.Base.html#2435" class="Datatype"
+      >IO&#738;+</a
+      ><a name="1115" class="Symbol"
+      >;</a
+      ><a name="1116"
+      > </a
+      ><a name="1117" href="StateSizedIO.Base.html#2579" class="Function"
+      >delay&#738;</a
+      ><a name="1123" class="Symbol"
+      >;</a
+      ><a name="1124"
+      > </a
+      ><a name="1125" href="StateSizedIO.Base.html#3006" class="Function"
+      >do&#738;</a
+      ><a name="1128" class="Symbol"
+      >;</a
+      ><a name="1129"
+      > </a
+      ><a name="1130" href="StateSizedIO.Base.html#3168" class="Function"
+      >fmap&#738;</a
+      ><a name="1135" class="Symbol"
+      >;</a
+      ><a name="1136"
+      > </a
+      ><a name="1137" href="StateSizedIO.Base.html#3390" class="Function"
+      >fmap&#738;'</a
+      ><a name="1143" class="Symbol"
+      >;</a
+      ><a name="1144"
+      > </a
+      ><a name="1145" href="StateSizedIO.Base.html#2865" class="Function"
+      >return&#738;</a
+      ><a name="1152" class="Symbol"
+      >)</a
+      ><a name="1153"
+      > </a
+      ><a name="1154" class="Keyword"
+      >public</a
+      ><a name="1160"
+      >
+
+
+</a
+      ><a name="1163" class="Keyword"
+      >open</a
+      ><a name="1167"
+      > </a
+      ><a name="1168" class="Keyword"
+      >import</a
+      ><a name="1174"
+      > </a
+      ><a name="1175" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1" class="Module"
+      >StateSizedIO.GUI.WxGraphicsLibLevel3</a
+      ><a name="1211"
+      > </a
+      ><a name="1212" class="Keyword"
+      >public</a
+      ><a name="1218"
+      > </a
+      ><a name="1219" class="Keyword"
+      >renaming</a
+      ><a name="1227"
+      > </a
+      ><a name="1228" class="Symbol"
+      >(</a
+      ><a name="1229" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#212" class="InductiveConstructor"
+      >createFrame</a
+      ><a name="1240"
+      > </a
+      ><a name="1241" class="Symbol"
+      >to</a
+      ><a name="1243"
+      > </a
+      ><a name="1244" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#212" class="InductiveConstructor"
+      >createWxFrame</a
+      ><a name="1257" class="Symbol"
+      >)</a
+      ><a name="1258"
+      >
+</a
+      ><a name="1259" class="Keyword"
+      >open</a
+      ><a name="1263"
+      > </a
+      ><a name="1264" class="Keyword"
+      >import</a
+      ><a name="1270"
+      > </a
+      ><a name="1271" href="StateSizedIO.GUI.WxBindingsFFI.html#1" class="Module"
+      >StateSizedIO.GUI.WxBindingsFFI</a
+      ><a name="1301"
+      >  </a
+      ><a name="1303" class="Keyword"
+      >renaming</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" class="Symbol"
+      >(</a
+      ><a name="1313" href="StateSizedIO.GUI.WxBindingsFFI.html#583" class="Postulate"
+      >Frame</a
+      ><a name="1318"
+      > </a
+      ><a name="1319" class="Symbol"
+      >to</a
+      ><a name="1321"
+      > </a
+      ><a name="1322" href="StateSizedIO.GUI.WxBindingsFFI.html#583" class="Postulate"
+      >FFIFrame</a
+      ><a name="1330" class="Symbol"
+      >;</a
+      ><a name="1331"
+      > </a
+      ><a name="1332" href="StateSizedIO.GUI.WxBindingsFFI.html#667" class="Postulate"
+      >Button</a
+      ><a name="1338"
+      > </a
+      ><a name="1339" class="Symbol"
+      >to</a
+      ><a name="1341"
+      > </a
+      ><a name="1342" href="StateSizedIO.GUI.WxBindingsFFI.html#667" class="Postulate"
+      >FFIButton</a
+      ><a name="1351" class="Symbol"
+      >;</a
+      ><a name="1352"
+      > </a
+      ><a name="1353" href="StateSizedIO.GUI.WxBindingsFFI.html#752" class="Postulate"
+      >TextCtrl</a
+      ><a name="1361"
+      > </a
+      ><a name="1362" class="Symbol"
+      >to</a
+      ><a name="1364"
+      > </a
+      ><a name="1365" href="StateSizedIO.GUI.WxBindingsFFI.html#752" class="Postulate"
+      >FFITextCtrl</a
+      ><a name="1376" class="Symbol"
+      >)</a
+      ><a name="1377"
+      > </a
+      ><a name="1378" class="Keyword"
+      >public</a
+      ><a name="1384"
+      >
+
+</a
+      ><a name="1386" class="Keyword"
+      >open</a
+      ><a name="1390"
+      > </a
+      ><a name="1391" class="Keyword"
+      >import</a
+      ><a name="1397"
+      > </a
+      ><a name="1398" href="SizedIO.Base.html#1" class="Module"
+      >SizedIO.Base</a
+      ><a name="1410"
+      > </a
+      ><a name="1411" class="Keyword"
+      >public</a
+      ><a name="1417"
+      >
+
+
+</a
+      ><a name="1420" class="Keyword"
+      >open</a
+      ><a name="1424"
+      > </a
+      ><a name="1425" class="Keyword"
+      >import</a
+      ><a name="1431"
+      > </a
+      ><a name="1432" href="StateSizedIO.GUI.BaseStateDependent.html#1" class="Module"
+      >StateSizedIO.GUI.BaseStateDependent</a
+      ><a name="1467"
+      > </a
+      ><a name="1468" class="Keyword"
+      >public</a
+      ><a name="1474"
+      >
+</a
+      ><a name="1475" class="Keyword"
+      >open</a
+      ><a name="1479"
+      > </a
+      ><a name="1480" class="Keyword"
+      >import</a
+      ><a name="1486"
+      > </a
+      ><a name="1487" href="StateSizedIO.GUI.VariableList.html#1" class="Module"
+      >StateSizedIO.GUI.VariableList</a
+      ><a name="1516"
+      > </a
+      ><a name="1517" class="Keyword"
+      >renaming</a
+      ><a name="1525"
+      > </a
+      ><a name="1526" class="Symbol"
+      >(</a
+      ><a name="1527" href="StateSizedIO.GUI.VariableList.html#220" class="InductiveConstructor"
+      >addVar</a
+      ><a name="1533"
+      > </a
+      ><a name="1534" class="Symbol"
+      >to</a
+      ><a name="1536"
+      > </a
+      ><a name="1537" href="StateSizedIO.GUI.VariableList.html#220" class="InductiveConstructor"
+      >addVar'</a
+      ><a name="1544" class="Symbol"
+      >;</a
+      ><a name="1545"
+      > </a
+      ><a name="1546" href="StateSizedIO.GUI.VariableList.html#268" class="Function"
+      >addVar'</a
+      ><a name="1553"
+      > </a
+      ><a name="1554" class="Symbol"
+      >to</a
+      ><a name="1556"
+      > </a
+      ><a name="1557" href="StateSizedIO.GUI.VariableList.html#268" class="Function"
+      >addVar</a
+      ><a name="1563" class="Symbol"
+      >)</a
+      ><a name="1564"
+      > </a
+      ><a name="1565" class="Keyword"
+      >public</a
+      ><a name="1571"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

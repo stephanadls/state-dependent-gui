@@ -1,0 +1,1808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >GUIgeneric.GUIExample</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >open</a
+      ><a name="5"
+      > </a
+      ><a name="6" class="Keyword"
+      >import</a
+      ><a name="12"
+      > </a
+      ><a name="13" href="Data.Bool.html#1" class="Module"
+      >Data.Bool</a
+      ><a name="22"
+      >
+
+</a
+      ><a name="24" class="Keyword"
+      >module</a
+      ><a name="30"
+      > </a
+      ><a name="31" href="GUIgeneric.GUIExample.html#1" class="Module"
+      >GUIgeneric.GUIExample</a
+      ><a name="52"
+      >   </a
+      ><a name="55" class="Keyword"
+      >where</a
+      ><a name="60"
+      >
+
+</a
+      ><a name="62" class="Keyword"
+      >open</a
+      ><a name="66"
+      > </a
+      ><a name="67" class="Keyword"
+      >import</a
+      ><a name="73"
+      > </a
+      ><a name="74" href="GUIgeneric.Prelude.html#1" class="Module"
+      >GUIgeneric.Prelude</a
+      ><a name="92"
+      > </a
+      ><a name="93" class="Keyword"
+      >renaming</a
+      ><a name="101"
+      > </a
+      ><a name="102" class="Symbol"
+      >(</a
+      ><a name="103" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="107"
+      > </a
+      ><a name="108" class="Symbol"
+      >to</a
+      ><a name="110"
+      > </a
+      ><a name="111" href="Data.Sum.html#489" class="InductiveConstructor"
+      >secondBtn</a
+      ><a name="120" class="Symbol"
+      >;</a
+      ><a name="121"
+      > </a
+      ><a name="122" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="126"
+      > </a
+      ><a name="127" class="Symbol"
+      >to</a
+      ><a name="129"
+      > </a
+      ><a name="130" href="Data.Sum.html#514" class="InductiveConstructor"
+      >firstBtn</a
+      ><a name="138" class="Symbol"
+      >;</a
+      ><a name="139"
+      > </a
+      ><a name="140" href="StateSizedIO.GUI.WxBindingsFFI.html#3395" class="Postulate"
+      >WxColor</a
+      ><a name="147"
+      > </a
+      ><a name="148" class="Symbol"
+      >to</a
+      ><a name="150"
+      > </a
+      ><a name="151" href="StateSizedIO.GUI.WxBindingsFFI.html#3395" class="Postulate"
+      >Color</a
+      ><a name="156" class="Symbol"
+      >)</a
+      ><a name="157"
+      > </a
+      ><a name="158" class="Keyword"
+      >hiding</a
+      ><a name="164"
+      > </a
+      ><a name="165" class="Symbol"
+      >(</a
+      ><a name="166" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton</a
+      ><a name="175" class="Symbol"
+      >;</a
+      ><a name="176"
+      > </a
+      ><a name="177" href="SizedIO.Base.html#1826" class="Function Operator"
+      >_&gt;&gt;_</a
+      ><a name="181" class="Symbol"
+      >)</a
+      ><a name="182"
+      >
+
+
+</a
+      ><a name="185" class="Keyword"
+      >open</a
+      ><a name="189"
+      > </a
+      ><a name="190" class="Keyword"
+      >import</a
+      ><a name="196"
+      > </a
+      ><a name="197" href="GUIgeneric.GUIDefinitions.html#1" class="Module"
+      >GUIgeneric.GUIDefinitions</a
+      ><a name="222"
+      > </a
+      ><a name="223" class="Keyword"
+      >renaming</a
+      ><a name="231"
+      > </a
+      ><a name="232" class="Symbol"
+      >(</a
+      ><a name="233" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add</a
+      ><a name="236"
+      > </a
+      ><a name="237" class="Symbol"
+      >to</a
+      ><a name="239"
+      > </a
+      ><a name="240" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add'</a
+      ><a name="244" class="Symbol"
+      >;</a
+      ><a name="245"
+      > </a
+      ><a name="246" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add'</a
+      ><a name="250"
+      > </a
+      ><a name="251" class="Symbol"
+      >to</a
+      ><a name="253"
+      > </a
+      ><a name="254" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add</a
+      ><a name="257" class="Symbol"
+      >)</a
+      ><a name="258"
+      >
+</a
+      ><a name="259" class="Keyword"
+      >open</a
+      ><a name="263"
+      > </a
+      ><a name="264" class="Keyword"
+      >import</a
+      ><a name="270"
+      > </a
+      ><a name="271" href="GUIgeneric.GUI.html#1" class="Module"
+      >GUIgeneric.GUI</a
+      ><a name="285"
+      >
+</a
+      ><a name="286" class="Keyword"
+      >open</a
+      ><a name="290"
+      > </a
+      ><a name="291" class="Keyword"
+      >import</a
+      ><a name="297"
+      > </a
+      ><a name="298" href="GUIgeneric.GUIExampleLib.html#1" class="Module"
+      >GUIgeneric.GUIExampleLib</a
+      ><a name="322"
+      > </a
+      ><a name="323" class="Keyword"
+      >renaming</a
+      ><a name="331"
+      > </a
+      ><a name="332" class="Symbol"
+      >(</a
+      ><a name="333" href="GUIgeneric.GUIExampleLib.html#3053" class="Function"
+      >addButton</a
+      ><a name="342"
+      > </a
+      ><a name="343" class="Symbol"
+      >to</a
+      ><a name="345"
+      > </a
+      ><a name="346" href="GUIgeneric.GUIExampleLib.html#3053" class="Function"
+      >addButton'</a
+      ><a name="356" class="Symbol"
+      >)</a
+      ><a name="357"
+      >
+
+</a
+      ><a name="359" class="Keyword"
+      >open</a
+      ><a name="363"
+      > </a
+      ><a name="364" class="Keyword"
+      >import</a
+      ><a name="370"
+      > </a
+      ><a name="371" href="Data.Product.html#1" class="Module"
+      >Data.Product</a
+      ><a name="383"
+      >
+
+</a
+      ><a name="385" href="GUIgeneric.GUIExample.html#385" class="Function"
+      >addButton</a
+      ><a name="394"
+      > </a
+      ><a name="395" class="Symbol"
+      >:</a
+      ><a name="396"
+      > </a
+      ><a name="397" href="Agda.Builtin.String.html#165" class="Postulate"
+      >String</a
+      ><a name="403"
+      > </a
+      ><a name="404" class="Symbol"
+      >&#8594;</a
+      ><a name="405"
+      > </a
+      ><a name="406" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="411"
+      > </a
+      ><a name="412" class="Symbol"
+      >&#8594;</a
+      ><a name="413"
+      > </a
+      ><a name="414" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="419"
+      >
+</a
+      ><a name="420" href="GUIgeneric.GUIExample.html#385" class="Function"
+      >addButton</a
+      ><a name="429"
+      > </a
+      ><a name="430" href="GUIgeneric.GUIExample.html#430" class="Bound"
+      >str</a
+      ><a name="433"
+      > </a
+      ><a name="434" href="GUIgeneric.GUIExample.html#434" class="Bound"
+      >fr</a
+      ><a name="436"
+      > </a
+      ><a name="437" class="Symbol"
+      >=</a
+      ><a name="438"
+      > </a
+      ><a name="439" href="GUIgeneric.GUIExampleLib.html#3053" class="Function"
+      >addButton'</a
+      ><a name="449"
+      > </a
+      ><a name="450" href="GUIgeneric.GUIExample.html#430" class="Bound"
+      >str</a
+      ><a name="453"
+      > </a
+      ><a name="454" href="GUIgeneric.GUIExample.html#434" class="Bound"
+      >fr</a
+      ><a name="456"
+      > </a
+      ><a name="457" href="GUIgeneric.GUIDefinitions.html#849" class="InductiveConstructor"
+      >optimized</a
+      ><a name="466"
+      >
+
+</a
+      ><a name="468" href="GUIgeneric.GUIExample.html#468" class="Function"
+      >addTxtBox</a
+      ><a name="477"
+      > </a
+      ><a name="478" class="Symbol"
+      >:</a
+      ><a name="479"
+      > </a
+      ><a name="480" href="Agda.Builtin.String.html#165" class="Postulate"
+      >String</a
+      ><a name="486"
+      > </a
+      ><a name="487" class="Symbol"
+      >&#8594;</a
+      ><a name="488"
+      > </a
+      ><a name="489" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="494"
+      > </a
+      ><a name="495" class="Symbol"
+      >&#8594;</a
+      ><a name="496"
+      > </a
+      ><a name="497" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="502"
+      >
+</a
+      ><a name="503" href="GUIgeneric.GUIExample.html#468" class="Function"
+      >addTxtBox</a
+      ><a name="512"
+      > </a
+      ><a name="513" href="GUIgeneric.GUIExample.html#513" class="Bound"
+      >str</a
+      ><a name="516"
+      > </a
+      ><a name="517" href="GUIgeneric.GUIExample.html#517" class="Bound"
+      >fr</a
+      ><a name="519"
+      > </a
+      ><a name="520" class="Symbol"
+      >=</a
+      ><a name="521"
+      > </a
+      ><a name="522" href="GUIgeneric.GUIExampleLib.html#3200" class="Function"
+      >addTxtBox'</a
+      ><a name="532"
+      > </a
+      ><a name="533" href="GUIgeneric.GUIExample.html#513" class="Bound"
+      >str</a
+      ><a name="536"
+      > </a
+      ><a name="537" href="GUIgeneric.GUIExample.html#517" class="Bound"
+      >fr</a
+      ><a name="539"
+      > </a
+      ><a name="540" href="GUIgeneric.GUIDefinitions.html#849" class="InductiveConstructor"
+      >optimized</a
+      ><a name="549"
+      >
+
+
+
+</a
+      ><a name="553" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="562"
+      > </a
+      ><a name="563" class="Symbol"
+      >:</a
+      ><a name="564"
+      > </a
+      ><a name="565" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="570"
+      >
+</a
+      ><a name="571" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="580"
+      > </a
+      ><a name="581" class="Symbol"
+      >=</a
+      ><a name="582"
+      > </a
+      ><a name="583" href="GUIgeneric.GUIExample.html#385" class="Function"
+      >addButton</a
+      ><a name="592"
+      > </a
+      ><a name="593" class="String"
+      >&quot;OK&quot;</a
+      ><a name="597"
+      > </a
+      ><a name="598" href="GUIgeneric.GUIDefinitions.html#5730" class="Function"
+      >create-frame</a
+      ><a name="610"
+      >
+
+</a
+      ><a name="612" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="621"
+      > </a
+      ><a name="622" class="Symbol"
+      >:</a
+      ><a name="623"
+      > </a
+      ><a name="624" href="GUIgeneric.GUI.html#105" class="Function"
+      >Frame</a
+      ><a name="629"
+      >
+</a
+      ><a name="630" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="639"
+      > </a
+      ><a name="640" class="Symbol"
+      >=</a
+      ><a name="641"
+      > </a
+      ><a name="642" href="GUIgeneric.GUIExample.html#385" class="Function"
+      >addButton</a
+      ><a name="651"
+      > </a
+      ><a name="652" class="String"
+      >&quot;Cancel&quot;</a
+      ><a name="660"
+      > </a
+      ><a name="661" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="670"
+      >
+
+
+
+</a
+      ><a name="674" class="Comment"
+      >-- Attributes</a
+      ><a name="687"
+      >
+</a
+      ><a name="688" class="Comment"
+      >--</a
+      ><a name="690"
+      >
+</a
+      ><a name="691" href="GUIgeneric.GUIExample.html#691" class="Function"
+      >Cols</a
+      ><a name="695"
+      > </a
+      ><a name="696" class="Symbol"
+      >=</a
+      ><a name="697"
+      > </a
+      ><a name="698" href="Agda.Builtin.Nat.html#97" class="Datatype"
+      >&#8469;</a
+      ><a name="699"
+      >
+</a
+      ><a name="700" href="GUIgeneric.GUIExample.html#700" class="Function"
+      >Margin</a
+      ><a name="706"
+      >  </a
+      ><a name="708" class="Symbol"
+      >=</a
+      ><a name="709"
+      > </a
+      ><a name="710" href="Agda.Builtin.Nat.html#97" class="Datatype"
+      >&#8469;</a
+      ><a name="711"
+      >
+</a
+      ><a name="712" href="GUIgeneric.GUIExample.html#712" class="Function"
+      >HSpace</a
+      ><a name="718"
+      >  </a
+      ><a name="720" class="Symbol"
+      >=</a
+      ><a name="721"
+      > </a
+      ><a name="722" href="Agda.Builtin.Nat.html#97" class="Datatype"
+      >&#8469;</a
+      ><a name="723"
+      >
+</a
+      ><a name="724" href="GUIgeneric.GUIExample.html#724" class="Function"
+      >VSpace</a
+      ><a name="730"
+      >  </a
+      ><a name="732" class="Symbol"
+      >=</a
+      ><a name="733"
+      > </a
+      ><a name="734" href="Agda.Builtin.Nat.html#97" class="Datatype"
+      >&#8469;</a
+      ><a name="735"
+      >
+
+</a
+      ><a name="737" href="GUIgeneric.GUIExample.html#737" class="Function"
+      >oneColumnLayout</a
+      ><a name="752"
+      > </a
+      ><a name="753" class="Symbol"
+      >:</a
+      ><a name="754"
+      > </a
+      ><a name="755" href="GUIgeneric.GUIExample.html#691" class="Function"
+      >Cols</a
+      ><a name="759"
+      > </a
+      ><a name="760" href="Data.Product.html#1295" class="Function Operator"
+      >&#215;</a
+      ><a name="761"
+      > </a
+      ><a name="762" href="GUIgeneric.GUIExample.html#700" class="Function"
+      >Margin</a
+      ><a name="768"
+      > </a
+      ><a name="769" href="Data.Product.html#1295" class="Function Operator"
+      >&#215;</a
+      ><a name="770"
+      > </a
+      ><a name="771" href="GUIgeneric.GUIExample.html#712" class="Function"
+      >HSpace</a
+      ><a name="777"
+      > </a
+      ><a name="778" href="Data.Product.html#1295" class="Function Operator"
+      >&#215;</a
+      ><a name="779"
+      > </a
+      ><a name="780" href="GUIgeneric.GUIExample.html#724" class="Function"
+      >VSpace</a
+      ><a name="786"
+      >
+</a
+      ><a name="787" href="GUIgeneric.GUIExample.html#737" class="Function"
+      >oneColumnLayout</a
+      ><a name="802"
+      > </a
+      ><a name="803" class="Symbol"
+      >=</a
+      ><a name="804"
+      > </a
+      ><a name="805" class="Symbol"
+      >(</a
+      ><a name="806" class="Number"
+      >1</a
+      ><a name="807"
+      > </a
+      ><a name="808" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="809"
+      > </a
+      ><a name="810" class="Number"
+      >10</a
+      ><a name="812"
+      > </a
+      ><a name="813" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="814"
+      > </a
+      ><a name="815" class="Number"
+      >2</a
+      ><a name="816"
+      > </a
+      ><a name="817" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="818"
+      > </a
+      ><a name="819" class="Number"
+      >2</a
+      ><a name="820" class="Symbol"
+      >)</a
+      ><a name="821"
+      >
+
+
+
+</a
+      ><a name="825" href="GUIgeneric.GUIExample.html#825" class="Function"
+      >black</a
+      ><a name="830"
+      > </a
+      ><a name="831" class="Symbol"
+      >:</a
+      ><a name="832"
+      > </a
+      ><a name="833" href="StateSizedIO.GUI.WxBindingsFFI.html#3395" class="Postulate"
+      >Color</a
+      ><a name="838"
+      >
+</a
+      ><a name="839" href="GUIgeneric.GUIExample.html#825" class="Function"
+      >black</a
+      ><a name="844"
+      > </a
+      ><a name="845" class="Symbol"
+      >=</a
+      ><a name="846"
+      > </a
+      ><a name="847" href="StateSizedIO.GUI.WxBindingsFFI.html#3869" class="Postulate"
+      >rgb</a
+      ><a name="850"
+      > </a
+      ><a name="851" class="Number"
+      >0</a
+      ><a name="852"
+      > </a
+      ><a name="853" class="Number"
+      >0</a
+      ><a name="854"
+      > </a
+      ><a name="855" class="Number"
+      >0</a
+      ><a name="856"
+      >
+
+</a
+      ><a name="858" href="GUIgeneric.GUIExample.html#858" class="Function"
+      >propOneBtn</a
+      ><a name="868"
+      > </a
+      ><a name="869" class="Symbol"
+      >:</a
+      ><a name="870"
+      > </a
+      ><a name="871" href="GUIgeneric.GUIDefinitions.html#6587" class="Function"
+      >properties</a
+      ><a name="881"
+      > </a
+      ><a name="882" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="891"
+      >
+</a
+      ><a name="892" href="GUIgeneric.GUIExample.html#858" class="Function"
+      >propOneBtn</a
+      ><a name="902"
+      > </a
+      ><a name="903" class="Symbol"
+      >=</a
+      ><a name="904"
+      > </a
+      ><a name="905" href="GUIgeneric.GUIExample.html#825" class="Function"
+      >black</a
+      ><a name="910"
+      > </a
+      ><a name="911" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="912"
+      > </a
+      ><a name="913" href="GUIgeneric.GUIExample.html#737" class="Function"
+      >oneColumnLayout</a
+      ><a name="928"
+      >
+
+</a
+      ><a name="930" href="GUIgeneric.GUIExample.html#930" class="Function"
+      >propTwoBtn</a
+      ><a name="940"
+      > </a
+      ><a name="941" class="Symbol"
+      >:</a
+      ><a name="942"
+      > </a
+      ><a name="943" href="GUIgeneric.GUIDefinitions.html#6587" class="Function"
+      >properties</a
+      ><a name="953"
+      > </a
+      ><a name="954" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="963"
+      >
+</a
+      ><a name="964" href="GUIgeneric.GUIExample.html#930" class="Function"
+      >propTwoBtn</a
+      ><a name="974"
+      > </a
+      ><a name="975" class="Symbol"
+      >=</a
+      ><a name="976"
+      > </a
+      ><a name="977" href="GUIgeneric.GUIExample.html#825" class="Function"
+      >black</a
+      ><a name="982"
+      > </a
+      ><a name="983" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="984"
+      > </a
+      ><a name="985" href="GUIgeneric.GUIExample.html#825" class="Function"
+      >black</a
+      ><a name="990"
+      > </a
+      ><a name="991" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="992"
+      > </a
+      ><a name="993" href="GUIgeneric.GUIExample.html#737" class="Function"
+      >oneColumnLayout</a
+      ><a name="1008"
+      >
+
+
+
+</a
+      ><a name="1012" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStr'</a
+      ><a name="1019"
+      > </a
+      ><a name="1020" class="Symbol"
+      >:</a
+      ><a name="1021"
+      > </a
+      ><a name="1022" class="Symbol"
+      >{</a
+      ><a name="1023" href="GUIgeneric.GUIExample.html#1023" class="Bound"
+      >A</a
+      ><a name="1024"
+      > </a
+      ><a name="1025" class="Symbol"
+      >:</a
+      ><a name="1026"
+      > </a
+      ><a name="1027" class="PrimitiveType"
+      >Set</a
+      ><a name="1030" class="Symbol"
+      >}</a
+      ><a name="1031"
+      > </a
+      ><a name="1032" class="Symbol"
+      >&#8594;</a
+      ><a name="1033"
+      > </a
+      ><a name="1034" href="Agda.Builtin.String.html#165" class="Postulate"
+      >String</a
+      ><a name="1040"
+      > </a
+      ><a name="1041" class="Symbol"
+      >&#8594;</a
+      ><a name="1042"
+      > </a
+      ><a name="1043" class="Symbol"
+      >(</a
+      ><a name="1044" href="GUIgeneric.GUIExample.html#1044" class="Bound"
+      >f</a
+      ><a name="1045"
+      > </a
+      ><a name="1046" class="Symbol"
+      >:</a
+      ><a name="1047"
+      > </a
+      ><a name="1048" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1050"
+      > </a
+      ><a name="1051" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1067"
+      > </a
+      ><a name="1068" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1069"
+      > </a
+      ><a name="1070" href="GUIgeneric.GUIExample.html#1023" class="Bound"
+      >A</a
+      ><a name="1071" class="Symbol"
+      >)</a
+      ><a name="1072"
+      > </a
+      ><a name="1073" class="Symbol"
+      >&#8594;</a
+      ><a name="1074"
+      >
+           </a
+      ><a name="1086" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1088"
+      > </a
+      ><a name="1089" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1105"
+      > </a
+      ><a name="1106" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1107"
+      > </a
+      ><a name="1108" href="GUIgeneric.GUIExample.html#1023" class="Bound"
+      >A</a
+      ><a name="1109"
+      >
+</a
+      ><a name="1110" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStr'</a
+      ><a name="1117"
+      > </a
+      ><a name="1118" href="GUIgeneric.GUIExample.html#1118" class="Bound"
+      >s</a
+      ><a name="1119"
+      > </a
+      ><a name="1120" href="GUIgeneric.GUIExample.html#1120" class="Bound"
+      >f</a
+      ><a name="1121"
+      > </a
+      ><a name="1122" class="Symbol"
+      >=</a
+      ><a name="1123"
+      > </a
+      ><a name="1124" href="SizedIO.Base.html#1365" class="Function"
+      >do</a
+      ><a name="1126"
+      > </a
+      ><a name="1127" class="Symbol"
+      >(</a
+      ><a name="1128" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#169" class="InductiveConstructor"
+      >putStrLn</a
+      ><a name="1136"
+      > </a
+      ><a name="1137" href="GUIgeneric.GUIExample.html#1118" class="Bound"
+      >s</a
+      ><a name="1138" class="Symbol"
+      >)</a
+      ><a name="1139"
+      > </a
+      ><a name="1140" class="Symbol"
+      >(&#955;</a
+      ><a name="1142"
+      > </a
+      ><a name="1143" href="GUIgeneric.GUIExample.html#1143" class="Bound"
+      >_</a
+      ><a name="1144"
+      > </a
+      ><a name="1145" class="Symbol"
+      >&#8594;</a
+      ><a name="1146"
+      > </a
+      ><a name="1147" href="GUIgeneric.GUIExample.html#1120" class="Bound"
+      >f</a
+      ><a name="1148" class="Symbol"
+      >)</a
+      ><a name="1149"
+      >
+
+</a
+      ><a name="1151" class="Keyword"
+      >syntax</a
+      ><a name="1157"
+      > </a
+      ><a name="1158" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStr'</a
+      ><a name="1165"
+      > s f </a
+      ><a name="1170" class="Symbol"
+      >=</a
+      ><a name="1171"
+      > putStrLn s &gt;&gt; f
+
+
+</a
+      ><a name="1190" href="GUIgeneric.GUIExample.html#1190" class="Function"
+      >keepGUI</a
+      ><a name="1197"
+      > </a
+      ><a name="1198" class="Symbol"
+      >:</a
+      ><a name="1199"
+      > </a
+      ><a name="1200" class="Symbol"
+      >{</a
+      ><a name="1201" href="GUIgeneric.GUIExample.html#1201" class="Bound"
+      >j</a
+      ><a name="1202"
+      > </a
+      ><a name="1203" class="Symbol"
+      >:</a
+      ><a name="1204"
+      > </a
+      ><a name="1205" href="Agda.Builtin.Size.html#114" class="Postulate"
+      >Size</a
+      ><a name="1209" class="Symbol"
+      >}</a
+      ><a name="1210"
+      > </a
+      ><a name="1211" class="Symbol"
+      >&#8594;</a
+      ><a name="1212"
+      > </a
+      ><a name="1213" href="GUIgeneric.GUI.html#8296" class="Function"
+      >HandlerObject</a
+      ><a name="1226"
+      > </a
+      ><a name="1227" href="GUIgeneric.GUIExample.html#1201" class="Bound"
+      >j</a
+      ><a name="1228"
+      > </a
+      ><a name="1229" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="1238"
+      > </a
+      ><a name="1239" class="Symbol"
+      >&#8594;</a
+      ><a name="1240"
+      >
+            </a
+      ><a name="1253" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1255"
+      > </a
+      ><a name="1256" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1272"
+      > </a
+      ><a name="1273" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1274"
+      >
+      </a
+      ><a name="1281" class="Symbol"
+      >(</a
+      ><a name="1282" href="Data.Product.html#706" class="Function"
+      >&#931;-syntax</a
+      ><a name="1290"
+      > </a
+      ><a name="1291" class="Symbol"
+      >(</a
+      ><a name="1292" href="GUIgeneric.GUI.html#7704" class="Datatype"
+      >returnType</a
+      ><a name="1302"
+      > </a
+      ><a name="1303" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="1312" class="Symbol"
+      >)</a
+      ><a name="1313"
+      >
+       </a
+      ><a name="1321" class="Symbol"
+      >(&#955;</a
+      ><a name="1323"
+      > </a
+      ><a name="1324" href="GUIgeneric.GUIExample.html#1324" class="Bound"
+      >r</a
+      ><a name="1325"
+      > </a
+      ><a name="1326" class="Symbol"
+      >&#8594;</a
+      ><a name="1327"
+      >
+          </a
+      ><a name="1338" href="StateSizedIO.Base.html#1268" class="Record"
+      >IOObject&#738;</a
+      ><a name="1347"
+      > </a
+      ><a name="1348" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1364"
+      > </a
+      ><a name="1365" href="GUIgeneric.GUI.html#8084" class="Function"
+      >handlerInterface</a
+      ><a name="1381"
+      > </a
+      ><a name="1382" href="GUIgeneric.GUIExample.html#1201" class="Bound"
+      >j</a
+      ><a name="1383"
+      >
+          </a
+      ><a name="1394" class="Symbol"
+      >(</a
+      ><a name="1395" href="GUIgeneric.GUI.html#7911" class="Function"
+      >nextStateFrame</a
+      ><a name="1409"
+      > </a
+      ><a name="1410" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="1419"
+      > </a
+      ><a name="1420" href="GUIgeneric.GUIExample.html#1324" class="Bound"
+      >r</a
+      ><a name="1421" class="Symbol"
+      >)))</a
+      ><a name="1424"
+      >
+</a
+      ><a name="1425" href="GUIgeneric.GUIExample.html#1190" class="Function"
+      >keepGUI</a
+      ><a name="1432"
+      > </a
+      ><a name="1433" class="Symbol"
+      >=</a
+      ><a name="1434"
+      > </a
+      ><a name="1435" class="Symbol"
+      >&#955;</a
+      ><a name="1436"
+      > </a
+      ><a name="1437" href="GUIgeneric.GUIExample.html#1437" class="Bound"
+      >obj</a
+      ><a name="1440"
+      > </a
+      ><a name="1441" class="Symbol"
+      >&#8594;</a
+      ><a name="1442"
+      > </a
+      ><a name="1443" href="SizedIO.Base.html#1290" class="Function"
+      >return</a
+      ><a name="1449"
+      > </a
+      ><a name="1450" class="Symbol"
+      >(</a
+      ><a name="1451" href="GUIgeneric.GUI.html#7743" class="InductiveConstructor"
+      >noChange</a
+      ><a name="1459"
+      > </a
+      ><a name="1460" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1461"
+      > </a
+      ><a name="1462" href="GUIgeneric.GUIExample.html#1437" class="Bound"
+      >obj</a
+      ><a name="1465" class="Symbol"
+      >)</a
+      ><a name="1466"
+      >
+
+
+</a
+      ><a name="1469" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="1478"
+      > </a
+      ><a name="1479" class="Symbol"
+      >:</a
+      ><a name="1480"
+      > </a
+      ><a name="1481" class="Symbol"
+      >&#8704;</a
+      ><a name="1482"
+      > </a
+      ><a name="1483" class="Symbol"
+      >{</a
+      ><a name="1484" href="GUIgeneric.GUIExample.html#1484" class="Bound"
+      >j</a
+      ><a name="1485" class="Symbol"
+      >}</a
+      ><a name="1486"
+      > </a
+      ><a name="1487" class="Symbol"
+      >(</a
+      ><a name="1488" href="GUIgeneric.GUIExample.html#1488" class="Bound"
+      >g</a
+      ><a name="1489"
+      > </a
+      ><a name="1490" class="Symbol"
+      >:</a
+      ><a name="1491"
+      > </a
+      ><a name="1492" href="GUIgeneric.GUIDefinitions.html#892" class="Datatype"
+      >CompEls</a
+      ><a name="1499"
+      > </a
+      ><a name="1500" href="GUIgeneric.GUIDefinitions.html#389" class="InductiveConstructor"
+      >frame</a
+      ><a name="1505" class="Symbol"
+      >)</a
+      ><a name="1506"
+      > </a
+      ><a name="1507" class="Symbol"
+      >{</a
+      ><a name="1508" href="GUIgeneric.GUIExample.html#1508" class="Bound"
+      >g'</a
+      ><a name="1510" class="Symbol"
+      >}</a
+      ><a name="1511"
+      > </a
+      ><a name="1512" class="Symbol"
+      >(</a
+      ><a name="1513" href="GUIgeneric.GUIExample.html#1513" class="Bound"
+      >prop</a
+      ><a name="1517"
+      > </a
+      ><a name="1518" class="Symbol"
+      >:</a
+      ><a name="1519"
+      > </a
+      ><a name="1520" href="GUIgeneric.GUIDefinitions.html#6587" class="Function"
+      >properties</a
+      ><a name="1530"
+      > </a
+      ><a name="1531" href="GUIgeneric.GUIExample.html#1488" class="Bound"
+      >g</a
+      ><a name="1532" class="Symbol"
+      >)</a
+      ><a name="1533"
+      > </a
+      ><a name="1534" href="GUIgeneric.GUIExample.html#1534" class="Bound"
+      >obj</a
+      ><a name="1537"
+      > </a
+      ><a name="1538" class="Symbol"
+      >&#8594;</a
+      ><a name="1539"
+      >
+              </a
+      ><a name="1554" href="SizedIO.Base.html#546" class="Record"
+      >IO</a
+      ><a name="1556"
+      > </a
+      ><a name="1557" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1573"
+      > </a
+      ><a name="1574" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="1575"
+      > </a
+      ><a name="1576" class="Symbol"
+      >(</a
+      ><a name="1577" href="Data.Product.html#439" class="Record"
+      >&#931;</a
+      ><a name="1578"
+      > </a
+      ><a name="1579" class="Symbol"
+      >(</a
+      ><a name="1580" href="GUIgeneric.GUI.html#7704" class="Datatype"
+      >returnType</a
+      ><a name="1590"
+      > </a
+      ><a name="1591" href="GUIgeneric.GUIExample.html#1508" class="Bound"
+      >g'</a
+      ><a name="1593" class="Symbol"
+      >)</a
+      ><a name="1594"
+      > </a
+      ><a name="1595" class="Symbol"
+      >(\</a
+      ><a name="1597" href="GUIgeneric.GUIExample.html#1597" class="Bound"
+      >r</a
+      ><a name="1598"
+      > </a
+      ><a name="1599" class="Symbol"
+      >-&gt;</a
+      ><a name="1601"
+      > </a
+      ><a name="1602" href="StateSizedIO.Base.html#1268" class="Record"
+      >IOObject&#738;</a
+      ><a name="1611"
+      > </a
+      ><a name="1612" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1175" class="Function"
+      >GuiLev1Interface</a
+      ><a name="1628"
+      > </a
+      ><a name="1629" href="GUIgeneric.GUI.html#8084" class="Function"
+      >handlerInterface</a
+      ><a name="1645"
+      > </a
+      ><a name="1646" href="GUIgeneric.GUIExample.html#1484" class="Bound"
+      >j</a
+      ><a name="1647"
+      > </a
+      ><a name="1648" class="Symbol"
+      >(</a
+      ><a name="1649" href="GUIgeneric.GUI.html#7911" class="Function"
+      >nextStateFrame</a
+      ><a name="1663"
+      > </a
+      ><a name="1664" href="GUIgeneric.GUIExample.html#1508" class="Bound"
+      >g'</a
+      ><a name="1666"
+      > </a
+      ><a name="1667" href="GUIgeneric.GUIExample.html#1597" class="Bound"
+      >r</a
+      ><a name="1668" class="Symbol"
+      >)))</a
+      ><a name="1671"
+      >
+</a
+      ><a name="1672" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="1681"
+      > </a
+      ><a name="1682" class="Symbol"
+      >=</a
+      ><a name="1683"
+      > </a
+      ><a name="1684" class="Symbol"
+      >&#955;</a
+      ><a name="1685"
+      > </a
+      ><a name="1686" href="GUIgeneric.GUIExample.html#1686" class="Bound"
+      >g</a
+      ><a name="1687"
+      > </a
+      ><a name="1688" href="GUIgeneric.GUIExample.html#1688" class="Bound"
+      >prop</a
+      ><a name="1692"
+      > </a
+      ><a name="1693" href="GUIgeneric.GUIExample.html#1693" class="Bound"
+      >obj</a
+      ><a name="1696"
+      > </a
+      ><a name="1697" class="Symbol"
+      >&#8594;</a
+      ><a name="1698"
+      >  </a
+      ><a name="1700" href="SizedIO.Base.html#1290" class="Function"
+      >return</a
+      ><a name="1706"
+      > </a
+      ><a name="1707" class="Symbol"
+      >(</a
+      ><a name="1708" href="GUIgeneric.GUI.html#7838" class="InductiveConstructor"
+      >changedGUI</a
+      ><a name="1718"
+      > </a
+      ><a name="1719" href="GUIgeneric.GUIExample.html#1686" class="Bound"
+      >g</a
+      ><a name="1720"
+      > </a
+      ><a name="1721" href="GUIgeneric.GUIExample.html#1688" class="Bound"
+      >prop</a
+      ><a name="1725"
+      > </a
+      ><a name="1726" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="1727"
+      > </a
+      ><a name="1728" href="GUIgeneric.GUIExample.html#1693" class="Bound"
+      >obj</a
+      ><a name="1731" class="Symbol"
+      >)</a
+      ><a name="1732"
+      >
+
+
+
+</a
+      ><a name="1736" class="Keyword"
+      >mutual</a
+      ><a name="1742"
+      >
+ </a
+      ><a name="1744" href="GUIgeneric.GUIExample.html#1744" class="Function"
+      >objTwoBtnGUI'</a
+      ><a name="1757"
+      > </a
+      ><a name="1758" class="Symbol"
+      >:</a
+      ><a name="1759"
+      > </a
+      ><a name="1760" class="Symbol"
+      >&#8704;</a
+      ><a name="1761"
+      > </a
+      ><a name="1762" href="GUIgeneric.GUIExample.html#1762" class="Bound"
+      >i</a
+      ><a name="1763"
+      > </a
+      ><a name="1764" class="Symbol"
+      >&#8594;</a
+      ><a name="1765"
+      > </a
+      ><a name="1766" href="GUIgeneric.GUI.html#8296" class="Function"
+      >HandlerObject</a
+      ><a name="1779"
+      > </a
+      ><a name="1780" href="GUIgeneric.GUIExample.html#1762" class="Bound"
+      >i</a
+      ><a name="1781"
+      > </a
+      ><a name="1782" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="1791"
+      >
+ </a
+      ><a name="1793" href="GUIgeneric.GUIExample.html#1744" class="Function"
+      >objTwoBtnGUI'</a
+      ><a name="1806"
+      > </a
+      ><a name="1807" href="GUIgeneric.GUIExample.html#1807" class="Bound"
+      >i</a
+      ><a name="1808"
+      > </a
+      ><a name="1809" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1810" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="1816"
+      > </a
+      ><a name="1817" class="Symbol"
+      >{</a
+      ><a name="1818" href="GUIgeneric.GUIExample.html#1818" class="Bound"
+      >j</a
+      ><a name="1819" class="Symbol"
+      >}</a
+      ><a name="1820"
+      > </a
+      ><a name="1821" class="Symbol"
+      >(</a
+      ><a name="1822" href="Data.Sum.html#489" class="InductiveConstructor"
+      >secondBtn</a
+      ><a name="1831"
+      > </a
+      ><a name="1832" href="GUIgeneric.GUIExample.html#1832" class="Bound"
+      >bt</a
+      ><a name="1834" class="Symbol"
+      >)</a
+      ><a name="1835"
+      > </a
+      ><a name="1836" class="Symbol"
+      >=</a
+      ><a name="1837"
+      >
+   </a
+      ><a name="1841" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="1849"
+      > </a
+      ><a name="1850" class="String"
+      >&quot;Cancel Fired! NO GUI Change.&quot;</a
+      ><a name="1880"
+      > </a
+      ><a name="1881" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="1883"
+      >
+   </a
+      ><a name="1887" href="GUIgeneric.GUIExample.html#1190" class="Function"
+      >keepGUI</a
+      ><a name="1894"
+      > </a
+      ><a name="1895" class="Symbol"
+      >(</a
+      ><a name="1896" href="GUIgeneric.GUIExample.html#1744" class="Function"
+      >objTwoBtnGUI'</a
+      ><a name="1909"
+      > </a
+      ><a name="1910" href="GUIgeneric.GUIExample.html#1818" class="Bound"
+      >j</a
+      ><a name="1911" class="Symbol"
+      >)</a
+      ><a name="1912"
+      >
+
+ </a
+      ><a name="1915" href="GUIgeneric.GUIExample.html#1744" class="Function"
+      >objTwoBtnGUI'</a
+      ><a name="1928"
+      > </a
+      ><a name="1929" href="GUIgeneric.GUIExample.html#1929" class="Bound"
+      >i</a
+      ><a name="1930"
+      > </a
+      ><a name="1931" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1932" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="1938"
+      > </a
+      ><a name="1939" class="Symbol"
+      >{</a
+      ><a name="1940" href="GUIgeneric.GUIExample.html#1940" class="Bound"
+      >j</a
+      ><a name="1941" class="Symbol"
+      >}</a
+      ><a name="1942"
+      > </a
+      ><a name="1943" class="Symbol"
+      >(</a
+      ><a name="1944" href="Data.Sum.html#514" class="InductiveConstructor"
+      >firstBtn</a
+      ><a name="1952"
+      > </a
+      ><a name="1953" href="GUIgeneric.GUIExample.html#1953" class="Bound"
+      >bt</a
+      ><a name="1955" class="Symbol"
+      >)</a
+      ><a name="1956"
+      > </a
+      ><a name="1957" class="Symbol"
+      >=</a
+      ><a name="1958"
+      >
+   </a
+      ><a name="1962" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="1970"
+      > </a
+      ><a name="1971" class="String"
+      >&quot;OK Fired! Redefining GUI.&quot;</a
+      ><a name="1998"
+      > </a
+      ><a name="1999" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="2001"
+      >
+   </a
+      ><a name="2005" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="2014"
+      > </a
+      ><a name="2015" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="2024"
+      > </a
+      ><a name="2025" href="GUIgeneric.GUIExample.html#858" class="Function"
+      >propOneBtn</a
+      ><a name="2035"
+      > </a
+      ><a name="2036" class="Symbol"
+      >(</a
+      ><a name="2037" href="GUIgeneric.GUIExample.html#2056" class="Function"
+      >objOneBtnGUI'</a
+      ><a name="2050"
+      > </a
+      ><a name="2051" href="GUIgeneric.GUIExample.html#1940" class="Bound"
+      >j</a
+      ><a name="2052" class="Symbol"
+      >)</a
+      ><a name="2053"
+      >
+
+ </a
+      ><a name="2056" href="GUIgeneric.GUIExample.html#2056" class="Function"
+      >objOneBtnGUI'</a
+      ><a name="2069"
+      > </a
+      ><a name="2070" class="Symbol"
+      >:</a
+      ><a name="2071"
+      > </a
+      ><a name="2072" class="Symbol"
+      >&#8704;</a
+      ><a name="2073"
+      > </a
+      ><a name="2074" href="GUIgeneric.GUIExample.html#2074" class="Bound"
+      >i</a
+      ><a name="2075"
+      > </a
+      ><a name="2076" class="Symbol"
+      >&#8594;</a
+      ><a name="2077"
+      > </a
+      ><a name="2078" href="GUIgeneric.GUI.html#8296" class="Function"
+      >HandlerObject</a
+      ><a name="2091"
+      > </a
+      ><a name="2092" href="GUIgeneric.GUIExample.html#2074" class="Bound"
+      >i</a
+      ><a name="2093"
+      > </a
+      ><a name="2094" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="2103"
+      >
+ </a
+      ><a name="2105" href="GUIgeneric.GUIExample.html#2056" class="Function"
+      >objOneBtnGUI'</a
+      ><a name="2118"
+      > </a
+      ><a name="2119" href="GUIgeneric.GUIExample.html#2119" class="Bound"
+      >i</a
+      ><a name="2120"
+      > </a
+      ><a name="2121" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2122" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="2128"
+      > </a
+      ><a name="2129" class="Symbol"
+      >{</a
+      ><a name="2130" href="GUIgeneric.GUIExample.html#2130" class="Bound"
+      >j</a
+      ><a name="2131" class="Symbol"
+      >}</a
+      ><a name="2132"
+      > </a
+      ><a name="2133" href="GUIgeneric.GUIExample.html#2133" class="Bound"
+      >bt</a
+      ><a name="2135"
+      > </a
+      ><a name="2136" class="Symbol"
+      >=</a
+      ><a name="2137"
+      >
+    </a
+      ><a name="2142" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="2150"
+      > </a
+      ><a name="2151" class="String"
+      >&quot;OK Fired! Redefining GUI.&quot;</a
+      ><a name="2178"
+      > </a
+      ><a name="2179" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="2181"
+      >
+    </a
+      ><a name="2186" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="2195"
+      > </a
+      ><a name="2196" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="2205"
+      > </a
+      ><a name="2206" href="GUIgeneric.GUIExample.html#930" class="Function"
+      >propTwoBtn</a
+      ><a name="2216"
+      > </a
+      ><a name="2217" class="Symbol"
+      >(</a
+      ><a name="2218" href="GUIgeneric.GUIExample.html#1744" class="Function"
+      >objTwoBtnGUI'</a
+      ><a name="2231"
+      > </a
+      ><a name="2232" href="GUIgeneric.GUIExample.html#2130" class="Bound"
+      >j</a
+      ><a name="2233" class="Symbol"
+      >)</a
+      ><a name="2234"
+      >
+
+
+ </a
+      ><a name="2238" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2245"
+      > </a
+      ><a name="2246" class="Symbol"
+      >:</a
+      ><a name="2247"
+      > </a
+      ><a name="2248" class="Symbol"
+      >&#8704;</a
+      ><a name="2249"
+      > </a
+      ><a name="2250" class="Symbol"
+      >{</a
+      ><a name="2251" href="GUIgeneric.GUIExample.html#2251" class="Bound"
+      >i</a
+      ><a name="2252" class="Symbol"
+      >}</a
+      ><a name="2253"
+      > </a
+      ><a name="2254" class="Symbol"
+      >&#8594;</a
+      ><a name="2255"
+      > </a
+      ><a name="2256" href="GUIgeneric.GUI.html#8296" class="Function"
+      >HandlerObject</a
+      ><a name="2269"
+      > </a
+      ><a name="2270" href="GUIgeneric.GUIExample.html#2251" class="Bound"
+      >i</a
+      ><a name="2271"
+      > </a
+      ><a name="2272" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="2281"
+      >
+ </a
+      ><a name="2283" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2290"
+      > </a
+      ><a name="2291" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2292" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="2298"
+      > </a
+      ><a name="2299" class="Symbol"
+      >(</a
+      ><a name="2300" href="Data.Sum.html#514" class="InductiveConstructor"
+      >firstBtn</a
+      ><a name="2308"
+      > </a
+      ><a name="2309" href="GUIgeneric.GUIExample.html#2309" class="Bound"
+      >bt</a
+      ><a name="2311" class="Symbol"
+      >)</a
+      ><a name="2312"
+      > </a
+      ><a name="2313" class="Symbol"
+      >=</a
+      ><a name="2314"
+      >
+   </a
+      ><a name="2318" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="2326"
+      > </a
+      ><a name="2327" class="String"
+      >&quot;OK fired! Redefining GUI.&quot;</a
+      ><a name="2354"
+      > </a
+      ><a name="2355" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="2357"
+      >
+   </a
+      ><a name="2361" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="2370"
+      > </a
+      ><a name="2371" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="2380"
+      > </a
+      ><a name="2381" href="GUIgeneric.GUIExample.html#858" class="Function"
+      >propOneBtn</a
+      ><a name="2391"
+      > </a
+      ><a name="2392" href="GUIgeneric.GUIExample.html#2501" class="Function"
+      >obj1Btn</a
+      ><a name="2399"
+      >
+ </a
+      ><a name="2401" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2408"
+      > </a
+      ><a name="2409" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2410" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="2416"
+      > </a
+      ><a name="2417" class="Symbol"
+      >(</a
+      ><a name="2418" href="Data.Sum.html#489" class="InductiveConstructor"
+      >secondBtn</a
+      ><a name="2427"
+      > </a
+      ><a name="2428" href="GUIgeneric.GUIExample.html#2428" class="Bound"
+      >bt</a
+      ><a name="2430" class="Symbol"
+      >)</a
+      ><a name="2431"
+      > </a
+      ><a name="2432" class="Symbol"
+      >=</a
+      ><a name="2433"
+      >
+   </a
+      ><a name="2437" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="2445"
+      > </a
+      ><a name="2446" class="String"
+      >&quot;Cancel fired! No GUI change.&quot;</a
+      ><a name="2476"
+      > </a
+      ><a name="2477" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="2479"
+      >
+   </a
+      ><a name="2483" href="GUIgeneric.GUIExample.html#1190" class="Function"
+      >keepGUI</a
+      ><a name="2490"
+      > </a
+      ><a name="2491" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2498"
+      >
+
+ </a
+      ><a name="2501" href="GUIgeneric.GUIExample.html#2501" class="Function"
+      >obj1Btn</a
+      ><a name="2508"
+      > </a
+      ><a name="2509" class="Symbol"
+      >:</a
+      ><a name="2510"
+      > </a
+      ><a name="2511" class="Symbol"
+      >&#8704;</a
+      ><a name="2512"
+      > </a
+      ><a name="2513" class="Symbol"
+      >{</a
+      ><a name="2514" href="GUIgeneric.GUIExample.html#2514" class="Bound"
+      >i</a
+      ><a name="2515" class="Symbol"
+      >}</a
+      ><a name="2516"
+      > </a
+      ><a name="2517" class="Symbol"
+      >&#8594;</a
+      ><a name="2518"
+      > </a
+      ><a name="2519" href="GUIgeneric.GUI.html#8296" class="Function"
+      >HandlerObject</a
+      ><a name="2532"
+      > </a
+      ><a name="2533" href="GUIgeneric.GUIExample.html#2514" class="Bound"
+      >i</a
+      ><a name="2534"
+      > </a
+      ><a name="2535" href="GUIgeneric.GUIExample.html#553" class="Function"
+      >oneBtnGUI</a
+      ><a name="2544"
+      >
+ </a
+      ><a name="2546" href="GUIgeneric.GUIExample.html#2501" class="Function"
+      >obj1Btn</a
+      ><a name="2553"
+      > </a
+      ><a name="2554" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2555" href="StateSizedIO.Base.html#1346" class="DottedPattern Field"
+      >method</a
+      ><a name="2561"
+      > </a
+      ><a name="2562" href="GUIgeneric.GUIExample.html#2562" class="Bound"
+      >bt</a
+      ><a name="2564"
+      > </a
+      ><a name="2565" class="Symbol"
+      >=</a
+      ><a name="2566"
+      >
+    </a
+      ><a name="2571" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >putStrLn</a
+      ><a name="2579"
+      > </a
+      ><a name="2580" class="String"
+      >&quot;OK fired! Redefining GUI.&quot;</a
+      ><a name="2607"
+      > </a
+      ><a name="2608" href="GUIgeneric.GUIExample.html#1012" class="Function"
+      >&gt;&gt;</a
+      ><a name="2610"
+      >
+    </a
+      ><a name="2615" href="GUIgeneric.GUIExample.html#1469" class="Function"
+      >changeGUI</a
+      ><a name="2624"
+      > </a
+      ><a name="2625" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="2634"
+      > </a
+      ><a name="2635" href="GUIgeneric.GUIExample.html#930" class="Function"
+      >propTwoBtn</a
+      ><a name="2645"
+      > </a
+      ><a name="2646" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2653"
+      >
+
+
+</a
+      ><a name="2656" href="GUIgeneric.GUIExample.html#2656" class="Function"
+      >main</a
+      ><a name="2660"
+      > </a
+      ><a name="2661" class="Symbol"
+      >:</a
+      ><a name="2662"
+      > </a
+      ><a name="2663" href="NativeIO.html#260" class="Postulate"
+      >NativeIO</a
+      ><a name="2671"
+      > </a
+      ><a name="2672" href="Unit.html#28" class="Record"
+      >Unit</a
+      ><a name="2676"
+      >
+</a
+      ><a name="2677" href="GUIgeneric.GUIExample.html#2656" class="Function"
+      >main</a
+      ><a name="2681"
+      > </a
+      ><a name="2682" class="Symbol"
+      >=</a
+      ><a name="2683"
+      > </a
+      ><a name="2684" href="GUIgeneric.GUIExampleLib.html#2831" class="Function"
+      >compileProgram</a
+      ><a name="2698"
+      >  </a
+      ><a name="2700" href="GUIgeneric.GUIExample.html#612" class="Function"
+      >twoBtnGUI</a
+      ><a name="2709"
+      > </a
+      ><a name="2710" href="GUIgeneric.GUIExample.html#930" class="Function"
+      >propTwoBtn</a
+      ><a name="2720"
+      >
+                       </a
+      ><a name="2744" class="Symbol"
+      >(</a
+      ><a name="2745" href="GUIgeneric.GUIExample.html#2238" class="Function"
+      >obj2Btn</a
+      ><a name="2752"
+      > </a
+      ><a name="2753" class="Symbol"
+      >{</a
+      ><a name="2754" href="Agda.Builtin.Size.html#210" class="Postulate"
+      >&#8734;</a
+      ><a name="2755" class="Symbol"
+      >})</a
+      ><a name="2757"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

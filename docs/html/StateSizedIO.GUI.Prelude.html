@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >StateSizedIO.GUI.Prelude</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Comment"
+      >--{-# OPTIONS --allow-unsolved-metas #-}</a
+      ><a name="41"
+      >
+
+</a
+      ><a name="43" class="Keyword"
+      >module</a
+      ><a name="49"
+      > </a
+      ><a name="50" href="StateSizedIO.GUI.Prelude.html#1" class="Module"
+      >StateSizedIO.GUI.Prelude</a
+      ><a name="74"
+      > </a
+      ><a name="75" class="Keyword"
+      >where</a
+      ><a name="80"
+      >
+
+</a
+      ><a name="82" class="Keyword"
+      >open</a
+      ><a name="86"
+      > </a
+      ><a name="87" class="Keyword"
+      >import</a
+      ><a name="93"
+      > </a
+      ><a name="94" href="Size.html#1" class="Module"
+      >Size</a
+      ><a name="98"
+      > </a
+      ><a name="99" class="Keyword"
+      >public</a
+      ><a name="105"
+      > </a
+      ><a name="106" class="Keyword"
+      >renaming</a
+      ><a name="114"
+      > </a
+      ><a name="115" class="Symbol"
+      >(</a
+      ><a name="116" href="Agda.Builtin.Size.html#114" class="Postulate"
+      >Size</a
+      ><a name="120"
+      > </a
+      ><a name="121" class="Symbol"
+      >to</a
+      ><a name="123"
+      > </a
+      ><a name="124" href="Agda.Builtin.Size.html#114" class="Postulate"
+      >AgdaSize</a
+      ><a name="132" class="Symbol"
+      >)</a
+      ><a name="133"
+      >
+
+</a
+      ><a name="135" class="Keyword"
+      >open</a
+      ><a name="139"
+      > </a
+      ><a name="140" class="Keyword"
+      >import</a
+      ><a name="146"
+      > </a
+      ><a name="147" href="Data.Nat.Base.html#1" class="Module"
+      >Data.Nat.Base</a
+      ><a name="160"
+      > </a
+      ><a name="161" class="Keyword"
+      >public</a
+      ><a name="167"
+      >
+</a
+      ><a name="168" class="Keyword"
+      >open</a
+      ><a name="172"
+      > </a
+      ><a name="173" class="Keyword"
+      >import</a
+      ><a name="179"
+      > </a
+      ><a name="180" href="Data.Bool.Base.html#1" class="Module"
+      >Data.Bool.Base</a
+      ><a name="194"
+      > </a
+      ><a name="195" class="Keyword"
+      >hiding</a
+      ><a name="201"
+      > </a
+      ><a name="202" class="Symbol"
+      >(</a
+      ><a name="203" href="Data.Bool.Base.html#1216" class="Function Operator"
+      >_&#8799;_</a
+      ><a name="206" class="Symbol"
+      >)</a
+      ><a name="207"
+      > </a
+      ><a name="208" class="Keyword"
+      >public</a
+      ><a name="214"
+      >
+</a
+      ><a name="215" class="Keyword"
+      >open</a
+      ><a name="219"
+      > </a
+      ><a name="220" class="Keyword"
+      >import</a
+      ><a name="226"
+      > </a
+      ><a name="227" href="Data.List.Base.html#1" class="Module"
+      >Data.List.Base</a
+      ><a name="241"
+      > </a
+      ><a name="242" class="Keyword"
+      >public</a
+      ><a name="248"
+      >
+
+</a
+      ><a name="250" class="Keyword"
+      >open</a
+      ><a name="254"
+      > </a
+      ><a name="255" class="Keyword"
+      >import</a
+      ><a name="261"
+      > </a
+      ><a name="262" href="Function.html#1" class="Module"
+      >Function</a
+      ><a name="270"
+      > </a
+      ><a name="271" class="Keyword"
+      >public</a
+      ><a name="277"
+      >
+</a
+      ><a name="278" class="Keyword"
+      >open</a
+      ><a name="282"
+      > </a
+      ><a name="283" class="Keyword"
+      >import</a
+      ><a name="289"
+      > </a
+      ><a name="290" href="Data.Integer.Base.html#1" class="Module"
+      >Data.Integer.Base</a
+      ><a name="307"
+      > </a
+      ><a name="308" class="Keyword"
+      >public</a
+      ><a name="314"
+      > </a
+      ><a name="315" class="Keyword"
+      >hiding</a
+      ><a name="321"
+      > </a
+      ><a name="322" class="Symbol"
+      >(</a
+      ><a name="323" href="Data.Integer.Base.html#2671" class="Function Operator"
+      >_*_</a
+      ><a name="326" class="Symbol"
+      >;</a
+      ><a name="327"
+      > </a
+      ><a name="328" href="Data.Integer.Base.html#2025" class="Function Operator"
+      >_+_</a
+      ><a name="331" class="Symbol"
+      >;</a
+      ><a name="332"
+      > </a
+      ><a name="333" href="Data.Integer.Base.html#2204" class="Function Operator"
+      >_-_</a
+      ><a name="336" class="Symbol"
+      >;</a
+      ><a name="337"
+      > </a
+      ><a name="338" href="Data.Integer.Base.html#2900" class="Function Operator"
+      >_&#8851;_</a
+      ><a name="341" class="Symbol"
+      >;</a
+      ><a name="342"
+      > </a
+      ><a name="343" href="Data.Integer.Base.html#2743" class="Function Operator"
+      >_&#8852;_</a
+      ><a name="346" class="Symbol"
+      >;</a
+      ><a name="347"
+      > </a
+      ><a name="348" href="Data.Integer.Base.html#2455" class="Function"
+      >pred</a
+      ><a name="352" class="Symbol"
+      >;</a
+      ><a name="353"
+      > </a
+      ><a name="354" href="Data.Integer.Base.html#2252" class="Function"
+      >suc</a
+      ><a name="357" class="Symbol"
+      >;</a
+      ><a name="358" href="Data.Integer.Base.html#3145" class="Datatype Operator"
+      >_&#8804;_</a
+      ><a name="361" class="Symbol"
+      >)</a
+      ><a name="362"
+      >
+</a
+      ><a name="363" class="Keyword"
+      >open</a
+      ><a name="367"
+      > </a
+      ><a name="368" class="Keyword"
+      >import</a
+      ><a name="374"
+      > </a
+      ><a name="375" href="Agda.Builtin.Equality.html#1" class="Module"
+      >Agda.Builtin.Equality</a
+      ><a name="396"
+      > </a
+      ><a name="397" class="Keyword"
+      >public</a
+      ><a name="403"
+      >
+</a
+      ><a name="404" class="Keyword"
+      >open</a
+      ><a name="408"
+      > </a
+      ><a name="409" class="Keyword"
+      >import</a
+      ><a name="415"
+      > </a
+      ><a name="416" href="Data.Product.html#1" class="Module"
+      >Data.Product</a
+      ><a name="428"
+      > </a
+      ><a name="429" class="Keyword"
+      >public</a
+      ><a name="435"
+      > </a
+      ><a name="436" class="Keyword"
+      >using</a
+      ><a name="441"
+      > </a
+      ><a name="442" class="Symbol"
+      >(</a
+      ><a name="443" href="Data.Product.html#1295" class="Function Operator"
+      >_&#215;_</a
+      ><a name="446" class="Symbol"
+      >;</a
+      ><a name="447"
+      > </a
+      ><a name="448" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >_,_</a
+      ><a name="451" class="Symbol"
+      >)</a
+      ><a name="452"
+      >
+
+</a
+      ><a name="454" class="Keyword"
+      >open</a
+      ><a name="458"
+      > </a
+      ><a name="459" class="Keyword"
+      >import</a
+      ><a name="465"
+      > </a
+      ><a name="466" href="NativeIO.html#1" class="Module"
+      >NativeIO</a
+      ><a name="474"
+      > </a
+      ><a name="475" class="Keyword"
+      >public</a
+      ><a name="481"
+      >
+
+</a
+      ><a name="483" class="Keyword"
+      >open</a
+      ><a name="487"
+      > </a
+      ><a name="488" class="Keyword"
+      >import</a
+      ><a name="494"
+      > </a
+      ><a name="495" href="StateSizedIO.GUI.WxBindingsFFI.html#1" class="Module"
+      >StateSizedIO.GUI.WxBindingsFFI</a
+      ><a name="525"
+      > </a
+      ><a name="526" class="Keyword"
+      >public</a
+      ><a name="532"
+      >
+</a
+      ><a name="533" class="Keyword"
+      >open</a
+      ><a name="537"
+      > </a
+      ><a name="538" class="Keyword"
+      >import</a
+      ><a name="544"
+      > </a
+      ><a name="545" href="StateSizedIO.GUI.VariableList.html#1" class="Module"
+      >StateSizedIO.GUI.VariableList</a
+      ><a name="574"
+      > </a
+      ><a name="575" class="Keyword"
+      >public</a
+      ><a name="581"
+      >
+
+</a
+      ><a name="583" class="Keyword"
+      >open</a
+      ><a name="587"
+      > </a
+      ><a name="588" class="Keyword"
+      >import</a
+      ><a name="594"
+      > </a
+      ><a name="595" href="SizedIO.Base.html#1" class="Module"
+      >SizedIO.Base</a
+      ><a name="607"
+      > </a
+      ><a name="608" class="Keyword"
+      >public</a
+      ><a name="614"
+      >
+</a
+      ><a name="615" class="Keyword"
+      >open</a
+      ><a name="619"
+      > </a
+      ><a name="620" class="Keyword"
+      >import</a
+      ><a name="626"
+      > </a
+      ><a name="627" href="StateSizedIO.GUI.BaseStateDependent.html#1" class="Module"
+      >StateSizedIO.GUI.BaseStateDependent</a
+      ><a name="662"
+      > </a
+      ><a name="663" class="Keyword"
+      >public</a
+      ><a name="669"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>

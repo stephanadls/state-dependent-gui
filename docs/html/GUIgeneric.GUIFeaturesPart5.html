@@ -1,0 +1,2535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >GUIgeneric.GUIFeaturesPart5</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Comment"
+      >-- {-# OPTIONS --allow-unsolved-metas #-}</a
+      ><a name="42"
+      >
+</a
+      ><a name="43" class="Keyword"
+      >module</a
+      ><a name="49"
+      > </a
+      ><a name="50" href="GUIgeneric.GUIFeaturesPart5.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart5</a
+      ><a name="77"
+      > </a
+      ><a name="78" class="Keyword"
+      >where</a
+      ><a name="83"
+      >
+
+</a
+      ><a name="85" class="Keyword"
+      >open</a
+      ><a name="89"
+      > </a
+      ><a name="90" class="Keyword"
+      >import</a
+      ><a name="96"
+      > </a
+      ><a name="97" href="GUIgeneric.Prelude.html#1" class="Module"
+      >GUIgeneric.Prelude</a
+      ><a name="115"
+      > </a
+      ><a name="116" class="Keyword"
+      >renaming</a
+      ><a name="124"
+      > </a
+      ><a name="125" class="Symbol"
+      >(</a
+      ><a name="126" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton</a
+      ><a name="135"
+      > </a
+      ><a name="136" class="Symbol"
+      >to</a
+      ><a name="138"
+      > </a
+      ><a name="139" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton'</a
+      ><a name="149" class="Symbol"
+      >)</a
+      ><a name="150"
+      >
+
+</a
+      ><a name="152" class="Keyword"
+      >open</a
+      ><a name="156"
+      > </a
+      ><a name="157" class="Keyword"
+      >import</a
+      ><a name="163"
+      > </a
+      ><a name="164" href="GUIgeneric.GUIDefinitions.html#1" class="Module"
+      >GUIgeneric.GUIDefinitions</a
+      ><a name="189"
+      > </a
+      ><a name="190" class="Keyword"
+      >renaming</a
+      ><a name="198"
+      > </a
+      ><a name="199" class="Symbol"
+      >(</a
+      ><a name="200" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add</a
+      ><a name="203"
+      > </a
+      ><a name="204" class="Symbol"
+      >to</a
+      ><a name="206"
+      > </a
+      ><a name="207" href="GUIgeneric.GUIDefinitions.html#969" class="InductiveConstructor"
+      >add'</a
+      ><a name="211" class="Symbol"
+      >;</a
+      ><a name="212"
+      > </a
+      ><a name="213" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add'</a
+      ><a name="217"
+      > </a
+      ><a name="218" class="Symbol"
+      >to</a
+      ><a name="220"
+      > </a
+      ><a name="221" href="GUIgeneric.GUIDefinitions.html#6285" class="Function"
+      >add</a
+      ><a name="224" class="Symbol"
+      >)</a
+      ><a name="225"
+      >
+</a
+      ><a name="226" class="Keyword"
+      >open</a
+      ><a name="230"
+      > </a
+      ><a name="231" class="Keyword"
+      >import</a
+      ><a name="237"
+      > </a
+      ><a name="238" href="GUIgeneric.GUI.html#1" class="Module"
+      >GUIgeneric.GUI</a
+      ><a name="252"
+      >
+</a
+      ><a name="253" class="Keyword"
+      >open</a
+      ><a name="257"
+      > </a
+      ><a name="258" class="Keyword"
+      >import</a
+      ><a name="264"
+      > </a
+      ><a name="265" href="GUIgeneric.GUIExampleLib.html#1" class="Module"
+      >GUIgeneric.GUIExampleLib</a
+      ><a name="289"
+      >
+</a
+      ><a name="290" class="Keyword"
+      >open</a
+      ><a name="294"
+      > </a
+      ><a name="295" class="Keyword"
+      >import</a
+      ><a name="301"
+      > </a
+      ><a name="302" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#1" class="Module"
+      >StateSizedIO.GUI.WxGraphicsLibLevel3</a
+      ><a name="338"
+      > </a
+      ><a name="339" class="Keyword"
+      >renaming</a
+      ><a name="347"
+      > </a
+      ><a name="348" class="Symbol"
+      >(</a
+      ><a name="349" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton</a
+      ><a name="358"
+      > </a
+      ><a name="359" class="Symbol"
+      >to</a
+      ><a name="361"
+      > </a
+      ><a name="362" href="StateSizedIO.GUI.WxGraphicsLibLevel3.html#244" class="InductiveConstructor"
+      >addButton'</a
+      ><a name="372" class="Symbol"
+      >)</a
+      ><a name="373"
+      >
+</a
+      ><a name="374" class="Keyword"
+      >open</a
+      ><a name="378"
+      > </a
+      ><a name="379" class="Keyword"
+      >import</a
+      ><a name="385"
+      > </a
+      ><a name="386" href="GUIgeneric.GUIFeatures.html#1" class="Module"
+      >GUIgeneric.GUIFeatures</a
+      ><a name="408"
+      >
+</a
+      ><a name="409" class="Keyword"
+      >open</a
+      ><a name="413"
+      > </a
+      ><a name="414" class="Keyword"
+      >import</a
+      ><a name="420"
+      > </a
+      ><a name="421" href="GUIgeneric.GUIFeaturesPart2.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart2</a
+      ><a name="448"
+      > </a
+      ><a name="449" class="Keyword"
+      >hiding</a
+      ><a name="455"
+      > </a
+      ><a name="456" class="Symbol"
+      >(</a
+      ><a name="457"
+      > </a
+      ><a name="458" href="GUIgeneric.GUIFeaturesPart2.html#10110" class="Function"
+      >main</a
+      ><a name="462"
+      > </a
+      ><a name="463" class="Symbol"
+      >;</a
+      ><a name="464"
+      > </a
+      ><a name="465" href="GUIgeneric.GUIFeaturesPart2.html#10040" class="Function"
+      >main1</a
+      ><a name="470"
+      > </a
+      ><a name="471" class="Symbol"
+      >)</a
+      ><a name="472"
+      >
+</a
+      ><a name="473" class="Keyword"
+      >open</a
+      ><a name="477"
+      > </a
+      ><a name="478" class="Keyword"
+      >import</a
+      ><a name="484"
+      > </a
+      ><a name="485" href="GUIgeneric.GUIFeaturesPart3.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart3</a
+      ><a name="512"
+      > </a
+      ><a name="513" class="Keyword"
+      >hiding</a
+      ><a name="519"
+      > </a
+      ><a name="520" class="Symbol"
+      >(</a
+      ><a name="521"
+      > </a
+      ><a name="522" href="GUIgeneric.GUIFeaturesPart3.html#3989" class="Function"
+      >main</a
+      ><a name="526"
+      > </a
+      ><a name="527" class="Symbol"
+      >;</a
+      ><a name="528"
+      > </a
+      ><a name="529" href="GUIgeneric.GUIFeaturesPart3.html#3330" class="Function"
+      >Tea</a
+      ><a name="532"
+      > </a
+      ><a name="533" class="Symbol"
+      >;</a
+      ><a name="534"
+      > </a
+      ><a name="535" href="GUIgeneric.GUIFeaturesPart3.html#2761" class="Function"
+      >Cancel</a
+      ><a name="541" class="Symbol"
+      >)</a
+      ><a name="542"
+      >
+</a
+      ><a name="543" class="Keyword"
+      >open</a
+      ><a name="547"
+      > </a
+      ><a name="548" class="Keyword"
+      >import</a
+      ><a name="554"
+      > </a
+      ><a name="555" href="GUIgeneric.GUIFeaturesPart4.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart4</a
+      ><a name="582"
+      > </a
+      ><a name="583" class="Keyword"
+      >hiding</a
+      ><a name="589"
+      > </a
+      ><a name="590" class="Symbol"
+      >(</a
+      ><a name="591"
+      > </a
+      ><a name="592" href="GUIgeneric.GUIFeaturesPart4.html#3391" class="Function"
+      >main</a
+      ><a name="596"
+      > </a
+      ><a name="597" class="Symbol"
+      >;</a
+      ><a name="598"
+      > </a
+      ><a name="599" href="GUIgeneric.GUIFeaturesPart4.html#2347" class="Function"
+      >cancelNewStateSM</a
+      ><a name="615"
+      > </a
+      ><a name="616" class="Symbol"
+      >;</a
+      ><a name="617"
+      > </a
+      ><a name="618" href="GUIgeneric.GUIFeaturesPart4.html#2580" class="Function"
+      >cancelStateAdded</a
+      ><a name="634"
+      > </a
+      ><a name="635" class="Symbol"
+      >;</a
+      ><a name="636"
+      > </a
+      ><a name="637" href="GUIgeneric.GUIFeaturesPart4.html#2766" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="655"
+      >  </a
+      ><a name="657" class="Symbol"
+      >)</a
+      ><a name="658"
+      >
+</a
+      ><a name="659" class="Keyword"
+      >open</a
+      ><a name="663"
+      > </a
+      ><a name="664" class="Keyword"
+      >import</a
+      ><a name="670"
+      > </a
+      ><a name="671" href="GUIgeneric.GUIExample.html#1" class="Module"
+      >GUIgeneric.GUIExample</a
+      ><a name="692"
+      > </a
+      ><a name="693" class="Keyword"
+      >hiding</a
+      ><a name="699"
+      > </a
+      ><a name="700" class="Symbol"
+      >(</a
+      ><a name="701" href="GUIgeneric.GUIExample.html#2656" class="Function"
+      >main</a
+      ><a name="705"
+      > </a
+      ><a name="706" class="Symbol"
+      >)</a
+      ><a name="707"
+      >
+
+
+
+</a
+      ><a name="711" class="Keyword"
+      >data</a
+      ><a name="715"
+      > </a
+      ><a name="716" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="729"
+      > </a
+      ><a name="730" class="Symbol"
+      >:</a
+      ><a name="731"
+      > </a
+      ><a name="732" class="PrimitiveType"
+      >Set</a
+      ><a name="735"
+      > </a
+      ><a name="736" class="Keyword"
+      >where</a
+      ><a name="741"
+      >
+  </a
+      ><a name="744" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="747"
+      > </a
+      ><a name="748" href="GUIgeneric.GUIFeaturesPart5.html#748" class="InductiveConstructor"
+      >change</a
+      ><a name="754"
+      > </a
+      ><a name="755" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="759"
+      > </a
+      ><a name="760" href="GUIgeneric.GUIFeaturesPart5.html#760" class="InductiveConstructor"
+      >serveSoda</a
+      ><a name="769"
+      >  </a
+      ><a name="771" href="GUIgeneric.GUIFeaturesPart5.html#771" class="InductiveConstructor"
+      >open'</a
+      ><a name="776"
+      > </a
+      ><a name="777" href="GUIgeneric.GUIFeaturesPart5.html#777" class="InductiveConstructor"
+      >close</a
+      ><a name="782"
+      > </a
+      ><a name="783" class="Symbol"
+      >:</a
+      ><a name="784"
+      > </a
+      ><a name="785" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="798"
+      >
+
+</a
+      ><a name="800" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="807"
+      > </a
+      ><a name="808" class="Symbol"
+      >:</a
+      ><a name="809"
+      > </a
+      ><a name="810" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="818"
+      > </a
+      ><a name="819" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="832"
+      >
+</a
+      ><a name="833" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="840"
+      >  </a
+      ><a name="842" class="DottedPattern Symbol"
+      >.</a
+      ><a name="843" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="851"
+      > </a
+      ><a name="852" class="Symbol"
+      >=</a
+      ><a name="853"
+      > </a
+      ><a name="854" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="855"
+      >
+</a
+      ><a name="856" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="863"
+      >  </a
+      ><a name="865" class="DottedPattern Symbol"
+      >.</a
+      ><a name="866" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="875"
+      > </a
+      ><a name="876" class="Symbol"
+      >=</a
+      ><a name="877"
+      > </a
+      ><a name="878" href="Data.Empty.html#243" class="Datatype"
+      >&#8869;</a
+      ><a name="879"
+      >
+</a
+      ><a name="880" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="887"
+      >  </a
+      ><a name="889" class="DottedPattern Symbol"
+      >.</a
+      ><a name="890" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="894"
+      > </a
+      ><a name="895" href="GUIgeneric.GUIFeaturesPart5.html#895" class="Bound"
+      >f</a
+      ><a name="896"
+      > </a
+      ><a name="897" class="Symbol"
+      >(</a
+      ><a name="898" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="902"
+      > </a
+      ><a name="903" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="906" class="Symbol"
+      >)</a
+      ><a name="907"
+      >        </a
+      ><a name="915" class="Symbol"
+      >=</a
+      ><a name="916"
+      >
+         </a
+      ><a name="926" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="939"
+      > </a
+      ><a name="940" class="String"
+      >&quot;Pay&quot;</a
+      ><a name="945"
+      > </a
+      ><a name="946" class="Symbol"
+      >(</a
+      ><a name="947" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="951"
+      > </a
+      ><a name="952" href="GUIgeneric.GUIFeaturesPart5.html#748" class="InductiveConstructor"
+      >change</a
+      ><a name="958" class="Symbol"
+      >)</a
+      ><a name="959"
+      >
+</a
+      ><a name="960" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="967"
+      >  </a
+      ><a name="969" class="DottedPattern Symbol"
+      >.</a
+      ><a name="970" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="974"
+      > </a
+      ><a name="975" href="GUIgeneric.GUIFeaturesPart5.html#975" class="Bound"
+      >f</a
+      ><a name="976"
+      > </a
+      ><a name="977" class="Symbol"
+      >(</a
+      ><a name="978" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="982"
+      > </a
+      ><a name="983" href="GUIgeneric.GUIFeaturesPart5.html#748" class="InductiveConstructor"
+      >change</a
+      ><a name="989" class="Symbol"
+      >)</a
+      ><a name="990"
+      >     </a
+      ><a name="995" class="Symbol"
+      >=</a
+      ><a name="996"
+      >
+         </a
+      ><a name="1006" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1019"
+      > </a
+      ><a name="1020" class="String"
+      >&quot;Get Change&quot;</a
+      ><a name="1032"
+      > </a
+      ><a name="1033" class="Symbol"
+      >(</a
+      ><a name="1034" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1038"
+      > </a
+      ><a name="1039" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="1043" class="Symbol"
+      >)</a
+      ><a name="1044"
+      >
+</a
+      ><a name="1045" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="1052"
+      >  </a
+      ><a name="1054" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1055" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="1059"
+      > </a
+      ><a name="1060" href="GUIgeneric.GUIFeaturesPart5.html#1060" class="Bound"
+      >f</a
+      ><a name="1061"
+      > </a
+      ><a name="1062" class="Symbol"
+      >(</a
+      ><a name="1063" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1067"
+      > </a
+      ><a name="1068" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="1072" class="Symbol"
+      >)</a
+      ><a name="1073"
+      >       </a
+      ><a name="1080" class="Symbol"
+      >=</a
+      ><a name="1081"
+      >
+         </a
+      ><a name="1091" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1104"
+      > </a
+      ><a name="1105" class="String"
+      >&quot;Soda&quot;</a
+      ><a name="1111"
+      > </a
+      ><a name="1112" class="Symbol"
+      >(</a
+      ><a name="1113" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1117"
+      > </a
+      ><a name="1118" href="GUIgeneric.GUIFeaturesPart5.html#760" class="InductiveConstructor"
+      >serveSoda</a
+      ><a name="1127" class="Symbol"
+      >)</a
+      ><a name="1128"
+      >
+</a
+      ><a name="1129" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="1136"
+      >  </a
+      ><a name="1138" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1139" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="1143"
+      > </a
+      ><a name="1144" href="GUIgeneric.GUIFeaturesPart5.html#1144" class="Bound"
+      >f</a
+      ><a name="1145"
+      > </a
+      ><a name="1146" class="Symbol"
+      >(</a
+      ><a name="1147" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1151"
+      > </a
+      ><a name="1152" href="GUIgeneric.GUIFeaturesPart5.html#760" class="InductiveConstructor"
+      >serveSoda</a
+      ><a name="1161" class="Symbol"
+      >)</a
+      ><a name="1162"
+      >  </a
+      ><a name="1164" class="Symbol"
+      >=</a
+      ><a name="1165"
+      >
+         </a
+      ><a name="1175" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1188"
+      > </a
+      ><a name="1189" class="String"
+      >&quot;Serve Soda&quot;</a
+      ><a name="1201"
+      > </a
+      ><a name="1202" class="Symbol"
+      >(</a
+      ><a name="1203" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1207"
+      > </a
+      ><a name="1208" href="GUIgeneric.GUIFeaturesPart5.html#771" class="InductiveConstructor"
+      >open'</a
+      ><a name="1213" class="Symbol"
+      >)</a
+      ><a name="1214"
+      >
+</a
+      ><a name="1215" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="1222"
+      >  </a
+      ><a name="1224" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1225" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="1229"
+      > </a
+      ><a name="1230" href="GUIgeneric.GUIFeaturesPart5.html#1230" class="Bound"
+      >f</a
+      ><a name="1231"
+      > </a
+      ><a name="1232" class="Symbol"
+      >(</a
+      ><a name="1233" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1237"
+      > </a
+      ><a name="1238" href="GUIgeneric.GUIFeaturesPart5.html#771" class="InductiveConstructor"
+      >open'</a
+      ><a name="1243" class="Symbol"
+      >)</a
+      ><a name="1244"
+      >      </a
+      ><a name="1250" class="Symbol"
+      >=</a
+      ><a name="1251"
+      >
+         </a
+      ><a name="1261" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1274"
+      > </a
+      ><a name="1275" class="String"
+      >&quot;Open&quot;</a
+      ><a name="1281"
+      > </a
+      ><a name="1282" class="Symbol"
+      >(</a
+      ><a name="1283" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1287"
+      > </a
+      ><a name="1288" href="GUIgeneric.GUIFeaturesPart5.html#777" class="InductiveConstructor"
+      >close</a
+      ><a name="1293" class="Symbol"
+      >)</a
+      ><a name="1294"
+      >
+</a
+      ><a name="1295" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="1302"
+      >  </a
+      ><a name="1304" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1305" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="1309"
+      > </a
+      ><a name="1310" href="GUIgeneric.GUIFeaturesPart5.html#1310" class="Bound"
+      >f</a
+      ><a name="1311"
+      > </a
+      ><a name="1312" class="Symbol"
+      >(</a
+      ><a name="1313" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1317"
+      > </a
+      ><a name="1318" href="GUIgeneric.GUIFeaturesPart5.html#777" class="InductiveConstructor"
+      >close</a
+      ><a name="1323" class="Symbol"
+      >)</a
+      ><a name="1324"
+      >      </a
+      ><a name="1330" class="Symbol"
+      >=</a
+      ><a name="1331"
+      >
+         </a
+      ><a name="1341" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1354"
+      > </a
+      ><a name="1355" class="String"
+      >&quot;Close&quot;</a
+      ><a name="1362"
+      > </a
+      ><a name="1363" class="Symbol"
+      >(</a
+      ><a name="1364" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1368"
+      > </a
+      ><a name="1369" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="1372" class="Symbol"
+      >)</a
+      ><a name="1373"
+      > 
+</a
+      ><a name="1375" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="1382"
+      >  </a
+      ><a name="1384" class="DottedPattern Symbol"
+      >.</a
+      ><a name="1385" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="1389"
+      > </a
+      ><a name="1390" href="GUIgeneric.GUIFeaturesPart5.html#1390" class="Bound"
+      >f</a
+      ><a name="1391"
+      > </a
+      ><a name="1392" class="Symbol"
+      >(</a
+      ><a name="1393" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="1397"
+      > </a
+      ><a name="1398" class="Symbol"
+      >())</a
+      ><a name="1401"
+      >
+
+</a
+      ><a name="1403" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="1411"
+      > </a
+      ><a name="1412" class="Symbol"
+      >:</a
+      ><a name="1413"
+      > </a
+      ><a name="1414" class="Symbol"
+      >{</a
+      ><a name="1415" href="GUIgeneric.GUIFeaturesPart5.html#1415" class="Bound"
+      >A</a
+      ><a name="1416"
+      > </a
+      ><a name="1417" href="GUIgeneric.GUIFeaturesPart5.html#1417" class="Bound"
+      >B</a
+      ><a name="1418"
+      > </a
+      ><a name="1419" class="Symbol"
+      >:</a
+      ><a name="1420"
+      > </a
+      ><a name="1421" class="PrimitiveType"
+      >Set</a
+      ><a name="1424" class="Symbol"
+      >}</a
+      ><a name="1425"
+      > </a
+      ><a name="1426" class="Symbol"
+      >&#8594;</a
+      ><a name="1427"
+      > </a
+      ><a name="1428" href="GUIgeneric.GUIFeaturesPart5.html#1415" class="Bound"
+      >A</a
+      ><a name="1429"
+      > </a
+      ><a name="1430" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1431"
+      > </a
+      ><a name="1432" href="GUIgeneric.GUIFeaturesPart5.html#1417" class="Bound"
+      >B</a
+      ><a name="1433"
+      > </a
+      ><a name="1434" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1435"
+      > </a
+      ><a name="1436" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="1437"
+      >
+</a
+      ><a name="1438" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="1446"
+      > </a
+      ><a name="1447" class="Symbol"
+      >=</a
+      ><a name="1448"
+      > </a
+      ><a name="1449" class="Symbol"
+      >(</a
+      ><a name="1450" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="1454"
+      > </a
+      ><a name="1455" class="Symbol"
+      >(</a
+      ><a name="1456" href="Data.Sum.html#514" class="InductiveConstructor"
+      >inj&#8322;</a
+      ><a name="1460"
+      > </a
+      ><a name="1461" href="Agda.Builtin.Unit.html#106" class="InductiveConstructor"
+      >tt</a
+      ><a name="1463" class="Symbol"
+      >))</a
+      ><a name="1465"
+      >
+
+</a
+      ><a name="1467" class="Comment"
+      >{- handler for the new state to be added to the tea machine -}</a
+      ><a name="1529"
+      >
+</a
+      ><a name="1530" href="GUIgeneric.GUIFeaturesPart5.html#1530" class="Function"
+      >teaNewStateSM</a
+      ><a name="1543"
+      > </a
+      ><a name="1544" class="Symbol"
+      >:</a
+      ><a name="1545"
+      >  </a
+      ><a name="1547" class="Symbol"
+      >(</a
+      ><a name="1548" href="GUIgeneric.GUIFeaturesPart5.html#1548" class="Bound"
+      >fm</a
+      ><a name="1550"
+      > </a
+      ><a name="1551" class="Symbol"
+      >:</a
+      ><a name="1552"
+      > </a
+      ><a name="1553" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="1561"
+      > </a
+      ><a name="1562" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="1575" class="Symbol"
+      >)</a
+      ><a name="1576"
+      >
+                 </a
+      ><a name="1594" class="Symbol"
+      >&#8594;</a
+      ><a name="1595"
+      >    </a
+      ><a name="1599" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="1612"
+      >
+                      </a
+      ><a name="1635" class="Symbol"
+      >(</a
+      ><a name="1636" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="1649"
+      > </a
+      ><a name="1650" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1651"
+      > </a
+      ><a name="1652" href="GUIgeneric.GUIFeaturesPart5.html#1548" class="Bound"
+      >fm</a
+      ><a name="1654"
+      > </a
+      ><a name="1655" class="Symbol"
+      >.</a
+      ><a name="1656" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="1665"
+      > </a
+      ><a name="1666" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="1667"
+      > </a
+      ><a name="1668" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="1669" class="Symbol"
+      >)</a
+      ><a name="1670"
+      >
+                      </a
+      ><a name="1693" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="1701"
+      >
+</a
+      ><a name="1702" href="GUIgeneric.GUIFeaturesPart5.html#1530" class="Function"
+      >teaNewStateSM</a
+      ><a name="1715"
+      > </a
+      ><a name="1716" href="GUIgeneric.GUIFeaturesPart5.html#1716" class="Bound"
+      >fm</a
+      ><a name="1718"
+      > </a
+      ><a name="1719" class="Symbol"
+      >=</a
+      ><a name="1720"
+      > </a
+      ><a name="1721" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="1734"
+      > </a
+      ><a name="1735" class="String"
+      >&quot;Serve Tea&quot;</a
+      ><a name="1746"
+      > </a
+      ><a name="1747" class="Symbol"
+      >(</a
+      ><a name="1748" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="1752"
+      > </a
+      ><a name="1753" href="GUIgeneric.GUIFeaturesPart5.html#771" class="InductiveConstructor"
+      >open'</a
+      ><a name="1758" class="Symbol"
+      >)</a
+      ><a name="1759"
+      >
+
+</a
+      ><a name="1761" class="Comment"
+      >{- add the new state to the feature machine -}</a
+      ><a name="1807"
+      >
+</a
+      ><a name="1808" href="GUIgeneric.GUIFeaturesPart5.html#1808" class="Function"
+      >TeaMAddNewState</a
+      ><a name="1823"
+      > </a
+      ><a name="1824" class="Symbol"
+      >:</a
+      ><a name="1825"
+      >  </a
+      ><a name="1827" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="1835"
+      > </a
+      ><a name="1836" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="1849"
+      >
+                   </a
+      ><a name="1869" class="Symbol"
+      >&#8594;</a
+      ><a name="1870"
+      > </a
+      ><a name="1871" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="1879"
+      > </a
+      ><a name="1880" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="1893"
+      >
+</a
+      ><a name="1894" href="GUIgeneric.GUIFeaturesPart5.html#1808" class="Function"
+      >TeaMAddNewState</a
+      ><a name="1909"
+      > </a
+      ><a name="1910" href="GUIgeneric.GUIFeaturesPart5.html#1910" class="Bound"
+      >fm</a
+      ><a name="1912"
+      > </a
+      ><a name="1913" class="Symbol"
+      >=</a
+      ><a name="1914"
+      >
+  </a
+      ><a name="1917" href="GUIgeneric.GUIFeaturesPart4.html#1576" class="Function"
+      >addOneStateFMachine</a
+      ><a name="1936"
+      > </a
+      ><a name="1937" href="GUIgeneric.GUIFeaturesPart5.html#1910" class="Bound"
+      >fm</a
+      ><a name="1939"
+      > </a
+      ><a name="1940" class="Symbol"
+      >(</a
+      ><a name="1941" href="GUIgeneric.GUIFeaturesPart5.html#1530" class="Function"
+      >teaNewStateSM</a
+      ><a name="1954"
+      > </a
+      ><a name="1955" href="GUIgeneric.GUIFeaturesPart5.html#1910" class="Bound"
+      >fm</a
+      ><a name="1957" class="Symbol"
+      >)</a
+      ><a name="1958"
+      >
+
+</a
+      ><a name="1960" class="Comment"
+      >{- add a dummy feature &quot;FeatureTea&quot; to the feature machine -}</a
+      ><a name="2021"
+      >
+</a
+      ><a name="2022" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2036"
+      > </a
+      ><a name="2037" class="Symbol"
+      >:</a
+      ><a name="2038"
+      >  </a
+      ><a name="2040" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2048"
+      > </a
+      ><a name="2049" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2062"
+      >
+                  </a
+      ><a name="2081" class="Symbol"
+      >&#8594;</a
+      ><a name="2082"
+      > </a
+      ><a name="2083" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2091"
+      > </a
+      ><a name="2092" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2105"
+      >
+</a
+      ><a name="2106" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2120"
+      > </a
+      ><a name="2121" href="GUIgeneric.GUIFeaturesPart5.html#2121" class="Bound"
+      >fm</a
+      ><a name="2123"
+      > </a
+      ><a name="2124" class="Symbol"
+      >=</a
+      ><a name="2125"
+      > </a
+      ><a name="2126" href="GUIgeneric.GUIFeaturesPart4.html#1880" class="Function"
+      >addDummyFeatures</a
+      ><a name="2142"
+      >
+                         </a
+      ><a name="2168" class="Symbol"
+      >(</a
+      ><a name="2169" href="GUIgeneric.GUIFeaturesPart5.html#1808" class="Function"
+      >TeaMAddNewState</a
+      ><a name="2184"
+      > </a
+      ><a name="2185" href="GUIgeneric.GUIFeaturesPart5.html#2121" class="Bound"
+      >fm</a
+      ><a name="2187" class="Symbol"
+      >)</a
+      ><a name="2188"
+      >
+                         </a
+      ><a name="2214" href="GUIgeneric.GUIFeatures.html#933" class="Datatype"
+      >FeatureTea</a
+      ><a name="2224"
+      >
+
+</a
+      ><a name="2226" class="Comment"
+      >{- redefine in the feature machine one button -}</a
+      ><a name="2274"
+      >
+</a
+      ><a name="2275" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="2278"
+      > </a
+      ><a name="2279" class="Symbol"
+      >:</a
+      ><a name="2280"
+      >  </a
+      ><a name="2282" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2290"
+      > </a
+      ><a name="2291" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2304"
+      >
+       </a
+      ><a name="2312" class="Symbol"
+      >&#8594;</a
+      ><a name="2313"
+      > </a
+      ><a name="2314" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2322"
+      > </a
+      ><a name="2323" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2336"
+      >
+</a
+      ><a name="2337" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="2340"
+      > </a
+      ><a name="2341" href="GUIgeneric.GUIFeaturesPart5.html#2341" class="Bound"
+      >fm</a
+      ><a name="2343"
+      > </a
+      ><a name="2344" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2345" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="2353"
+      >   </a
+      ><a name="2356" class="Symbol"
+      >=</a
+      ><a name="2357"
+      > </a
+      ><a name="2358" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2372"
+      > </a
+      ><a name="2373" href="GUIgeneric.GUIFeaturesPart5.html#2341" class="Bound"
+      >fm</a
+      ><a name="2375"
+      > </a
+      ><a name="2376" class="Symbol"
+      >.</a
+      ><a name="2377" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="Field"
+      >Features</a
+      ><a name="2385"
+      >
+</a
+      ><a name="2386" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="2389"
+      > </a
+      ><a name="2390" href="GUIgeneric.GUIFeaturesPart5.html#2390" class="Bound"
+      >fm</a
+      ><a name="2392"
+      > </a
+      ><a name="2393" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2394" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="2403"
+      >  </a
+      ><a name="2405" class="Symbol"
+      >=</a
+      ><a name="2406"
+      > </a
+      ><a name="2407" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2421"
+      > </a
+      ><a name="2422" href="GUIgeneric.GUIFeaturesPart5.html#2390" class="Bound"
+      >fm</a
+      ><a name="2424"
+      > </a
+      ><a name="2425" class="Symbol"
+      >.</a
+      ><a name="2426" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="2435"
+      >
+</a
+      ><a name="2436" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="2439"
+      > </a
+      ><a name="2440" href="GUIgeneric.GUIFeaturesPart5.html#2440" class="Bound"
+      >fm</a
+      ><a name="2442"
+      > </a
+      ><a name="2443" class="DottedPattern Symbol"
+      >.</a
+      ><a name="2444" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="2448"
+      > </a
+      ><a name="2449" class="Symbol"
+      >(</a
+      ><a name="2450" href="GUIgeneric.GUIFeaturesPart5.html#2450" class="Bound"
+      >f</a
+      ><a name="2451"
+      > </a
+      ><a name="2452" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="2453"
+      > </a
+      ><a name="2454" href="GUIgeneric.GUIFeatures.html#958" class="InductiveConstructor"
+      >yesTea</a
+      ><a name="2460" class="Symbol"
+      >)</a
+      ><a name="2461"
+      > </a
+      ><a name="2462" class="Symbol"
+      >(</a
+      ><a name="2463" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="2467"
+      > </a
+      ><a name="2468" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="2472" class="Symbol"
+      >)</a
+      ><a name="2473"
+      > </a
+      ><a name="2474" class="Symbol"
+      >=</a
+      ><a name="2475"
+      >
+      </a
+      ><a name="2482" href="GUIgeneric.GUIFeaturesPart2.html#9140" class="Function"
+      >addBtn2StateMachine</a
+      ><a name="2501"
+      >
+      </a
+      ><a name="2508" class="Symbol"
+      >(</a
+      ><a name="2509"
+      >  </a
+      ><a name="2511" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2525"
+      > </a
+      ><a name="2526" href="GUIgeneric.GUIFeaturesPart5.html#2440" class="Bound"
+      >fm</a
+      ><a name="2528"
+      > </a
+      ><a name="2529" class="Symbol"
+      >.</a
+      ><a name="2530" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="2534"
+      >
+         </a
+      ><a name="2544" class="Symbol"
+      >(</a
+      ><a name="2545" href="GUIgeneric.GUIFeaturesPart5.html#2450" class="Bound"
+      >f</a
+      ><a name="2546"
+      > </a
+      ><a name="2547" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="2548"
+      > </a
+      ><a name="2549" href="GUIgeneric.GUIFeatures.html#958" class="InductiveConstructor"
+      >yesTea</a
+      ><a name="2555" class="Symbol"
+      >)</a
+      ><a name="2556"
+      > </a
+      ><a name="2557" class="Symbol"
+      >(</a
+      ><a name="2558" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="2562"
+      > </a
+      ><a name="2563" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="2567" class="Symbol"
+      >))</a
+      ><a name="2569"
+      >
+         </a
+      ><a name="2579" class="String"
+      >&quot;Tea&quot;</a
+      ><a name="2584"
+      > </a
+      ><a name="2585" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="2593"
+      >
+</a
+      ><a name="2594" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="CatchallClause Function"
+      >Tea</a
+      ><a name="2597" class="CatchallClause"
+      > </a
+      ><a name="2598" href="GUIgeneric.GUIFeaturesPart5.html#2598" class="CatchallClause Bound"
+      >fm</a
+      ><a name="2600" class="CatchallClause"
+      > </a
+      ><a name="2601" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="2602" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="2606" class="CatchallClause"
+      > </a
+      ><a name="2607" href="GUIgeneric.GUIFeaturesPart5.html#2607" class="CatchallClause Bound"
+      >f</a
+      ><a name="2608" class="CatchallClause"
+      >  </a
+      ><a name="2610" href="GUIgeneric.GUIFeaturesPart5.html#2610" class="CatchallClause Bound"
+      >s</a
+      ><a name="2611"
+      > </a
+      ><a name="2612" class="Symbol"
+      >=</a
+      ><a name="2613"
+      > </a
+      ><a name="2614" href="GUIgeneric.GUIFeaturesPart5.html#2022" class="Function"
+      >TeaMAddFeature</a
+      ><a name="2628"
+      > </a
+      ><a name="2629" href="GUIgeneric.GUIFeaturesPart5.html#2598" class="Bound"
+      >fm</a
+      ><a name="2631"
+      > </a
+      ><a name="2632" class="Symbol"
+      >.</a
+      ><a name="2633" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="2637"
+      > </a
+      ><a name="2638" href="GUIgeneric.GUIFeaturesPart5.html#2607" class="Bound"
+      >f</a
+      ><a name="2639"
+      > </a
+      ><a name="2640" href="GUIgeneric.GUIFeaturesPart5.html#2610" class="Bound"
+      >s</a
+      ><a name="2641"
+      >
+
+</a
+      ><a name="2643" class="Comment"
+      >{- handler for the new state to be added to the cancel machine -}</a
+      ><a name="2708"
+      >
+</a
+      ><a name="2709" href="GUIgeneric.GUIFeaturesPart5.html#2709" class="Function"
+      >cancelNewStateSM</a
+      ><a name="2725"
+      > </a
+      ><a name="2726" class="Symbol"
+      >:</a
+      ><a name="2727"
+      > </a
+      ><a name="2728" class="Symbol"
+      >(</a
+      ><a name="2729" href="GUIgeneric.GUIFeaturesPart5.html#2729" class="Bound"
+      >fm</a
+      ><a name="2731"
+      > </a
+      ><a name="2732" class="Symbol"
+      >:</a
+      ><a name="2733"
+      > </a
+      ><a name="2734" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2742"
+      > </a
+      ><a name="2743" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2756" class="Symbol"
+      >)</a
+      ><a name="2757"
+      > </a
+      ><a name="2758" class="Symbol"
+      >&#8594;</a
+      ><a name="2759"
+      >
+                    </a
+      ><a name="2780" href="GUIgeneric.GUIFeaturesPart2.html#3942" class="Record"
+      >SMachineState</a
+      ><a name="2793"
+      > </a
+      ><a name="2794" class="Symbol"
+      >(</a
+      ><a name="2795" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2808"
+      > </a
+      ><a name="2809" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2810"
+      > </a
+      ><a name="2811" href="GUIgeneric.GUIFeaturesPart5.html#2729" class="Bound"
+      >fm</a
+      ><a name="2813"
+      > </a
+      ><a name="2814" class="Symbol"
+      >.</a
+      ><a name="2815" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="2824"
+      > </a
+      ><a name="2825" href="Data.Sum.html#433" class="Datatype Operator"
+      >&#8846;</a
+      ><a name="2826"
+      > </a
+      ><a name="2827" href="Agda.Builtin.Unit.html#69" class="Record"
+      >&#8868;</a
+      ><a name="2828" class="Symbol"
+      >)</a
+      ><a name="2829"
+      > </a
+      ><a name="2830" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="2838"
+      >
+</a
+      ><a name="2839" href="GUIgeneric.GUIFeaturesPart5.html#2709" class="Function"
+      >cancelNewStateSM</a
+      ><a name="2855"
+      > </a
+      ><a name="2856" href="GUIgeneric.GUIFeaturesPart5.html#2856" class="Bound"
+      >fm</a
+      ><a name="2858"
+      > </a
+      ><a name="2859" class="Symbol"
+      >=</a
+      ><a name="2860"
+      > </a
+      ><a name="2861" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="2874"
+      > </a
+      ><a name="2875" class="String"
+      >&quot;Cancelling&quot;</a
+      ><a name="2887"
+      > </a
+      ><a name="2888" class="Symbol"
+      >(</a
+      ><a name="2889" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="2893"
+      > </a
+      ><a name="2894" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="2897" class="Symbol"
+      >)</a
+      ><a name="2898"
+      >
+
+</a
+      ><a name="2900" class="Comment"
+      >{- add the state to the old feature machine -}</a
+      ><a name="2946"
+      >
+</a
+      ><a name="2947" href="GUIgeneric.GUIFeaturesPart5.html#2947" class="Function"
+      >cancelStateAdded</a
+      ><a name="2963"
+      > </a
+      ><a name="2964" class="Symbol"
+      >:</a
+      ><a name="2965"
+      > </a
+      ><a name="2966" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2974"
+      > </a
+      ><a name="2975" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="2988"
+      > </a
+      ><a name="2989" class="Symbol"
+      >&#8594;</a
+      ><a name="2990"
+      > </a
+      ><a name="2991" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="2999"
+      > </a
+      ><a name="3000" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3013"
+      >
+</a
+      ><a name="3014" href="GUIgeneric.GUIFeaturesPart5.html#2947" class="Function"
+      >cancelStateAdded</a
+      ><a name="3030"
+      > </a
+      ><a name="3031" href="GUIgeneric.GUIFeaturesPart5.html#3031" class="Bound"
+      >fm</a
+      ><a name="3033"
+      > </a
+      ><a name="3034" class="Symbol"
+      >=</a
+      ><a name="3035"
+      > </a
+      ><a name="3036" href="GUIgeneric.GUIFeaturesPart4.html#1576" class="Function"
+      >addOneStateFMachine</a
+      ><a name="3055"
+      > </a
+      ><a name="3056" href="GUIgeneric.GUIFeaturesPart5.html#3031" class="Bound"
+      >fm</a
+      ><a name="3058"
+      > </a
+      ><a name="3059" class="Symbol"
+      >(</a
+      ><a name="3060" href="GUIgeneric.GUIFeaturesPart5.html#2709" class="Function"
+      >cancelNewStateSM</a
+      ><a name="3076"
+      > </a
+      ><a name="3077" href="GUIgeneric.GUIFeaturesPart5.html#3031" class="Bound"
+      >fm</a
+      ><a name="3079" class="Symbol"
+      >)</a
+      ><a name="3080"
+      >
+
+</a
+      ><a name="3082" class="Comment"
+      >{- add a dummy feature &quot;FeatureCancel&quot; to the feature machine -}</a
+      ><a name="3146"
+      >
+</a
+      ><a name="3147" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3165"
+      > </a
+      ><a name="3166" class="Symbol"
+      >:</a
+      ><a name="3167"
+      > </a
+      ><a name="3168" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3176"
+      > </a
+      ><a name="3177" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3190"
+      > </a
+      ><a name="3191" class="Symbol"
+      >&#8594;</a
+      ><a name="3192"
+      > </a
+      ><a name="3193" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3201"
+      > </a
+      ><a name="3202" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3215"
+      >
+</a
+      ><a name="3216" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3234"
+      > </a
+      ><a name="3235" href="GUIgeneric.GUIFeaturesPart5.html#3235" class="Bound"
+      >fm</a
+      ><a name="3237"
+      > </a
+      ><a name="3238" class="Symbol"
+      >=</a
+      ><a name="3239"
+      > </a
+      ><a name="3240" href="GUIgeneric.GUIFeaturesPart4.html#1880" class="Function"
+      >addDummyFeatures</a
+      ><a name="3256"
+      >
+                         </a
+      ><a name="3282" class="Symbol"
+      >(</a
+      ><a name="3283" href="GUIgeneric.GUIFeaturesPart5.html#2947" class="Function"
+      >cancelStateAdded</a
+      ><a name="3299"
+      > </a
+      ><a name="3300" href="GUIgeneric.GUIFeaturesPart5.html#3235" class="Bound"
+      >fm</a
+      ><a name="3302" class="Symbol"
+      >)</a
+      ><a name="3303"
+      >
+                         </a
+      ><a name="3329" href="GUIgeneric.GUIFeatures.html#1051" class="Datatype"
+      >FeatureCancel</a
+      ><a name="3342"
+      >
+
+</a
+      ><a name="3344" class="Comment"
+      >{- redefine in the feature machine one button -}</a
+      ><a name="3392"
+      >
+</a
+      ><a name="3393" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="3399"
+      > </a
+      ><a name="3400" class="Symbol"
+      >:</a
+      ><a name="3401"
+      >  </a
+      ><a name="3403" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3411"
+      > </a
+      ><a name="3412" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3425"
+      >
+          </a
+      ><a name="3436" class="Symbol"
+      >&#8594;</a
+      ><a name="3437"
+      > </a
+      ><a name="3438" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3446"
+      > </a
+      ><a name="3447" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3460"
+      >
+</a
+      ><a name="3461" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="3467"
+      > </a
+      ><a name="3468" href="GUIgeneric.GUIFeaturesPart5.html#3468" class="Bound"
+      >fm</a
+      ><a name="3470"
+      > </a
+      ><a name="3471" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3472" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="3480"
+      > </a
+      ><a name="3481" class="Symbol"
+      >=</a
+      ><a name="3482"
+      > </a
+      ><a name="3483" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3501"
+      > </a
+      ><a name="3502" href="GUIgeneric.GUIFeaturesPart5.html#3468" class="Bound"
+      >fm</a
+      ><a name="3504"
+      > </a
+      ><a name="3505" class="Symbol"
+      >.</a
+      ><a name="3506" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="Field"
+      >Features</a
+      ><a name="3514"
+      >
+</a
+      ><a name="3515" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="3521"
+      > </a
+      ><a name="3522" href="GUIgeneric.GUIFeaturesPart5.html#3522" class="Bound"
+      >fm</a
+      ><a name="3524"
+      > </a
+      ><a name="3525" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3526" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="3535"
+      >  </a
+      ><a name="3537" class="Symbol"
+      >=</a
+      ><a name="3538"
+      > </a
+      ><a name="3539" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3557"
+      > </a
+      ><a name="3558" href="GUIgeneric.GUIFeaturesPart5.html#3522" class="Bound"
+      >fm</a
+      ><a name="3560"
+      > </a
+      ><a name="3561" class="Symbol"
+      >.</a
+      ><a name="3562" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="3571"
+      >
+</a
+      ><a name="3572" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="3578"
+      > </a
+      ><a name="3579" href="GUIgeneric.GUIFeaturesPart5.html#3579" class="Bound"
+      >fm</a
+      ><a name="3581"
+      > </a
+      ><a name="3582" class="DottedPattern Symbol"
+      >.</a
+      ><a name="3583" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="3587"
+      > </a
+      ><a name="3588" class="Symbol"
+      >(</a
+      ><a name="3589" href="GUIgeneric.GUIFeaturesPart5.html#3589" class="Bound"
+      >f</a
+      ><a name="3590"
+      > </a
+      ><a name="3591" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="3592"
+      > </a
+      ><a name="3593" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="3602" class="Symbol"
+      >)</a
+      ><a name="3603"
+      > </a
+      ><a name="3604" class="Symbol"
+      >(</a
+      ><a name="3605" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3609"
+      > </a
+      ><a name="3610" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="3614" class="Symbol"
+      >)</a
+      ><a name="3615"
+      > </a
+      ><a name="3616" class="Symbol"
+      >=</a
+      ><a name="3617"
+      >
+      </a
+      ><a name="3624" href="GUIgeneric.GUIFeaturesPart2.html#9140" class="Function"
+      >addBtn2StateMachine</a
+      ><a name="3643"
+      > </a
+      ><a name="3644" class="Symbol"
+      >(</a
+      ><a name="3645" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3663"
+      > </a
+      ><a name="3664" href="GUIgeneric.GUIFeaturesPart5.html#3579" class="Bound"
+      >fm</a
+      ><a name="3666"
+      > </a
+      ><a name="3667" class="Symbol"
+      >.</a
+      ><a name="3668" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3672"
+      > </a
+      ><a name="3673" class="Symbol"
+      >(</a
+      ><a name="3674" href="GUIgeneric.GUIFeaturesPart5.html#3589" class="Bound"
+      >f</a
+      ><a name="3675"
+      > </a
+      ><a name="3676" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="3677"
+      > </a
+      ><a name="3678" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="3687" class="Symbol"
+      >)</a
+      ><a name="3688"
+      > </a
+      ><a name="3689" class="Symbol"
+      >(</a
+      ><a name="3690" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="3694"
+      > </a
+      ><a name="3695" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="3699" class="Symbol"
+      >))</a
+      ><a name="3701"
+      >
+                          </a
+      ><a name="3728" class="String"
+      >&quot;Cancel&quot;</a
+      ><a name="3736"
+      > </a
+      ><a name="3737" href="GUIgeneric.GUIFeaturesPart5.html#1403" class="Function"
+      >newState</a
+      ><a name="3745"
+      >
+</a
+      ><a name="3746" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="CatchallClause Function"
+      >Cancel</a
+      ><a name="3752" class="CatchallClause"
+      > </a
+      ><a name="3753" href="GUIgeneric.GUIFeaturesPart5.html#3753" class="CatchallClause Bound"
+      >fm</a
+      ><a name="3755" class="CatchallClause"
+      > </a
+      ><a name="3756" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="3757" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="3761" class="CatchallClause"
+      > </a
+      ><a name="3762" href="GUIgeneric.GUIFeaturesPart5.html#3762" class="CatchallClause Bound"
+      >f</a
+      ><a name="3763" class="CatchallClause"
+      >  </a
+      ><a name="3765" href="GUIgeneric.GUIFeaturesPart5.html#3765" class="CatchallClause Bound"
+      >s</a
+      ><a name="3766"
+      > </a
+      ><a name="3767" class="Symbol"
+      >=</a
+      ><a name="3768"
+      > </a
+      ><a name="3769" href="GUIgeneric.GUIFeaturesPart5.html#3147" class="Function"
+      >cancelFeatureAdded</a
+      ><a name="3787"
+      > </a
+      ><a name="3788" href="GUIgeneric.GUIFeaturesPart5.html#3753" class="Bound"
+      >fm</a
+      ><a name="3790"
+      > </a
+      ><a name="3791" class="Symbol"
+      >.</a
+      ><a name="3792" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="3796"
+      > </a
+      ><a name="3797" href="GUIgeneric.GUIFeaturesPart5.html#3762" class="Bound"
+      >f</a
+      ><a name="3798"
+      > </a
+      ><a name="3799" href="GUIgeneric.GUIFeaturesPart5.html#3765" class="Bound"
+      >s</a
+      ><a name="3800"
+      >
+
+</a
+      ><a name="3802" class="Comment"
+      >{- add the Dummy free feature -}</a
+      ><a name="3834"
+      >
+</a
+      ><a name="3835" href="GUIgeneric.GUIFeaturesPart5.html#3835" class="Function"
+      >FreeMAddFeature</a
+      ><a name="3850"
+      > </a
+      ><a name="3851" class="Symbol"
+      >:</a
+      ><a name="3852"
+      > </a
+      ><a name="3853" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3861"
+      > </a
+      ><a name="3862" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3875"
+      >
+                  </a
+      ><a name="3894" class="Symbol"
+      >&#8594;</a
+      ><a name="3895"
+      > </a
+      ><a name="3896" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="3904"
+      > </a
+      ><a name="3905" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="3918"
+      >
+</a
+      ><a name="3919" href="GUIgeneric.GUIFeaturesPart5.html#3835" class="Function"
+      >FreeMAddFeature</a
+      ><a name="3934"
+      > </a
+      ><a name="3935" href="GUIgeneric.GUIFeaturesPart5.html#3935" class="Bound"
+      >fm</a
+      ><a name="3937"
+      > </a
+      ><a name="3938" class="Symbol"
+      >=</a
+      ><a name="3939"
+      > </a
+      ><a name="3940" href="GUIgeneric.GUIFeaturesPart4.html#1880" class="Function"
+      >addDummyFeatures</a
+      ><a name="3956"
+      > </a
+      ><a name="3957" href="GUIgeneric.GUIFeaturesPart5.html#3935" class="Bound"
+      >fm</a
+      ><a name="3959"
+      > </a
+      ><a name="3960" href="GUIgeneric.GUIFeatures.html#990" class="Datatype"
+      >FeatureFree</a
+      ><a name="3971"
+      >
+
+</a
+      ><a name="3973" class="Comment"
+      >{- redefine the pay button to free in case feature free is yesFree -}</a
+      ><a name="4042"
+      >
+</a
+      ><a name="4043" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4047"
+      > </a
+      ><a name="4048" class="Symbol"
+      >:</a
+      ><a name="4049"
+      >  </a
+      ><a name="4051" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="4059"
+      > </a
+      ><a name="4060" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="4073"
+      >
+        </a
+      ><a name="4082" class="Symbol"
+      >&#8594;</a
+      ><a name="4083"
+      > </a
+      ><a name="4084" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="4092"
+      > </a
+      ><a name="4093" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="4106"
+      >
+</a
+      ><a name="4107" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4111"
+      > </a
+      ><a name="4112" href="GUIgeneric.GUIFeaturesPart5.html#4112" class="Bound"
+      >fm</a
+      ><a name="4114"
+      > </a
+      ><a name="4115" class="DottedPattern Symbol"
+      >.</a
+      ><a name="4116" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="DottedPattern Field"
+      >Features</a
+      ><a name="4124"
+      >   </a
+      ><a name="4127" class="Symbol"
+      >=</a
+      ><a name="4128"
+      > </a
+      ><a name="4129" href="GUIgeneric.GUIFeaturesPart5.html#3835" class="Function"
+      >FreeMAddFeature</a
+      ><a name="4144"
+      > </a
+      ><a name="4145" href="GUIgeneric.GUIFeaturesPart5.html#4112" class="Bound"
+      >fm</a
+      ><a name="4147"
+      > </a
+      ><a name="4148" class="Symbol"
+      >.</a
+      ><a name="4149" href="GUIgeneric.GUIFeaturesPart2.html#5447" class="Field"
+      >Features</a
+      ><a name="4157"
+      >
+</a
+      ><a name="4158" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4162"
+      > </a
+      ><a name="4163" href="GUIgeneric.GUIFeaturesPart5.html#4163" class="Bound"
+      >fm</a
+      ><a name="4165"
+      > </a
+      ><a name="4166" class="DottedPattern Symbol"
+      >.</a
+      ><a name="4167" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="DottedPattern Field"
+      >AddStateF</a
+      ><a name="4176"
+      >  </a
+      ><a name="4178" class="Symbol"
+      >=</a
+      ><a name="4179"
+      > </a
+      ><a name="4180" href="GUIgeneric.GUIFeaturesPart5.html#3835" class="Function"
+      >FreeMAddFeature</a
+      ><a name="4195"
+      > </a
+      ><a name="4196" href="GUIgeneric.GUIFeaturesPart5.html#4163" class="Bound"
+      >fm</a
+      ><a name="4198"
+      > </a
+      ><a name="4199" class="Symbol"
+      >.</a
+      ><a name="4200" href="GUIgeneric.GUIFeaturesPart2.html#5467" class="Field"
+      >AddStateF</a
+      ><a name="4209"
+      >
+</a
+      ><a name="4210" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4214"
+      > </a
+      ><a name="4215" href="GUIgeneric.GUIFeaturesPart5.html#4215" class="Bound"
+      >fm</a
+      ><a name="4217"
+      > </a
+      ><a name="4218" class="DottedPattern Symbol"
+      >.</a
+      ><a name="4219" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="4223"
+      > </a
+      ><a name="4224" class="Symbol"
+      >(</a
+      ><a name="4225" href="GUIgeneric.GUIFeaturesPart5.html#4225" class="Bound"
+      >f</a
+      ><a name="4226"
+      > </a
+      ><a name="4227" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4228"
+      > </a
+      ><a name="4229" href="GUIgeneric.GUIFeatures.html#1016" class="InductiveConstructor"
+      >yesFree</a
+      ><a name="4236" class="Symbol"
+      >)</a
+      ><a name="4237"
+      > </a
+      ><a name="4238" class="Symbol"
+      >(</a
+      ><a name="4239" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4243"
+      > </a
+      ><a name="4244" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="4247" class="Symbol"
+      >)</a
+      ><a name="4248"
+      > </a
+      ><a name="4249" class="Symbol"
+      >=</a
+      ><a name="4250"
+      >
+      </a
+      ><a name="4257" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="4270"
+      > </a
+      ><a name="4271" class="String"
+      >&quot;Free&quot;</a
+      ><a name="4277"
+      > </a
+      ><a name="4278" class="Symbol"
+      >(</a
+      ><a name="4279" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4283"
+      > </a
+      ><a name="4284" href="GUIgeneric.GUIFeaturesPart5.html#755" class="InductiveConstructor"
+      >soda</a
+      ><a name="4288" class="Symbol"
+      >)</a
+      ><a name="4289"
+      >
+</a
+      ><a name="4290" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4294"
+      > </a
+      ><a name="4295" href="GUIgeneric.GUIFeaturesPart5.html#4295" class="Bound"
+      >fm</a
+      ><a name="4297"
+      > </a
+      ><a name="4298" class="DottedPattern Symbol"
+      >.</a
+      ><a name="4299" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="DottedPattern Field"
+      >GUIF</a
+      ><a name="4303"
+      > </a
+      ><a name="4304" class="Symbol"
+      >(</a
+      ><a name="4305" href="GUIgeneric.GUIFeaturesPart5.html#4305" class="Bound"
+      >f</a
+      ><a name="4306"
+      > </a
+      ><a name="4307" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4308"
+      > </a
+      ><a name="4309" href="GUIgeneric.GUIFeatures.html#1016" class="InductiveConstructor"
+      >yesFree</a
+      ><a name="4316" class="Symbol"
+      >)</a
+      ><a name="4317"
+      > </a
+      ><a name="4318" class="Symbol"
+      >(</a
+      ><a name="4319" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4323"
+      > </a
+      ><a name="4324" href="GUIgeneric.GUIFeaturesPart5.html#771" class="InductiveConstructor"
+      >open'</a
+      ><a name="4329" class="Symbol"
+      >)</a
+      ><a name="4330"
+      > </a
+      ><a name="4331" class="Symbol"
+      >=</a
+      ><a name="4332"
+      >
+      </a
+      ><a name="4339" href="GUIgeneric.GUIFeaturesPart2.html#8512" class="Function"
+      >simpleSMState</a
+      ><a name="4352"
+      > </a
+      ><a name="4353" class="String"
+      >&quot;Skip&quot;</a
+      ><a name="4359"
+      > </a
+      ><a name="4360" class="Symbol"
+      >(</a
+      ><a name="4361" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4365"
+      > </a
+      ><a name="4366" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="4369" class="Symbol"
+      >)</a
+      ><a name="4370"
+      >
+</a
+      ><a name="4371" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="CatchallClause Function"
+      >Free</a
+      ><a name="4375" class="CatchallClause"
+      > </a
+      ><a name="4376" href="GUIgeneric.GUIFeaturesPart5.html#4376" class="CatchallClause Bound"
+      >fm</a
+      ><a name="4378" class="CatchallClause"
+      > </a
+      ><a name="4379" class="CatchallClause DottedPattern Symbol"
+      >.</a
+      ><a name="4380" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="CatchallClause DottedPattern Field"
+      >GUIF</a
+      ><a name="4384" class="CatchallClause"
+      > </a
+      ><a name="4385" href="GUIgeneric.GUIFeaturesPart5.html#4385" class="CatchallClause Bound"
+      >f</a
+      ><a name="4386" class="CatchallClause"
+      >  </a
+      ><a name="4388" href="GUIgeneric.GUIFeaturesPart5.html#4388" class="CatchallClause Bound"
+      >s</a
+      ><a name="4389"
+      >  </a
+      ><a name="4391" class="Symbol"
+      >=</a
+      ><a name="4392"
+      > </a
+      ><a name="4393" href="GUIgeneric.GUIFeaturesPart5.html#3835" class="Function"
+      >FreeMAddFeature</a
+      ><a name="4408"
+      > </a
+      ><a name="4409" href="GUIgeneric.GUIFeaturesPart5.html#4376" class="Bound"
+      >fm</a
+      ><a name="4411"
+      > </a
+      ><a name="4412" class="Symbol"
+      >.</a
+      ><a name="4413" href="GUIgeneric.GUIFeaturesPart2.html#5488" class="Field"
+      >GUIF</a
+      ><a name="4417"
+      > </a
+      ><a name="4418" href="GUIgeneric.GUIFeaturesPart5.html#4385" class="Bound"
+      >f</a
+      ><a name="4419"
+      > </a
+      ><a name="4420" href="GUIgeneric.GUIFeaturesPart5.html#4388" class="Bound"
+      >s</a
+      ><a name="4421"
+      >
+
+</a
+      ><a name="4423" href="GUIgeneric.GUIFeaturesPart5.html#4423" class="Function"
+      >main1</a
+      ><a name="4428"
+      > </a
+      ><a name="4429" class="Symbol"
+      >:</a
+      ><a name="4430"
+      > </a
+      ><a name="4431" href="NativeIO.html#260" class="Postulate"
+      >NativeIO</a
+      ><a name="4439"
+      > </a
+      ><a name="4440" href="Unit.html#28" class="Record"
+      >Unit</a
+      ><a name="4444"
+      >
+</a
+      ><a name="4445" href="GUIgeneric.GUIFeaturesPart5.html#4423" class="Function"
+      >main1</a
+      ><a name="4450"
+      > </a
+      ><a name="4451" class="Symbol"
+      >=</a
+      ><a name="4452"
+      > </a
+      ><a name="4453" href="GUIgeneric.GUIFeaturesPart2.html#6240" class="Function"
+      >compileFeatureVM</a
+      ><a name="4469"
+      > </a
+      ><a name="4470" class="Symbol"
+      >(</a
+      ><a name="4471" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="4474"
+      > </a
+      ><a name="4475" class="Symbol"
+      >(</a
+      ><a name="4476" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="4482"
+      > </a
+      ><a name="4483" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="4490" class="Symbol"
+      >))</a
+      ><a name="4492"
+      > </a
+      ><a name="4493" class="Symbol"
+      >((_</a
+      ><a name="4496"
+      > </a
+      ><a name="4497" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4498"
+      > </a
+      ><a name="4499" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="4508" class="Symbol"
+      >)</a
+      ><a name="4509"
+      > </a
+      ><a name="4510" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4511"
+      > </a
+      ><a name="4512" href="GUIgeneric.GUIFeatures.html#958" class="InductiveConstructor"
+      >yesTea</a
+      ><a name="4518" class="Symbol"
+      >)</a
+      ><a name="4519"
+      > </a
+      ><a name="4520" class="Symbol"
+      >(</a
+      ><a name="4521" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4525"
+      > </a
+      ><a name="4526" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="4529" class="Symbol"
+      >)</a
+      ><a name="4530"
+      >
+
+</a
+      ><a name="4532" href="GUIgeneric.GUIFeaturesPart5.html#4532" class="Function"
+      >main2</a
+      ><a name="4537"
+      > </a
+      ><a name="4538" class="Symbol"
+      >:</a
+      ><a name="4539"
+      > </a
+      ><a name="4540" href="NativeIO.html#260" class="Postulate"
+      >NativeIO</a
+      ><a name="4548"
+      > </a
+      ><a name="4549" href="Unit.html#28" class="Record"
+      >Unit</a
+      ><a name="4553"
+      >
+</a
+      ><a name="4554" href="GUIgeneric.GUIFeaturesPart5.html#4532" class="Function"
+      >main2</a
+      ><a name="4559"
+      > </a
+      ><a name="4560" class="Symbol"
+      >=</a
+      ><a name="4561"
+      > </a
+      ><a name="4562" href="GUIgeneric.GUIFeaturesPart2.html#6240" class="Function"
+      >compileFeatureVM</a
+      ><a name="4578"
+      > </a
+      ><a name="4579" class="Symbol"
+      >(</a
+      ><a name="4580" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4584"
+      > </a
+      ><a name="4585" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="4592" class="Symbol"
+      >)</a
+      ><a name="4593"
+      > </a
+      ><a name="4594" class="Symbol"
+      >(_</a
+      ><a name="4596"
+      > </a
+      ><a name="4597" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4598"
+      > </a
+      ><a name="4599" href="GUIgeneric.GUIFeatures.html#1016" class="InductiveConstructor"
+      >yesFree</a
+      ><a name="4606" class="Symbol"
+      >)</a
+      ><a name="4607"
+      > </a
+      ><a name="4608" class="Symbol"
+      >(</a
+      ><a name="4609" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4613"
+      > </a
+      ><a name="4614" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="4617" class="Symbol"
+      >)</a
+      ><a name="4618"
+      > </a
+      ><a name="4619" class="Comment"
+      >--</a
+      ><a name="4621"
+      >
+
+</a
+      ><a name="4623" href="GUIgeneric.GUIFeaturesPart5.html#4623" class="Function"
+      >multiFeatureMachine</a
+      ><a name="4642"
+      > </a
+      ><a name="4643" class="Symbol"
+      >:</a
+      ><a name="4644"
+      > </a
+      ><a name="4645" href="GUIgeneric.GUIFeaturesPart2.html#5394" class="Record"
+      >FMachine</a
+      ><a name="4653"
+      > </a
+      ><a name="4654" href="GUIgeneric.GUIFeaturesPart5.html#716" class="Datatype"
+      >StatesBasicVM</a
+      ><a name="4667"
+      >
+</a
+      ><a name="4668" href="GUIgeneric.GUIFeaturesPart5.html#4623" class="Function"
+      >multiFeatureMachine</a
+      ><a name="4687"
+      > </a
+      ><a name="4688" class="Symbol"
+      >=</a
+      ><a name="4689"
+      > </a
+      ><a name="4690" href="GUIgeneric.GUIFeaturesPart5.html#4043" class="Function"
+      >Free</a
+      ><a name="4694"
+      > </a
+      ><a name="4695" class="Symbol"
+      >(</a
+      ><a name="4696" href="GUIgeneric.GUIFeaturesPart5.html#3393" class="Function"
+      >Cancel</a
+      ><a name="4702"
+      > </a
+      ><a name="4703" class="Symbol"
+      >(</a
+      ><a name="4704" href="GUIgeneric.GUIFeaturesPart5.html#2275" class="Function"
+      >Tea</a
+      ><a name="4707"
+      > </a
+      ><a name="4708" href="GUIgeneric.GUIFeaturesPart5.html#800" class="Function"
+      >basicVM</a
+      ><a name="4715" class="Symbol"
+      >))</a
+      ><a name="4717"
+      >
+
+</a
+      ><a name="4719" href="GUIgeneric.GUIFeaturesPart5.html#4719" class="Function"
+      >main</a
+      ><a name="4723"
+      > </a
+      ><a name="4724" class="Symbol"
+      >:</a
+      ><a name="4725"
+      > </a
+      ><a name="4726" href="NativeIO.html#260" class="Postulate"
+      >NativeIO</a
+      ><a name="4734"
+      > </a
+      ><a name="4735" href="Unit.html#28" class="Record"
+      >Unit</a
+      ><a name="4739"
+      >
+</a
+      ><a name="4740" href="GUIgeneric.GUIFeaturesPart5.html#4719" class="Function"
+      >main</a
+      ><a name="4744"
+      > </a
+      ><a name="4745" class="Symbol"
+      >=</a
+      ><a name="4746"
+      > </a
+      ><a name="4747" href="GUIgeneric.GUIFeaturesPart2.html#6240" class="Function"
+      >compileFeatureVM</a
+      ><a name="4763"
+      >
+       </a
+      ><a name="4771" href="GUIgeneric.GUIFeaturesPart5.html#4623" class="Function"
+      >multiFeatureMachine</a
+      ><a name="4790"
+      >
+       </a
+      ><a name="4798" class="Symbol"
+      >(((_</a
+      ><a name="4802"
+      > </a
+      ><a name="4803" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4804"
+      > </a
+      ><a name="4805" href="GUIgeneric.GUIFeatures.html#958" class="InductiveConstructor"
+      >yesTea</a
+      ><a name="4811" class="Symbol"
+      >)</a
+      ><a name="4812"
+      > </a
+      ><a name="4813" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4814"
+      > </a
+      ><a name="4815" href="GUIgeneric.GUIFeatures.html#1079" class="InductiveConstructor"
+      >yesCancel</a
+      ><a name="4824" class="Symbol"
+      >)</a
+      ><a name="4825"
+      > </a
+      ><a name="4826" href="Data.Product.html#509" class="InductiveConstructor Operator"
+      >,</a
+      ><a name="4827"
+      > </a
+      ><a name="4828" href="GUIgeneric.GUIFeatures.html#1024" class="InductiveConstructor"
+      >noFree</a
+      ><a name="4834" class="Symbol"
+      >)</a
+      ><a name="4835"
+      > </a
+      ><a name="4836" class="Symbol"
+      >(</a
+      ><a name="4837" href="Data.Sum.html#489" class="InductiveConstructor"
+      >inj&#8321;</a
+      ><a name="4841"
+      > </a
+      ><a name="4842" href="GUIgeneric.GUIFeaturesPart5.html#744" class="InductiveConstructor"
+      >pay</a
+      ><a name="4845" class="Symbol"
+      >)</a
+      ><a name="4846"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>
