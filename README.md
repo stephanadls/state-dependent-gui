@@ -10,11 +10,11 @@ State-Dependent GUIs based on Dependent Types
   * [obj1Btn](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIExample.html#2056)
   * [obj2Btn](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIExample.html#2238)
 3. 2. Section – Basic GUI Commands
-  * GuiLev1Interface
-  * GuiLev2Interface 
-  * GuiLev3Command 
+  * [GuiLev1Interface](https://stephanadls.github.io/state-dependent-gui/html/StateSizedIO.GUI.WxGraphicsLibLevel3.html#139)
+  * [GuiLev2Interface](https://stephanadls.github.io/state-dependent-gui/html/StateSizedIO.GUI.WxGraphicsLibLevel3.html#1357)
+  * [GuiLev3Command](https://stephanadls.github.io/state-dependent-gui/html/StateSizedIO.GUI.WxGraphicsLibLevel3.html#5810)
 3. 3. Section – State-dependent Objects
-  * Interface
+  * [Interface](https://stephanadls.github.io/state-dependent-gui/html/StateSizedIO.Base.html#390)
 3. 4. Section – Implementation of Generic GUIs
   * [HandlerObject](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUI.html#8296)
   * [handlerInterface](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUI.html#8084)
@@ -23,8 +23,8 @@ State-Dependent GUIs based on Dependent Types
   * [GUI](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIExampleLib.html#3358)
   * [atm example](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIExampleBankAccount.html)
 4. 1. Section – State Machines with Associated GUIs
-  * SMachineState
-  * ReturnType
+  * [SMachineState](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#3942)
+  * [ReturnType](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#511)
 4. 2. Section – Extending State Machines with Features
   * FeatureVMVers1
   * FMachine  
