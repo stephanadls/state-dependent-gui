@@ -28,7 +28,7 @@ State-Dependent GUIs based on Dependent Types
   * ReturnType
 4. 2. Section – Extending State Machines with Features
   * FeatureVMVers1
-  * FMachine 
+  * FMachine  
  
 
 
