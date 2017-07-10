@@ -2,7 +2,7 @@
 
 State-Dependent GUIs based on Dependent Types
 
-### Code Listings from Paper
+### Code from the Paper
 2.  Section – Background
   * [IOInterface](https://stephanadls.github.io/state-dependent-gui/html/SizedIO.Base.html#333)
 3. 1. Section – Introductory Example
@@ -26,8 +26,17 @@ State-Dependent GUIs based on Dependent Types
   * [SMachineState](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#3942)
   * [ReturnType](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#511)
 4. 2. Section – Extending State Machines with Features
-  * FeatureVMVers1
-  * FMachine  
+  * [FeatureVMVers1](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#5260)
+  * [FMachine](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIFeaturesPart2.html#5394)
+5. 1. Section – Reasoning about Coinductive Programs
+  * [MethodStarted](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIModel.html#649)
+  * [ModelGuiState](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIModel.html#946)
+  * [modelGuiInterface](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIModel.html#3867)
+5. 2. Section – Correctness of the Two-Button Example
+  * [state1Btn](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIModelExample.html#705)
+  * [state2Btn](https://stephanadls.github.io/state-dependent-gui/html/GUIgeneric.GUIModelExample.html#816)
+
+
  
 
 
