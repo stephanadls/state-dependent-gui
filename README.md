@@ -3,9 +3,9 @@
 State-Dependent GUIs based on Dependent Types
 
 ### Code Listings from Paper
-2. Section – Background
+2.  Section – Background
   * [IOInterface](https://stephanadls.github.io/state-dependent-gui/html/SizedIO.Base.html#333)
-3.1 Section – Introductory Example
+3. i. Section – Introductory Example
   * oneBtnGUI
   * twoBtnGUI 
   * propOneBtn 
