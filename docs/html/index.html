@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+><head
+  ><title
+    >GUIgeneric.loadAllRepository</title
+    ><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+     /><meta http-equiv="Content-Style-Type" content="text/css"
+     /><link href="Agda.css" rel="stylesheet" type="text/css"
+     /></head
+  ><body
+  ><pre
+    ><a name="1" class="Keyword"
+      >module</a
+      ><a name="7"
+      > </a
+      ><a name="8" href="GUIgeneric.loadAllRepository.html#1" class="Module"
+      >GUIgeneric.loadAllRepository</a
+      ><a name="36"
+      > </a
+      ><a name="37" class="Keyword"
+      >where</a
+      ><a name="42"
+      >
+
+</a
+      ><a name="44" class="Keyword"
+      >open</a
+      ><a name="48"
+      > </a
+      ><a name="49" class="Keyword"
+      >import</a
+      ><a name="55"
+      > </a
+      ><a name="56" href="GUIgeneric.GUI.html#1" class="Module"
+      >GUIgeneric.GUI</a
+      ><a name="70"
+      >
+</a
+      ><a name="71" class="Keyword"
+      >open</a
+      ><a name="75"
+      > </a
+      ><a name="76" class="Keyword"
+      >import</a
+      ><a name="82"
+      > </a
+      ><a name="83" href="GUIgeneric.GUIDefinitions.html#1" class="Module"
+      >GUIgeneric.GUIDefinitions</a
+      ><a name="108"
+      >
+</a
+      ><a name="109" class="Keyword"
+      >open</a
+      ><a name="113"
+      > </a
+      ><a name="114" class="Keyword"
+      >import</a
+      ><a name="120"
+      > </a
+      ><a name="121" href="GUIgeneric.GUIExample.html#1" class="Module"
+      >GUIgeneric.GUIExample</a
+      ><a name="142"
+      >
+</a
+      ><a name="143" class="Keyword"
+      >open</a
+      ><a name="147"
+      > </a
+      ><a name="148" class="Keyword"
+      >import</a
+      ><a name="154"
+      > </a
+      ><a name="155" href="GUIgeneric.GUIExampleBankAccount.html#1" class="Module"
+      >GUIgeneric.GUIExampleBankAccount</a
+      ><a name="187"
+      >
+</a
+      ><a name="188" class="Keyword"
+      >open</a
+      ><a name="192"
+      > </a
+      ><a name="193" class="Keyword"
+      >import</a
+      ><a name="199"
+      > </a
+      ><a name="200" href="GUIgeneric.GUIExampleLib.html#1" class="Module"
+      >GUIgeneric.GUIExampleLib</a
+      ><a name="224"
+      >
+</a
+      ><a name="225" class="Keyword"
+      >open</a
+      ><a name="229"
+      > </a
+      ><a name="230" class="Keyword"
+      >import</a
+      ><a name="236"
+      > </a
+      ><a name="237" href="GUIgeneric.GUIFeatures.html#1" class="Module"
+      >GUIgeneric.GUIFeatures</a
+      ><a name="259"
+      >
+</a
+      ><a name="260" class="Keyword"
+      >open</a
+      ><a name="264"
+      > </a
+      ><a name="265" class="Keyword"
+      >import</a
+      ><a name="271"
+      > </a
+      ><a name="272" href="GUIgeneric.GUIFeaturesPart2.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart2</a
+      ><a name="299"
+      >
+</a
+      ><a name="300" class="Keyword"
+      >open</a
+      ><a name="304"
+      > </a
+      ><a name="305" class="Keyword"
+      >import</a
+      ><a name="311"
+      > </a
+      ><a name="312" href="GUIgeneric.GUIFeaturesPart3.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart3</a
+      ><a name="339"
+      >
+</a
+      ><a name="340" class="Keyword"
+      >open</a
+      ><a name="344"
+      > </a
+      ><a name="345" class="Keyword"
+      >import</a
+      ><a name="351"
+      > </a
+      ><a name="352" href="GUIgeneric.GUIFeaturesPart4.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart4</a
+      ><a name="379"
+      >
+</a
+      ><a name="380" class="Keyword"
+      >open</a
+      ><a name="384"
+      > </a
+      ><a name="385" class="Keyword"
+      >import</a
+      ><a name="391"
+      > </a
+      ><a name="392" href="GUIgeneric.GUIFeaturesPart5.html#1" class="Module"
+      >GUIgeneric.GUIFeaturesPart5</a
+      ><a name="419"
+      >
+</a
+      ><a name="420" class="Keyword"
+      >open</a
+      ><a name="424"
+      > </a
+      ><a name="425" class="Keyword"
+      >import</a
+      ><a name="431"
+      > </a
+      ><a name="432" href="GUIgeneric.GUIModel.html#1" class="Module"
+      >GUIgeneric.GUIModel</a
+      ><a name="451"
+      >
+</a
+      ><a name="452" class="Keyword"
+      >open</a
+      ><a name="456"
+      > </a
+      ><a name="457" class="Keyword"
+      >import</a
+      ><a name="463"
+      > </a
+      ><a name="464" href="GUIgeneric.GUIModelExample.html#1" class="Module"
+      >GUIgeneric.GUIModelExample</a
+      ><a name="490"
+      >
+</a
+      ><a name="491" class="Keyword"
+      >open</a
+      ><a name="495"
+      > </a
+      ><a name="496" class="Keyword"
+      >import</a
+      ><a name="502"
+      > </a
+      ><a name="503" href="GUIgeneric.Prelude.html#1" class="Module"
+      >GUIgeneric.Prelude</a
+      ><a name="521"
+      >
+</a
+      ></pre
+    ></body
+  ></html
+>
