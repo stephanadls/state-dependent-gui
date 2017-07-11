@@ -126,6 +126,23 @@ module _ where
   add _ _ _ _ ≟CompBool createC _ = false
 
 
+  unused = Dec
+
+{- add buttonFrame a c notOptimzed ≡ add buttonFrame b d notOptimzedadd buttonFrame a c notOptimzed ≡ add buttonFrame b d notOptimzed -}
+  lemmaAddEqProj1 : ∀ {a} {c} {opt} {b} {d} {opt'} → add buttonFrame a c opt ≡ add buttonFrame b d opt' → a ≡ b
+  lemmaAddEqProj1 refl = refl
+
+  lemmaAddEqProj2 : ∀ {a} {c} {opt} {b} {d} {opt'} → add buttonFrame a c opt ≡ add buttonFrame b d opt' → c ≡ d
+  lemmaAddEqProj2 refl = refl
+
+
+  lemmaCreateCBtnEq : ∀ {s1} {s2} → ((createC (button s1))  ≡ (createC (button s2))) → (s1 ≡ s2)
+  lemmaCreateCBtnEq refl = refl
+
+  lemmaCreateCTxtbxEq : ∀ {s1} {s2} → ((createC (txtbox s1))  ≡ (createC (txtbox s2))) → (s1 ≡ s2)
+  lemmaCreateCTxtbxEq refl = refl
+
+
   mutual
    _≟CompFr_ : Decidable {A = CompEls frame} _≡_
    createC tt ≟CompFr createC tt = Dec.yes refl
@@ -136,14 +153,15 @@ module _ where
 
    add buttonFrame a c optimized ≟CompFr add buttonFrame b d optimized with (a ≟Comp b) | (c ≟Comp d)
    ... | Dec.yes p | Dec.yes q = yes (cong₂ (λ x y → add buttonFrame x y optimized ) p q)
-   ... | _ | _ = whatever
-     where postulate whatever : _
+   ... | Dec.yes p | Dec.no ¬p = no (λ addp → ¬p (lemmaAddEqProj2 addp))
+   ... | Dec.no ¬p | _ = no ((λ addp → ¬p (lemmaAddEqProj1 addp)))
+
 
 
    add buttonFrame a c notOptimzed ≟CompFr add buttonFrame b d notOptimzed with (a ≟Comp b) | (c ≟Comp d)
-   ... | Dec.yes p | Dec.yes q = yes (cong₂ (λ x y → add buttonFrame x y notOptimzed ) p q)
-   ... | x | y = Dec.no whatever -- TODO
-     where postulate whatever : _
+   ... | yes p | yes q = yes (cong₂ (λ x y → add buttonFrame x y notOptimzed ) p q)
+   ... | yes p | no ¬p = no (λ addp → ¬p (lemmaAddEqProj2 addp))
+   ... | no ¬p | q = no ((λ addp → ¬p (lemmaAddEqProj1 addp)))
 
    _≟Comp_ : {c : Comp} → Decidable {A = CompEls c} _≡_
 
@@ -156,13 +174,12 @@ module _ where
 
    _≟Comp_ {atomicComp} (createC (button s1)) (createC (button s2)) with (s1 ≟Str s2)
    ... | Dec.yes p = Dec.yes (cong (createC ∘ button) p)
-   ... | Dec.no q = Dec.no whatever -- TODO
-     where postulate whatever : _
+   ... | Dec.no q = Dec.no  (λ neq →   q  (lemmaCreateCBtnEq neq)  )
 
    _≟Comp_ {atomicComp} (createC (txtbox s1)) (createC (txtbox s2)) with (s1 ≟Str s2)
    ... | Dec.yes p = Dec.yes (cong (createC ∘ txtbox) p)
-   ... | Dec.no q = Dec.no whatever -- TODO
-     where postulate whatever : _
+   ... | Dec.no q = Dec.no (λ neq →   q  (lemmaCreateCTxtbxEq neq)  )
+
 
    _≟Comp_ {atomicComp} (createC (button s1)) (createC (txtbox s2)) = Dec.no (λ ())
    _≟Comp_ {atomicComp} (createC (txtbox s1)) (createC (button s2)) = Dec.no (λ ())
